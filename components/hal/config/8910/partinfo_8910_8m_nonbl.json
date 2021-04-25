@@ -1,0 +1,73 @@
+{
+    "version": "0x100",
+    "descriptions": [
+        {
+            "type": "FBD2",
+            "flash": "SFL1",
+            "name": "FSYS",
+            "offset": "0x340000",
+            "size": "0x130000",
+            "erase_block": "0x8000",
+            "logic_block": "0x200"
+        },
+        {
+            "type": "FBD2",
+            "flash": "SFL1",
+            "name": "FMOD",
+            "offset": "0x470000",
+            "size": "0x370000",
+            "erase_block": "0x10000",
+            "logic_block": "0x200"
+        },
+        {
+            "type": "FBD2",
+            "flash": "SFL1",
+            "name": "FFAC",
+            "offset": "0x7e0000",
+            "size": "0x20000",
+            "erase_block": "0x1000",
+            "logic_block": "0x100",
+            "bootloader_ignore": true
+        },
+        {
+            "type": "SFFS",
+            "device": "FSYS",
+            "mount": "/",
+            "reserve_block": "128"
+        },
+        {
+            "type": "SFFS",
+            "device": "FMOD",
+            "mount": "/modem",
+            "application_ro": true
+        },
+        {
+            "type": "SFFS",
+            "device": "FFAC",
+            "mount": "/factory",
+            "bootloader_ignore": true,
+            "bootloader_ro": true,
+            "application_ro": true
+        }
+    ],
+    "macros": {
+        "CONFIG_BOOT_FLASH_ADDRESS": "0x60000000",
+        "CONFIG_BOOT_FLASH_SIZE": "0x10000",
+        "CONFIG_APP_FLASH_ADDRESS": "0x60010000",
+        "CONFIG_APP_FLASH_SIZE": "0x330000",
+        "CONFIG_APPIMG_FLASH_ADDRESS": "0x60340000",
+        "CONFIG_APPIMG_FLASH_SIZE": "0x0",
+        "CONFIG_FS_SYS_FLASH_ADDRESS": "0x60340000",
+        "CONFIG_FS_SYS_FLASH_SIZE": "0x130000",
+        "CONFIG_FS_MODEM_FLASH_ADDRESS": "0x60470000",
+        "CONFIG_FS_MODEM_FLASH_SIZE": "0x370000",
+        "CONFIG_FS_FACTORY_FLASH_ADDRESS": "0x607e0000",
+        "CONFIG_FS_FACTORY_FLASH_SIZE": "0x20000",
+        "CONFIG_FS_SYS_MOUNT_POINT": "/",
+        "CONFIG_FS_MODEM_MOUNT_POINT": "/modem",
+        "CONFIG_FS_FACTORY_MOUNT_POINT": "/factory",
+        "CONFIG_FS_MODEM_NVM_DIR": "/modemnvm",
+        "CONFIG_FS_AP_NVM_DIR": "/nvm",
+        "CONFIG_FS_FOTA_DATA_DIR": "/fota"
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"_comment": [
+		"This is the configuration file to pre-pack files to pac.",
+		"It contains a list of _files_, and for each file,",
+		"_file_ is the absolute path in target, and _local_file_",
+		"is the path in host. When _local_file_ is relative path,",
+		"it is related to the directory of this configuration file.",
+		"Also @SOURCE_TOP_DIR@ and @BINARY_TOP_DIR@ will be substitued",
+		"to the absolte of current build.",
+		"",
+		"When it is empty, PREPACK won't be inserted into pac."
+	],
+	"files": [
+	]
+}

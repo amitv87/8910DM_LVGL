@@ -1,0 +1,25 @@
+// Auto generated. Don't edit it manually!
+
+static const halIomuxFunProp_t gFunProp[] = {{
+    {fun_prop_config} //
+}};
+
+static const halIomuxPadProp_t gPadProp[] = {{
+    {pad_prop_config} //
+}};
+
+static const halIomuxPadInit_t gInitPad[] = {{
+    {init_pad_config} //
+}};
+
+static const uint32_t gFunPadSel[] = {{
+    {fun_pad_sel_config} //
+}};
+
+static const char *gFunNames[] = {{
+    {fun_name_config} //
+}};
+
+static const char *gPadNames[] = {{
+    {pad_name_config} //
+}};

@@ -1,0 +1,83 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _SRV_CONFIG_H_
+#define _SRV_CONFIG_H_
+
+// @AUTO_GENERATION_NOTICE@
+
+/**
+ * whether to enable trace through usb serial
+ */
+#cmakedefine CONFIG_USB_TRACE_ENABLE
+
+/**
+ * whether to enable trace to file system
+ */
+#cmakedefine CONFIG_FS_TRACE_ENABLE
+
+/**
+ * whether to enable 2line wakeup feature
+ */
+#cmakedefine CONFIG_TWOLINE_WAKEUP_ENABLE
+
+/**
+ * input gpio number for 2line wakeup feature
+ */
+#cmakedefine CONFIG_TWOLINE_WAKEUP_IN_GPIO @CONFIG_TWOLINE_WAKEUP_IN_GPIO@
+
+/**
+ * output gpio number for 2line wakeup feature
+ */
+#cmakedefine CONFIG_TWOLINE_WAKEUP_OUT_GPIO @CONFIG_TWOLINE_WAKEUP_OUT_GPIO@
+
+/**
+ * whether to enable gpio simulation for DTR
+ */
+#cmakedefine CONFIG_SRV_DTR_ENABLE
+
+/**
+ * gpio number for DTR simulation
+ */
+#cmakedefine CONFIG_SRV_DTR_GPIO @CONFIG_SRV_DTR_GPIO@
+
+/**
+ * whether to enable software debounce of DTR gpio simulation
+ */
+#cmakedefine CONFIG_SRV_DTR_DEBOUNCE_ENABLE
+
+/**
+ * software debounce time for DTR gpio simulation
+ */
+#cmakedefine CONFIG_SRV_DTR_DEBOUNCE_TIME @CONFIG_SRV_DTR_DEBOUNCE_TIME@
+
+/**
+ * log tag of service module
+ */
+#define LOG_TAG_SRV OSI_MAKE_LOG_TAG('S', 'E', 'R', 'V')
+
+/**
+ * whether to enable simlock service
+ */
+#cmakedefine CONFIG_SRV_SIMLOCK_ENABLE
+
+/**
+ * minimal power on voltage
+ */
+#cmakedefine CONFIG_SRV_POWER_ON_VOLTAGE @CONFIG_SRV_POWER_ON_VOLTAGE@
+
+/**
+ * power off voltage threshold
+ */
+#cmakedefine CONFIG_SRV_POWER_OFF_VOLTAGE @CONFIG_SRV_POWER_OFF_VOLTAGE@
+
+#endif

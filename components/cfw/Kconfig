@@ -1,0 +1,85 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "CFW"
+
+config GSM_SUPPORT
+    bool "Support GSM"
+    default n if SOC_8909 && !8909_DUALMODE
+    default n if SOC_6760
+    default y
+
+config LTE_NBIOT_SUPPORT
+    bool "Support NBIOT"
+    default n if SOC_8955
+    default y
+
+config LTE_SUPPORT
+    bool "Support LTE"
+    default y if SOC_8910
+    default n
+
+config NUMBER_OF_SIM
+    int "Number of sim supported"
+    default 2
+    help
+        Number of sum supported.
+
+config EVENT_NAME_ENABLED
+    bool "Provide function to convert event ID to name"
+    default y
+    help
+        At debugging, it is convenient to show event name rather than
+        event ID. However, the conversion will take code spaces. Unless
+        when code size is critical, it is recommended to enable it.
+
+config CFW_PENDING_UTI_COUNT
+    int "Maximum CFW waiting count"
+    default 64
+    help
+        For each pending UTI, CFW dispatch shall record the response
+        task, and static memory is used to record this.
+
+config CFW_SKIP_NV_SAVE_RESTORE
+    bool "Skip CFW NV save and restore"
+    default n
+    help
+        It is for debug only.
+
+        When it is defined, CFW NV save and restore are skipped.
+
+config CFW_CALL_WITH_RPC
+    bool "Use RPC to call CFW API"
+    default y if SOC_8910
+    default n
+    help
+        When CFW is implemented on other CPU, it is needed to use RPC
+        to call CFW APIs. In this case, it is needed to enable this.
+
+config CFW_CALL_STACK_WITH_IPC
+    bool "Use IPC to call stack"
+    default y if SOC_6760
+    default n
+    help
+        When stack is implemented on other CPU, it is needed to use IPC
+        for stack messages.
+
+config CFW_DEBUG_IPFILTER
+    bool "CFW simple IP filter (debug only)"
+    default y if SOC_6760
+    default n
+    help
+        When enabled, uplink IP packet will be filtered inside CFW.
+        Only certain IP packets for debug purpose (such as ICMP, iperf,
+        DNS and etc) will be sent to stack.
+
+        This is for debug only. Don't enable it in real products.
+endmenu

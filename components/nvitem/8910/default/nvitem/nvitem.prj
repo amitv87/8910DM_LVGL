@@ -1,0 +1,19 @@
+# SpreadTrum NVEditor Project File, Format Version 1.0
+# WARNING: DO NOT EDIT OR DELETE THIS PROJECT FILE!
+
+################################################################################
+  PROJECT     =  NVitem
+  ALIGNMENT   =  4
+  TARGET      =  nvitem_8910_modem_cat1.bin
+  DESCRIPTION =  
+
+################################################################################
+
+# Begin Project Module
+
+  MODULE     =  ProductionParam_uix8910.nvm
+  MODULE     =  BaseParam.nvm
+
+# End Project Module
+
+################################################################################

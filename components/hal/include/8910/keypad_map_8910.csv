@@ -1,0 +1,9 @@
+,key_in0,key_in1,key_in2,key_in3,key_in4,key_in5,key_in6,key_in7
+key_out0,KEY_MAP_1,KEY_MAP_2,KEY_MAP_3,KEY_MAP_LEFT,KEY_MAP_OK,,,
+key_out1,KEY_MAP_4,KEY_MAP_5,KEY_MAP_6,KEY_MAP_RIGHT,KEY_MAP_SOFT_R,,,
+key_out2,KEY_MAP_7,KEY_MAP_8,KEY_MAP_9,KEY_MAP_UP,KEY_MAP_SOFT_L,,,
+key_out3,KEY_MAP_STAR,KEY_MAP_0,KEY_MAP_SHARP,KEY_MAP_DOWN,,,,
+key_out4,KEY_MAP_CANCLE,KEY_MAP_SIM1,KEY_MAP_SIM2,,,,,
+key_out5,,,,,,,,
+key_out6,,,,,,,,
+key_out7,,,,,,,,

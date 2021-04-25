@@ -1,0 +1,22 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "MAL"
+
+config MAL_GET_SIM_AUTH_TIMEOUT
+    int "timeout for read sim auth read"
+    default 5000
+
+config MAL_GET_NW_OPERATOR_TIMEOUT
+    int "timeout for get AvailableOperators"
+    default 180000
+
+endmenu

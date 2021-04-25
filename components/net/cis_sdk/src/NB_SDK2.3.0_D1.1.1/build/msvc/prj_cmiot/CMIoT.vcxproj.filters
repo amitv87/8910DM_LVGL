@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="er-coap-13">
+      <UniqueIdentifier>{eae87531-8d17-4ee4-a0e9-cbb7f56f602e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dm_utils">
+      <UniqueIdentifier>{b53726c7-5fb2-4309-8eae-d1e176dce6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dtls">
+      <UniqueIdentifier>{53c99005-54f0-4c36-8327-82ef361608c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std_object">
+      <UniqueIdentifier>{b77a2453-9e4e-429d-a937-6cb976ac10f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\ciscore\cis_if_net.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_if_sys.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_internals.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_list.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_log.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_api.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_config.h" />
+    <ClInclude Include="..\..\..\src\ciscore\cis_def.h" />
+    <ClInclude Include="..\..\..\src\ciscore\er-coap-13\er-coap-13.h">
+      <Filter>er-coap-13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dm_utils\aes.h">
+      <Filter>dm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dm_utils\j_base64.h">
+      <Filter>dm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dm_utils\sha256.h">
+      <Filter>dm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dm_utils\dm_endpoint.h">
+      <Filter>dm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\alert.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\ccm.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\cis_aes.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\crypto.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\debug.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\dtls.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\ecc.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\global.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\hmac.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\list.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\netq.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\numeric.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\peer.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\prng.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\session.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\sha2.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\dtls\state.h">
+      <Filter>dtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ciscore\std_object\std_object.h">
+      <Filter>std_object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\ciscore\cis_json.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_list.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_log.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_management.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_memtrace.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_objects.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_observe.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_packet.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_registration.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_tlv.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_transaction.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_uri.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_utils.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_block1.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_bootstrap.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_config.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_core.c" />
+    <ClCompile Include="..\..\..\src\ciscore\cis_data.c" />
+    <ClCompile Include="..\..\..\src\ciscore\er-coap-13\er-coap-13.c">
+      <Filter>er-coap-13</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\cis_discover.c" />
+    <ClCompile Include="..\..\..\src\ciscore\dm_utils\aes.c">
+      <Filter>dm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dm_utils\dm_endpoint.c">
+      <Filter>dm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dm_utils\j_base64.c">
+      <Filter>dm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dm_utils\sha256.c">
+      <Filter>dm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\ccm.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\cis_aes.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\crypto.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\debug.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\dtls.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\ecc.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\netq.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\peer.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\sha2.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\dtls\hmac.c">
+      <Filter>dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_conn_moniter.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_device.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_firmware.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\std_object.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\std_object_security.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_cmdhdefecvalues.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_powerup_log.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ciscore\std_object\cis_object_extend_moniter.c">
+      <Filter>std_object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\ciscore\readme.txt" />
+  </ItemGroup>
+</Project>

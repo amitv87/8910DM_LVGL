@@ -1,0 +1,51 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "AP/CP RPC"
+
+config RPC_SEND_STACK_ALLOCA_LIMIT
+    int "Size limit to use stack (alloca) on send"
+    default 256
+    help
+        RPC send can be called in multiple threads. When one thread
+        is wating response from peer, it is permitted to let another
+        thread to send call packet to peer when one thread. In normal
+        case, there are no differences due to there is only one
+        thread in peer, and all requests are handled one by one.
+        However, when peer is busy, it is possible there may exist
+        differences, and async message can be faster. So, we can't
+        use global memory for input and output parameters.
+
+        When input and output parameter memory size is small, alloca
+        will be used, and malloc/free can be saved. When memory size
+        is large, malloc/free shall be used to avoid stack overflow.
+        Anyway, malloc/free can be non-trivial operation.
+
+config RPC_PACKET_SIZE_MAX
+    int "RPC packet max size"
+    default 1024
+    help
+        The maximum of RPC packet size, including RPC call packet, RPC
+        response packet and RPC async message packet.
+
+config RPC_EVENT_RANGE_COUNT
+    int "RPC event range count"
+    default 4
+    help
+        When RPC daemon received an event from peer, RPC daemon itself
+        donesn't know how to do with the event. Application shoule
+        register router for specified events, usually send the event
+        to desired thread.
+
+        It is tedious to use dynamic memory for the registration. So,
+        static memory is used, and this configures the maximum count.
+
+endmenu

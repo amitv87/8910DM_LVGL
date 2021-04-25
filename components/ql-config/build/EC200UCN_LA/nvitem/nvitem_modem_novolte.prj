@@ -1,0 +1,27 @@
+# SpreadTrum NVEditor Project File, Format Version 1.0
+# WARNING: DO NOT EDIT OR DELETE THIS PROJECT FILE!
+
+################################################################################
+  PROJECT     =  NVitem
+  ALIGNMENT   =  4
+  TARGET      =  nvitem_8910_modem_cat1.bin
+  DESCRIPTION =  
+
+################################################################################
+
+# Begin Project Module
+
+  MODULE     =  nv_type_uix8910.nvm
+  MODULE     =  calibrationparam.nvm
+  MODULE     =  golden_board_param.nvm
+  MODULE     =  RF_calib_modem.nvm
+  MODULE     =  modem_nv_cat1bis_uix8910_static.nvm
+  MODULE     =  modem_nv_cat1bis_uix8910_phy.nvm
+  MODULE     =  modem_nv_cat1bis_uix8910_dynamic.nvm
+  MODULE     =  Cfw_nv.nvm
+  MODULE     =  RF_nv.nvm
+  MODULE     =  audio_calib_VQE.nvm
+  MODULE     =  audio_codec_nv.nvm
+# End Project Module
+
+################################################################################

@@ -1,0 +1,114 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "Diag"
+
+config DIAG_ENABLED
+    bool "Enable diag"
+    default y if SOC_8910
+    default n
+
+if DIAG_ENABLED
+config DIAG_NORMAL_MODE_BUF_SIZE
+    hex "Diag pre-allocated buffer size"
+    default 0x1040 if SOC_8811
+    default 0x10040
+    help
+        Pre-allocated buffer. When diag engine is created, buffer of this
+        size will be allocated. When it is enough for diag packet, this
+        pre-allocated buffer will be used. Otherwise, dynamic memory will
+        be used. When dynamic memory allocation fails, diag will return
+        bad command.
+
+        When system memory is enough, it is recommended to configure the
+        size to ensure maximum nvitem read and write can work.
+
+config DIAG_CALIB_MODE_BUF_SIZE
+    hex "Diag allocated buffer size in calib mode"
+    default 0x10040
+    help
+        Diag buffer size in calibration mode.
+
+config DIAG_DEVICE_USRL_SUPPORT
+    bool "usb diag device support"
+    default y if SOC_8910
+    default n
+
+if DIAG_DEVICE_USRL_SUPPORT
+choice
+    prompt "Default Userial"
+    default DIAG_DEFAULT_USRL_COM1
+
+config DIAG_DEFAULT_USRL_COM0
+    bool "USRL0"
+
+config DIAG_DEFAULT_USRL_COM1
+    bool "USRL1"
+
+config DIAG_DEFAULT_USRL_COM2
+    bool "USRL2"
+
+config DIAG_DEFAULT_USRL_COM3
+    bool "USRL3"
+
+endchoice
+
+config DIAG_DEFAULT_USERIAL
+    string
+    default "DRV_NAME_USRL_COM0" if DIAG_DEFAULT_USRL_COM0
+    default "DRV_NAME_USRL_COM1" if DIAG_DEFAULT_USRL_COM1
+    default "DRV_NAME_USRL_COM2" if DIAG_DEFAULT_USRL_COM2
+    default "DRV_NAME_USRL_COM3" if DIAG_DEFAULT_USRL_COM3
+    default ""
+endif
+
+choice
+    prompt "Default UART"
+    default DIAG_DEFAULT_UART2 if SOC_8910
+
+config DIAG_DEFAULT_UART1
+    bool "UART1"
+
+config DIAG_DEFAULT_UART2
+    bool "UART2"
+
+config DIAG_DEFAULT_UART3
+    bool "UART3"
+
+config DIAG_DEFAULT_UART4
+    bool "UART4"
+
+config DIAG_DEFAULT_UART5
+    bool "UART5"
+
+endchoice
+
+config DIAG_DEFAULT_UART
+    string
+    default "DRV_NAME_UART1" if DIAG_DEFAULT_UART1
+    default "DRV_NAME_UART2" if DIAG_DEFAULT_UART2
+    default "DRV_NAME_UART3" if DIAG_DEFAULT_UART3
+    default "DRV_NAME_UART4" if DIAG_DEFAULT_UART4
+    default "DRV_NAME_UART5" if DIAG_DEFAULT_UART5
+    default ""
+
+config DIAG_DEFAULT_UART_BAUD
+    int "Baud rate of default UART"
+    default 921600 if SOC_8910
+    default 921600 if SOC_6760
+    default 921600 if SOC_8811
+
+config DIAG_DEBUG_SUPPORT
+    bool "Support Diag Port Debug"
+    default y
+
+endif
+endmenu

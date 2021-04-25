@@ -1,0 +1,68 @@
+
+系统找不到指定的文件。
+
+cleaning done
+
+
+D:\EC200U\aliyun\tools\win32;D:\EC200U\aliyun\tools;D:\EC200U\aliyun\prebuilts\win32\gcc-arm-none-eabi\bin;D:\EC200U\aliyun\prebuilts\win32\python3;D:\EC200U\aliyun\prebuilts\win32\cmake\bin;D:\EC200U\aliyun\prebuilts\win32\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Qualcomm\QXDM4;C:\gcc-arm-none-eabi\bin;C:\Program Files\Git\cmd;C:\OpenSSL-Win64\bin;C:\Program Files (x86)\Qualcomm\QIKTool\1.0.106.2;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin
+
+
+
+-- QL_APP_FEATURE_FTP ON
+-- QL_APP_FEATURE_HTTP ON
+-- QL_APP_FEATURE_MMS ON
+-- QL_APP_FEATURE_MQTT ON
+-- QL_APP_FEATURE_SSL ON
+-- QL_APP_FEATURE_PING ON
+-- QL_APP_FEATURE_NTP ON
+-- FEATURE LBS is disabled at core!
+-- QL_APP_FEATURE_LBS OFF
+-- QL_APP_FEATURE_SOCKET ON
+-- QL_APP_FEATURE_CTSREG ON
+-- QL_APP_FEATURE_FILE ON
+-- QL_APP_FEATURE_AUDIO ON
+-- QL_APP_FEATURE_AUDIO_TTS ON
+-- QL_APP_FEATURE_EXT_CODEC ON
+-- QL_APP_FEATURE_WIFISCAN ON
+-- QL_APP_FEATURE_BT ON
+-- QL_APP_FEATURE_GNSS ON
+-- QL_APP_FEATURE_LCD ON
+-- QL_APP_FEATURE_LVGL ON
+-- QL_APP_FEATURE_CAMERA ON
+-- QL_APP_FEATURE_SIM ON
+-- QL_APP_FEATURE_SMS ON
+-- QL_APP_FEATURE_VOICE_CALL ON
+-- QL_APP_FEATURE_VOLTE ON
+-- QL_APP_FEATURE_SPI ON
+-- QL_APP_FEATURE_SPI_FLASH ON
+-- QL_APP_FEATURE_UART ON
+-- QL_APP_FEATURE_LEDCFG ON
+-- QL_APP_FEATURE_KEYPAD ON
+-- QL_APP_FEATURE_DECODER ON
+-- QL_APP_FEATURE_RTC ON
+-- QL_APP_FEATURE_SECURE_BOOT OFF
+-- QL_APP_FEATURE_HTTP_FOTA ON
+
+
+-- The C compiler identification is GNU 7.2.1
+-- The CXX compiler identification is GNU 7.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/EC200U/aliyun/prebuilts/win32/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/EC200U/aliyun/out/appimage_release
+
+[202/203] Linking C executable hex\appimage.elf
+FAILED: hex/appimage.elf hex/appimage.img hex/appimage.map 
+cmd.exe /C "cd . && D:\EC200U\aliyun\prebuilts\win32\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe -std=gnu11  -mcpu=cortex-a5 -mtune=generic-armv7-a -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mno-unaligned-access -Os ../../components/lib/core_stub.o CMakeFiles/appimage.dir/components/ql-application/init/ql_init.c.obj  -o hex\appimage.elf  -T  CMakeFiles/appimage_ldscript.dir/tools/ldscripts/app_flashimg.ld.obj  -Wl,-Map=D:/EC200U/aliyun/out/appimage_release/hex/appimage.map  -nostdlib  -Wl,--gc-sections  ../../components/newlib/armca5/libc.a  ../../components/newlib/armca5/libm.a  ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a  lib/libql_app_nw.a  lib/libql_app_peripheral.a  lib/libql_app_osi.a  lib/libql_app_dev.a  
+lib/libql_app_sim.a  lib/libql_app_power.a  lib/libaliyun.a  lib/libql_app_xlog.a  lib/libql_app_ftp.a  lib/libql_app_http.a  lib/libql_app_mms.a  lib/libql_app_mqtt.a  lib/libql_app_ssl.a  lib/libql_app_ping.a  lib/libql_app_ntp.a  lib/libql_app_ctsreg.a  lib/libql_app_socket.a  lib/libql_app_audio.a  lib/libql_app_wifi_scan.a  lib/libql_app_bt.a  lib/libql_app_gnss.a  lib/libql_app_lcd.a  lib/liblvgl.a  lib/libql_app_lvgl.a  lib/libql_app_camera.a  lib/libql_app_file.a  lib/libql_app_sms.a  lib/libql_app_voice_call.a  lib/libql_app_volte.a  lib/libql_app_spi.a  lib/libql_app_spi_flash.a  lib/libql_app_http_fota.a  lib/libql_app_decoder.a  ../../components/newlib/armca5/libql_api_decoder.a  ../../components/newlib/armca5/libm.a  lib/libql_app_rtc.a  lib/liblvgl.a  ../../components/newlib/armca5/libc.a  ../../components/newlib/armca5/libm.a  ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a && cmd.exe /C "cd /D D:\EC200U\aliyun\out\appimage_release && dtools mkappimg D:/EC200U/aliyun/out/appimage_release/hex/appimage.elf D:/EC200U/aliyun/out/appimage_release/hex/appimage.img""
+lib/libaliyun.a(adapt_ql_port.c.obj): In function `_core_sysdep_network_mbedtls_establish':
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:581: undefined reference to `mbedtls_ssl_conf_max_frag_len'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:629: undefined reference to `mbedtls_ssl_conf_handshake_timeout'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:658: undefined reference to `mbedtls_pk_parse_key'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:675: undefined reference to `mbedtls_ssl_conf_psk'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:683: undefined reference to `mbedtls_ssl_conf_ciphersuites'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:735: undefined reference to `mbedtls_timing_get_delay'
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:735: undefined reference to `mbedtls_timing_set_delay'
+lib/libaliyun.a(adapt_ql_port.c.obj): In function `_core_sysdep_network_udp_server_establish':
+D:\EC200U\aliyun\out\appimage_release/../../components/ql-application/LinkSDK/portfiles/adapt_ql_port.c:499: undefined reference to `lwip_htonl'

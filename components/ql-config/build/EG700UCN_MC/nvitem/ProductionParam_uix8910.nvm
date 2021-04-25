@@ -1,0 +1,1556 @@
+# SpreadTrum NVEditor NV Module File, Format Version 1.0
+# WARNING: DO NOT EDIT OR DELETE THIS NV Module FILE!
+
+###############################################################################
+  MODULE      = ProductionParam
+  DESCRIPTION = 
+
+################################################################################
+
+# Begin Module Item
+  BEGIN_ITEM
+    ITEM_NAME    = bt_config
+    ITEM_ID      = 401
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 0
+    ITEM_PARENT  = -1
+    ITEM_DESC    = bluetooth config parameter
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr
+    ITEM_ID      = 401
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 6
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 1
+    ITEM_PARENT  = 0
+    ITEM_DESC    = default address of bluetooth
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[0]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 2
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[1]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 3
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[2]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 4
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[3]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 5
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[4]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 6
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bd_addr[5]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 7
+    ITEM_PARENT  = 1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name
+    ITEM_ID      = 401
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 32
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 8
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[0]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x38
+    ITEM_INDEX   = 9
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[1]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x39
+    ITEM_INDEX   = 10
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[2]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x31
+    ITEM_INDEX   = 11
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[3]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x30
+    ITEM_INDEX   = 12
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[4]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x44
+    ITEM_INDEX   = 13
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[5]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x4D
+    ITEM_INDEX   = 14
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[6]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 15
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[7]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 16
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[8]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 17
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[9]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 18
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[10]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 19
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[11]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 20
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[12]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 21
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[13]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 22
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[14]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 23
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[15]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 24
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[16]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 25
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[17]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 26
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[18]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 27
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[19]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 28
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[20]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 29
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[21]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 30
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[22]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 31
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[23]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 32
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[24]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 33
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[25]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 34
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[26]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 35
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[27]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 36
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[28]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 37
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[29]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 38
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[30]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 39
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = local_name[31]
+    ITEM_ID      = 401
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 40
+    ITEM_PARENT  = 8
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = xtal_dac
+    ITEM_ID      = 401
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x25
+    ITEM_INDEX   = 41
+    ITEM_PARENT  = 0
+    ITEM_DESC    = Carrier Frequency Offset of bt (crstal trim)value =0~63 //ÔØ²¨ÆµÂÊÆ«²î
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = bt_sprd
+    ITEM_ID      = 442
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 42
+    ITEM_PARENT  = -1
+    ITEM_DESC    = Blue Tooth config for SPRD
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_dbg_source_sink_syn_test_data
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 43
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_sys_sleep_in_standby_supported
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 44
+    ITEM_PARENT  = 42
+    ITEM_DESC    = sleep switch: 0 represents that connot enter sleep mode, 1 represents that can enter sleep mode
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_sys_sleep_master_supported
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 45
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_sys_sleep_slave_supported
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 46
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = default_ahb_clk
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x18CBA80
+    ITEM_INDEX   = 47
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_class
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x240404
+    ITEM_INDEX   = 48
+    ITEM_PARENT  = 42
+    ITEM_DESC    = 0x1F00
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = win_ext
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1E
+    ITEM_INDEX   = 49
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 6
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 50
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xF600
+    ITEM_INDEX   = 51
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xD000
+    ITEM_INDEX   = 52
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xAA00
+    ITEM_INDEX   = 53
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x8400
+    ITEM_INDEX   = 54
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x4400
+    ITEM_INDEX   = 55
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aGainValue[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xA00
+    ITEM_INDEX   = 56
+    ITEM_PARENT  = 50
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 5
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 57
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xE6780000
+    ITEM_INDEX   = 58
+    ITEM_PARENT  = 57
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xE8F80000
+    ITEM_INDEX   = 59
+    ITEM_PARENT  = 57
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xECB80000
+    ITEM_INDEX   = 60
+    ITEM_PARENT  = 57
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xF2780000
+    ITEM_INDEX   = 61
+    ITEM_PARENT  = 57
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aPowerValue[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xFFF80000
+    ITEM_INDEX   = 62
+    ITEM_PARENT  = 57
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 16
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 63
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xBF
+    ITEM_INDEX   = 64
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte0
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xEE
+    ITEM_INDEX   = 65
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte1
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xCD
+    ITEM_INDEX   = 66
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte2
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFE
+    ITEM_INDEX   = 67
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte3
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xDB
+    ITEM_INDEX   = 68
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte4
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0xFF
+    ITEM_INDEX   = 69
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte5
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[6]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x7B
+    ITEM_INDEX   = 70
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte6
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[7]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x87
+    ITEM_INDEX   = 71
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page0 Byte7
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[8]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3
+    ITEM_INDEX   = 72
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page1 Byte0
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[9]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x5C
+    ITEM_INDEX   = 73
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page2 Byte0
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[10]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3
+    ITEM_INDEX   = 74
+    ITEM_PARENT  = 63
+    ITEM_DESC    = feature mask page2 Byte1
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[11]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 75
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[12]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 76
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[13]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 77
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[14]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 78
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = feature_set[15]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 79
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 6
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 80
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 81
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 82
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 83
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 84
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 85
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = device_addr[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 86
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_sys_sco_transmit_mode
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 87
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_sys_uart0_communication_supported
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 88
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = edr_tx_edr_delay
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x17
+    ITEM_INDEX   = 89
+    ITEM_PARENT  = 42
+    ITEM_DESC    = BT_RTRIP_DELAY
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = edr_rx_edr_delay
+    ITEM_ID      = 442
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x20
+    ITEM_INDEX   = 90
+    ITEM_PARENT  = 42
+    ITEM_DESC    = BLE_RTRIP_DELAY
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_wbs_nv_117
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x7C
+    ITEM_INDEX   = 91
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = is_wdg_supported
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 92
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_rx_base_addr
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 93
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_base_addr
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 94
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_packet_num_addr
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 95
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_data_base_addr
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 96
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_PrintLevel
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xFFFFFFFF
+    ITEM_INDEX   = 97
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_block_length
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 98
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_rx_block_length
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 99
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_water_mark
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 100
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = share_memo_tx_timeout_value
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 101
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = uart_rx_watermark
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x30
+    ITEM_INDEX   = 102
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = uart_flow_control_thld
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x3F
+    ITEM_INDEX   = 103
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = comp_id
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1EC
+    ITEM_INDEX   = 104
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = pcm_clk_divd
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x26
+    ITEM_INDEX   = 105
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_nbs_nv_118
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 106
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = br_edr_diff_reserved
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0xFFFF
+    ITEM_INDEX   = 107
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = br_edr_PowerControl_Flag
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0xFFFF
+    ITEM_INDEX   = 108
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 109
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x11C0
+    ITEM_INDEX   = 110
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the first level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x180
+    ITEM_INDEX   = 111
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the second level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1101
+    ITEM_INDEX   = 112
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the third level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x127F
+    ITEM_INDEX   = 113
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the fourth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x145D
+    ITEM_INDEX   = 114
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the fifth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1610
+    ITEM_INDEX   = 115
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the sixth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[6]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1815
+    ITEM_INDEX   = 116
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the seventh level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_br_channel_power[7]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1938
+    ITEM_INDEX   = 117
+    ITEM_PARENT  = 109
+    ITEM_DESC    = BR power control word of the eighth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 118
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x11C0
+    ITEM_INDEX   = 119
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the first level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x180
+    ITEM_INDEX   = 120
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the second level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1101
+    ITEM_INDEX   = 121
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the third level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x127F
+    ITEM_INDEX   = 122
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the fourth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x145D
+    ITEM_INDEX   = 123
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the fifth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1610
+    ITEM_INDEX   = 124
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the sixth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[6]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1815
+    ITEM_INDEX   = 125
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the seventh level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = gain_edr_channel_power[7]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x1B29
+    ITEM_INDEX   = 126
+    ITEM_PARENT  = 118
+    ITEM_DESC    = EDR power control word of the eighth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEPowerControlFlag
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x7070707
+    ITEM_INDEX   = 127
+    ITEM_PARENT  = 42
+    ITEM_DESC    = the power level index value in LE adv,scan,con,test mode in turn
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 128
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x11C0
+    ITEM_INDEX   = 129
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the first level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x180
+    ITEM_INDEX   = 130
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the second level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1101
+    ITEM_INDEX   = 131
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the third level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x127F
+    ITEM_INDEX   = 132
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the fourth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[4]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x145D
+    ITEM_INDEX   = 133
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the fifth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[5]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1610
+    ITEM_INDEX   = 134
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the sixth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[6]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1815
+    ITEM_INDEX   = 135
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the seventh level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = g_aLEChannelpwrvalue[7]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1938
+    ITEM_INDEX   = 136
+    ITEM_PARENT  = 128
+    ITEM_DESC    = LE power control word of the eighth level
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = host_reserved
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 2
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 137
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = host_reserved[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x53
+    ITEM_INDEX   = 138
+    ITEM_PARENT  = 137
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = host_reserved[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 139
+    ITEM_PARENT  = 137
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = config0
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x6E
+    ITEM_INDEX   = 140
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = config1
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x3F300E05
+    ITEM_INDEX   = 141
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = config2
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xDC198CFB
+    ITEM_INDEX   = 142
+    ITEM_PARENT  = 42
+    ITEM_DESC    = uint16 debug_bb_gain; 0x8CFB ;uint16 debug_tx_power;0xDC19
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = config3
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x4A9CBBE
+    ITEM_INDEX   = 143
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved1
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 4
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 144
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved1[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 145
+    ITEM_PARENT  = 144
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved1[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 146
+    ITEM_PARENT  = 144
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved1[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 147
+    ITEM_PARENT  = 144
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved1[3]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 148
+    ITEM_PARENT  = 144
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved2
+    ITEM_ID      = 442
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 3
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 149
+    ITEM_PARENT  = 42
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved2[0]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 150
+    ITEM_PARENT  = 149
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved2[1]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 151
+    ITEM_PARENT  = 149
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved2[2]
+    ITEM_ID      = 442
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 152
+    ITEM_PARENT  = 149
+    ITEM_DESC    =  
+  END_ITEM
+
+
+# End Module Item
+
+################################################################################

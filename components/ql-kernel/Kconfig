@@ -1,0 +1,15 @@
+# Copyright (C) 2020 Quectel.
+# All rights reserved.
+#
+
+menu "quectel core customize"
+
+config QL_PROJECT_DEF
+    string "Specify Project for Quectel"
+    default ""
+	
+config QL_PROJECT_DEF_SUB
+    string "Specify Sub Project for Quectel"
+    default ""
+
+endmenu

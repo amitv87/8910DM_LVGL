@@ -1,0 +1,96 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "net"
+
+config NET_LWIP_DEBUG
+    bool "enable lwip debug"
+    default y
+    help
+        when enabled, LWIP_DEBUG will be defined to 1.
+
+config NET_TCPIP_SUPPORT
+    bool "tcpip enabled"
+    default y
+    help
+        When enabled, CONFIG_NET_TCPIP_SUPPORT will be defined
+
+config NET_LOG_BUF_COUNT
+    int "Log buffer count"
+    default 2
+
+config NET_LOG_BUF_SIZE
+    int "Log buffer size"
+    default 8192
+
+config NET_LWIP_IPV4_ON
+    bool "Ipv4 enabled"
+    default y
+    help
+        When enabled, CONFIG_NET_LWIP_IPV4_ON will be defined
+
+config NET_LWIP_PPP_ON
+    bool "ppp enabled"
+    default y
+    help
+        When enabled, CONFIG_NET_LWIP_PPP_ON will be defined
+
+config NET_TRACE_IP_PACKET
+    bool "trace IP packet identify"
+    default y if SOC_8910
+    default n
+    help
+        When enabled, identify of IP packet will be show in trace.
+
+        It is just for debug, and usually not needed in produciton.
+
+config NET_LWM2M_SUPPORT
+    bool "NET_LWM2M_SUPPORT enabled"
+    default y
+    help
+        When enabled, NET_LWM2M_SUPPORT will be defined
+
+config NET_PAHO_MQTT_SUPPORT
+    bool "NET_PAHO_MQTT_SUPPORT enabled"
+    default n
+    help
+        When enabled, NET_PAHO_MQTT_SUPPORT will be defined
+
+config NET_ALI_SDK_SUPPORT
+    bool "NET_ALI_SDK_SUPPORT enabled"
+    default y
+    help
+        When enabled, NET_ALI_SDK_SUPPORT will be defined
+
+config NET_ALI_SDK_DYNAMIC_LOAD
+    bool "NET_ALI_SDK_DYNAMIC_LOAD enabled"
+    default n
+    help
+        When enabled, NET_ALI_SDK_DYNAMIC_LOAD will be defined
+
+config NET_CIS_SDK_SUPPORT
+    bool "NET_CIS_SDK_SUPPORT enabled"
+    default n
+    help
+        When enabled, NET_CIS_SDK_SUPPORT will be defined
+
+config NET_NAT_SUPPORT
+    bool "NET_NAT_SUPPORT enabled"
+    default y
+    help
+        When enabled, NET_NAT_SUPPORT will be defined
+orsource "mupnp/Kconfig"
+orsource "http/Kconfig"
+orsource "mbedtls/Kconfig"
+orsource "liblwm2m/Kconfig"
+orsource "ftp/Kconfig"
+
+endmenu

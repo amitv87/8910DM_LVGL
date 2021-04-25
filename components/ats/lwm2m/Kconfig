@@ -1,0 +1,30 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "at_lwm2m"
+
+config AT_CISSDK_MIPL_SUPPORT
+    bool "AT_CISSDK_MIPL_SUPPORT enabled"
+    default n if SOC_6760
+    default y
+    select NET_CIS_SDK_SUPPORT
+    help
+        When enabled, AT_CISSDK_MIPL_SUPPORT will be defined
+
+config AT_OCEANCONNECT_SUPPORT
+    bool "AT_OCEANCONNECT_SUPPORT enabled"
+    default y
+    depends on NET_LWM2M_SUPPORT
+    help
+        When enabled, AT_OCEANCONNECT_SUPPORT will be defined
+        Note : the config set to y should set the NET_LWM2M_SUPPORT
+        to y in components/net/Kconfig at the same time
+endmenu

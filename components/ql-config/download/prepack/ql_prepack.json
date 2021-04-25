@@ -1,0 +1,23 @@
+{
+	"_comment": [
+		"This is the configuration file to pre-pack files to pac.",
+		"It contains a list of _files_, and for each file,",
+		"_file_ is the absolute path in target, and _local_file_",
+		"is the path in host. When _local_file_ is relative path,",
+		"it is related to the directory of this configuration file.",
+		"Also @SOURCE_TOP_DIR@ and @BINARY_TOP_DIR@ will be substitued",
+		"to the absolte of current build.",
+		"",
+		"When it is empty, PREPACK won't be inserted into pac."
+	],
+	"files": [
+		{
+			"file": "/user/boot",
+			"local_file": "bootloader_r3.0.0_build2817_uartboot_4468750.pkg"
+		},
+		{
+			"file": "/user/firm",
+			"local_file": "UC6226CI-R3.2.0.12Build6815_mfg.pkg"
+		}
+	]
+}

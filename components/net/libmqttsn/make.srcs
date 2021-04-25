@@ -1,0 +1,18 @@
+
+SOURCE_FILES := \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNConnectClient.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNConnectServer.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNDeserializePublish.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNPacket.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNSearchClient.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNSearchServer.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNSerializePublish.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNSubscribeClient.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNSubscribeServer.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNUnsubscribeClient.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNUnsubscribeServer.c \
+./paho.mqtt-sn.embedded-c/MQTTSNPacket/src/MQTTSNApi.c \
+
+SOURCE_INCLUDE := \
+    ${LOCAL_NAME}/src/paho.mqtt-sn.embedded-c/MQTTSNPacket/src/ \
+

@@ -1,0 +1,35 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "at_bt"
+
+config AT_BT_CLASSIC_SUPPORT
+    bool "AT_BT_CLASSIC_SUPPORT enabled"
+    default n
+    select BLUEU_BT_ENABLE
+    help
+        When enabled, CONFIG_AT_BT_CLASSIC_SUPPORT will be defined
+
+config AT_BT_APP_SUPPORT
+    bool "AT_BT_APP_SUPPORT enabled"
+    default n
+    select BLUEU_BT_ENABLE
+    help
+        When enabled, CONFIG_AT_BT_APP_SUPPORT will be defined
+
+config AT_BLUEU_VERIFY_SUPPORT
+    bool "AT_BLUEU_VERIFY_SUPPORT enabled"
+    default n
+    select BLUEU_BT_ENABLE
+    help
+        When enabled, CONFIG_AT_BLUEU_VERIFY_SUPPORT will be defined
+
+endmenu

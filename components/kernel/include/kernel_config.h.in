@@ -1,0 +1,172 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _KERNEL_CONFIG_H_
+#define _KERNEL_CONFIG_H_
+
+#include "hal_config.h"
+
+// @AUTO_GENERATION_NOTICE@
+
+/**
+ * whether enable sysnv mechanism
+ */
+#cmakedefine CONFIG_KERNEL_SYSNV_ENABLED
+
+/**
+ * RTOS tick Hz
+ */
+#cmakedefine CONFIG_KERNEL_TICK_HZ @CONFIG_KERNEL_TICK_HZ@
+
+/**
+ * Default hardware tick frequency
+ */
+#cmakedefine CONFIG_KERNEL_HWTICK_FREQ @CONFIG_KERNEL_HWTICK_FREQ@
+
+/**
+ * RTOS tick relaxed time
+ *
+ * When it is 0, \p osiThreadSleep, \p osiMutexTryLock and etc. will wakeup
+ * system at sleep. Otherwise, these APIs will wakeup system with relaxed
+ * timeout to save power consumption.
+ */
+#cmakedefine CONFIG_KERNEL_OSTICK_RELAXED_TIME @CONFIG_KERNEL_OSTICK_RELAXED_TIME@
+
+/**
+ * whether \p OSI_ASSERT will panic
+ */
+#cmakedefine CONFIG_KERNEL_ASSERT_ENABLED
+
+/**
+ * system minimum utc time in second
+ *
+ * \p CONFIG_KERNEL_MIN_UTC_SECOND and \p CONFIG_KERNEL_MAX_UTC_SECOND are
+ * rough check of epoch time.
+ *
+ * \code
+ * $ date -u -d "@946684800"
+ * Sat Jan  1 00:00:00 UTC 2000
+ * $ date -u -d "@4102444800"
+ * Fri Jan  1 00:00:00 UTC 2100
+ * \endcode
+ */
+#cmakedefine CONFIG_KERNEL_MIN_UTC_SECOND @CONFIG_KERNEL_MIN_UTC_SECOND@LL
+
+/**
+ * system maximum utc time in second
+ */
+#cmakedefine CONFIG_KERNEL_MAX_UTC_SECOND @CONFIG_KERNEL_MAX_UTC_SECOND@LL
+
+/**
+ * whether global work queue with OSI_PRIORITY_HIGH enabled
+ */
+#cmakedefine CONFIG_KERNEL_HIGH_PRIO_WQ_ENABLED
+
+/**
+ * whether global work queue with OSI_PRIORITY_LOW enabled
+ */
+#cmakedefine CONFIG_KERNEL_LOW_PRIO_WQ_ENABLED
+
+/**
+ * whether global work queue for async file write enabled
+ */
+#cmakedefine CONFIG_KERNEL_FILE_WRITE_WQ_ENABLED
+
+/**
+ * stack size (in bytes) of global high priority work queue
+ */
+#cmakedefine CONFIG_KERNEL_HIGH_PRIO_WQ_STACKSIZE @CONFIG_KERNEL_HIGH_PRIO_WQ_STACKSIZE@
+
+/**
+ * stack size (in bytes) of global low priority work queue
+ */
+#cmakedefine CONFIG_KERNEL_LOW_PRIO_WQ_STACKSIZE @CONFIG_KERNEL_LOW_PRIO_WQ_STACKSIZE@
+
+/**
+ * stack size (in bytes) of global async file write work queue
+ */
+#cmakedefine CONFIG_KERNEL_FILE_WRITE_WQ_STACKSIZE @CONFIG_KERNEL_FILE_WRITE_WQ_STACKSIZE@
+
+/**
+ * stack size (in bytes) of timer work queue
+ */
+#cmakedefine CONFIG_KERNEL_TIMER_WQ_STACKSIZE @CONFIG_KERNEL_TIMER_WQ_STACKSIZE@
+
+/**
+ * minimum periodic timer period in milliseconds
+ */
+#cmakedefine CONFIG_KERNEL_PERIODIC_TIMER_MIN_PERIOD @CONFIG_KERNEL_PERIODIC_TIMER_MIN_PERIOD@
+
+/**
+ * use 32KHz tick as profile clock (8910)
+ */
+#cmakedefine CONFIG_KERNEL_PROFILE_CLOCK32K
+
+/**
+ * use 2mHz tick as profile clock (8910)
+ */
+#cmakedefine CONFIG_KERNEL_PROFILE_CLOCK2M
+
+/**
+ * profile buffer size in bytes
+ */
+#cmakedefine CONFIG_KERNEL_PROFILE_BUF_SIZE @CONFIG_KERNEL_PROFILE_BUF_SIZE@
+
+/**
+ * use host packet log
+ */
+#cmakedefine CONFIG_KERNEL_HOST_TRACE
+
+/**
+ * use diag packet log
+ */
+#cmakedefine CONFIG_KERNEL_DIAG_TRACE
+
+/**
+ * disable traceid forcedly
+ */
+#cmakedefine CONFIG_KERNEL_DISABLE_TRACEID
+
+/**
+ * size in bytes for each log buffer
+ */
+#cmakedefine CONFIG_KERNEL_TRACE_BUF_SIZE @CONFIG_KERNEL_TRACE_BUF_SIZE@
+
+/**
+ * log buffer count
+ */
+#cmakedefine CONFIG_KERNEL_TRACE_BUF_COUNT @CONFIG_KERNEL_TRACE_BUF_COUNT@
+
+/**
+ * external log buffer count
+ */
+#cmakedefine CONFIG_KERNEL_TRACE_EXTERNAL_BUF_COUNT @CONFIG_KERNEL_TRACE_EXTERNAL_BUF_COUNT@
+
+/**
+ * count of memory allocate/free records
+ */
+#cmakedefine CONFIG_KERNEL_MEM_RECORD_COUNT @CONFIG_KERNEL_MEM_RECORD_COUNT@
+
+/**
+ * Maximum blue screen handler count
+ */
+#cmakedefine CONFIG_KERNEL_BLUE_SCREEN_HANDLER_COUNT @CONFIG_KERNEL_BLUE_SCREEN_HANDLER_COUNT@
+
+/**
+ * whether to enable watchdog
+ *
+ * By default, watchdog will be enabled when \p BUILD_RELEASE_TYPE is
+ * "release".
+ */
+#cmakedefine CONFIG_WDT_ENABLE
+
+#endif

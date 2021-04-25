@@ -1,0 +1,188 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+syntax = "proto2";
+
+message PB_AtTcpipSetting
+{
+    optional uint32 cipSCONT_unSaved = 1;
+    optional uint32 cipMux_multiIp = 2;
+    optional uint32 cipHEAD_addIpHead = 3;
+    optional uint32 cipSHOWTP_dispTP = 4;
+    optional uint32 cipSRIP_showIPPort = 5;
+    optional uint32 cipATS_setTimer = 6;
+    optional uint32 cipATS_time = 7;
+    optional uint32 cipSPRT_sendPrompt = 8;
+    optional uint32 cipQSEND_quickSend = 9;
+    optional uint32 cipMODE_transParent = 10;
+    optional uint32 cipCCFG_NmRetry = 11;
+    optional uint32 cipCCFG_WaitTm = 12;
+    optional uint32 cipCCFG_SendSz = 13;
+    optional uint32 cipCCFG_esc = 14;
+    optional uint32 cipCCFG_Rxmode = 15;
+    optional uint32 cipCCFG_RxSize = 16;
+    optional uint32 cipCCFG_Rxtimer = 17;
+    optional uint32 cipDPDP_detectPDP = 18;
+    optional uint32 cipDPDP_interval = 19;
+    optional uint32 cipDPDP_timer = 20;
+    optional uint32 cipCSGP_setGprs = 21;
+    optional uint32 cipRDTIMER_rdsigtimer = 22;
+    optional uint32 cipRDTIMER_rdmuxtimer = 23;
+    optional uint32 cipRXGET_manualy = 24;
+    optional string cipApn = 25;
+    optional string cipUserName = 26;
+    optional string cipPassWord = 27;
+}
+
+message pbAtGlobalCfg
+{
+    required uint32 profile = 1;
+}
+
+message pbAtCidInfoCfg
+{
+    optional uint32 uCid = 1;
+    optional uint32 nDLCI = 2;
+    optional string uStateStr = 3;
+    optional uint32 uState = 4;
+    optional uint32 nPdpType = 5;
+    optional uint32 nDComp = 6;
+    optional uint32 nHComp = 7;
+    optional string pApn = 8;
+    optional string pPdpAddr = 9;
+    optional uint32 nApnSize = 10;
+    optional uint32 nPdpAddrSize = 11;
+    optional string uaUsername = 12;
+    optional uint32 nUsernameSize = 13;
+    optional string uaPassword = 14;
+    optional uint32 nPasswordSize = 15;
+    optional string szOperatorName = 16;
+    optional uint32 uPCid = 17;
+    optional uint32 apnacAer = 18;
+    optional uint32 apnacUnit = 19;
+    optional uint32 apnacRate = 20;
+    optional uint32 nAuthProt = 21;
+}
+
+message pbAtSimProfileCfg
+{
+    optional uint32 creg = 1;
+    optional uint32 cgreg = 2;
+    optional uint32 cereg = 3;
+    optional uint32 cscon = 4;
+    optional uint32 cgerep_mode = 5;
+    optional uint32 cgerep_bfr = 6;
+    optional uint32 clip = 7;
+    optional uint32 clir = 8;
+    optional uint32 colp = 9;
+    optional uint32 cssu = 10;
+    optional uint32 cssi = 11;
+    optional uint32 ccwa = 12;
+    optional uint32 cgauto = 13;
+    optional uint32 cr = 14;
+    optional uint32 s0 = 15;
+    optional uint32 ecsq = 16;
+    optional uint32 csdh = 17;
+    optional uint32 cmgf = 18;
+    optional uint32 cnmi_mode = 19;
+    optional uint32 cnmi_mt = 20;
+    optional uint32 cnmi_bm = 21;
+    optional uint32 cnmi_ds = 22;
+    optional uint32 cnmi_bfr = 23;
+    optional uint32 volte = 24;
+    optional uint32 flight_mode = 25;
+    optional uint32 cfgNvFlag = 26;
+    optional uint32 cpms_mem1 = 27;
+	optional uint32 cpms_mem2 = 28;
+	optional uint32 cpms_mem3 = 29;
+}
+
+message pbAtProfileCfg
+{
+    repeated pbAtSimProfileCfg sim = 1;
+    required uint32 ifc_rx = 2;
+    required uint32 ifc_tx = 3;
+    required uint32 icf_format = 4;
+    required uint32 icf_parity = 5;
+    required uint32 ipr = 6;
+
+    optional uint32 atv = 20;
+    optional uint32 ate = 21;
+    optional uint32 atq = 22;
+    optional uint32 atx = 23;
+    optional uint32 crc = 24;
+    optional uint32 s3 = 25;
+    optional uint32 s4 = 26;
+    optional uint32 s5 = 27;
+    optional uint32 cmee = 28;
+    optional uint32 andc = 29;
+    optional uint32 andd = 30;
+
+    optional uint32 cmer_ind = 40;
+    optional uint32 csclk = 41;
+    optional uint32 cscs = 42;
+    optional uint32 vtd = 43;
+    optional uint32 ctzu = 44;
+    optional uint32 ctzr = 45;
+    optional uint32 csdf_mode = 46;
+    optional uint32 csdf_auxmode = 47;
+
+    optional uint32 gprsAuto = 49;
+    optional uint32 tempStorage = 52;
+    optional uint32 self_register = 53;
+    optional uint32 psm_mode = 54;
+    optional uint32 drx_mode = 55;
+    optional uint32 mcuNotifySleepMode = 58;
+    optional uint32 mcuNotifySleepDelayMs = 59;
+    optional uint32 csta = 60;
+    optional uint32 csvm = 61;
+    optional uint32 detectMBS = 62;
+    optional string virtual_sim_card = 64;
+
+}
+
+message pbAtSimAutoSaveCfg
+{
+    optional uint32 cops_format = 1;
+    optional uint32 cops_mode = 2;
+    optional string cops_oper = 3;
+    optional uint32 cpol_format = 4;
+    optional uint32 cpol_index = 5;
+    optional string cpol_oper = 6;
+    optional uint32 cops_act = 7;
+}
+
+message pbAtTbDataStatisticsAutoSaveCfg
+{
+    optional string rx_bytes = 1;
+    optional string tx_bytes = 2;
+    optional string act_time = 3;
+    optional string up_time = 4;
+    optional uint64 total_rx_bytes = 5;
+    optional uint64 total_tx_bytes = 6;
+    optional uint64 total_act_time = 7;
+}
+
+message pbAtAutoSaveCfg
+{
+    repeated pbAtSimAutoSaveCfg sim = 1;
+    optional int32 timezone = 10;
+    optional uint32 timezone_dst = 11;
+    repeated pbAtCidInfoCfg g_staAtGprsCidInfo = 50;
+    optional uint32 bcchmode = 60;
+    optional uint32 callmode = 61;
+    optional uint32 smsmode = 62;
+    repeated pbAtTbDataStatisticsAutoSaveCfg tbDataStatistics = 63;
+    optional string virtual_sim_card = 64;
+    optional string CgClassType = 65;
+    optional uint32 poc_user_sim = 66;
+}

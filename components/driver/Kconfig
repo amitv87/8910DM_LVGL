@@ -1,0 +1,156 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "Driver configuration"
+
+config DEBUGHOST_RX_BUF_SIZE
+    hex "Debughost rx buffer size"
+    default 0x200
+    help
+        Debughost RX buffer size.
+
+config HOST_CMD_ENGINE_MAX_PACKET_SIZE
+    hex "Host command engine packet size"
+    default 0x2020
+    help
+        The maximum packet size of host command engine.
+
+config UART_AUTOMODE_DEFAULT_BAUD
+    int "Default baud rate of adaptive mode"
+    default 115200 if SOC_8910
+    default 921600 if SOC_6760
+    default 115200 if SOC_8955
+    default 57600 if SOC_8909
+    default 115200 if SOC_8811
+    help
+        It is suggested to set a baud rate when UART in adaptive baud rate mode.
+        UART Tx can send data througt the baud rate.
+
+
+config SUPPORT_BATTERY_CHARGER
+    bool "support battery charge"
+    default y
+    help
+        enable charger.
+
+config CAMERA_SINGLE_BUFFER
+    bool "camera single buffer"
+    default n
+    help
+        enable sinable buffer.
+
+config WCN_WIFI_SCAN_SUPPORT
+    bool "wcn wifi scan support"
+    default y if SOC_8910
+    default n
+
+config USB_SUPPORT
+    bool "support usb"
+    default y if SOC_8910
+    default n
+
+if USB_SUPPORT
+config USB_CONNECT_TIMEOUT
+    int "usb connect timeout"
+    default 10000
+    help
+        After charger on interrupt triggered, we should enable the usb controller,
+        if there is not a usb host but a pure charger, we should close the controller
+        to save power.
+        The software judge there is a pure charger or usb host by set address command,
+        if more than this <USB_CONNECT_TIMEOUT> milliseconds did not receive set address,
+        the software close the usb controller.
+
+config USB_DETECT_DEBOUNCE_TIME
+    int "usb debounce time in milliseconds before eumerating"
+    default 800
+    help
+        Debuouce a little milliseconds before start enumerating.
+
+config USB_DEVICE_CONTROLLER_FEATURE
+    hex "udc feature"
+    default 0xE0
+    help
+        Lower 8 bits for config descriptor -> bmAttributes, higher are software defined
+
+config USB_ETHER_HOST_MAC
+    string "usb ether host mac address"
+    default "\\x02\\x4b\\xb3\\xb9\\xeb\\xe5"
+
+config USB_ETHER_DEV_MAC
+    string "usb ether dev mac address"
+    default "\\xfa\\x32\\x47\\x15\\xe1\\x88"
+
+config USB_ETHER_DYNAMIC_HOST_MAC_SUPPORT
+    bool "usb ether support dynamic host mac"
+    default y
+
+endif
+
+config LCD_SUPPORT
+    bool "support lcd"
+    default y if SOC_8910
+    default n
+    help
+        Whether LCD is supported.
+
+if LCD_SUPPORT
+config SUPPORT_LCD_GC9305
+    bool "support GC9305 panel"
+    default y
+    help
+        Support GC9305 LCD panel
+
+config SUPPORT_LCD_ST7735S
+    bool "support ST7735S panel"
+    default y
+    help
+        Support ST7735S LCD panel
+
+endif
+
+config HEADSET_DETECT_SUPPORT
+    bool "support headset detect"
+    default y
+    help
+        enable headset detect.
+
+if HEADSET_DETECT_SUPPORT
+config HEADSET_STACK_SIZE
+    int "headset thread stack size"
+    default 16384
+    help
+        headset detect will run in separated thread. The stack size in bytes
+        shall be determined by the used status.
+endif
+
+config SDMMC_SUPPORT
+    bool "support SDMMC"
+    default y if SOC_8910
+    default n
+    help
+        Whether SDMMC is supported.
+
+if SDMMC_SUPPORT
+config SDMMC_CLK_FREQ_SD
+    int "SDMMC clock frequency for SD"
+    default 25000000
+    help
+        SDMMC clock frequency for SD.
+
+config SDMMC_CLK_FREQ_SDHC
+    int "SDMMC clock frequency for SDHC"
+    default 50000000
+    help
+        SDMMC clock frequency for SDHC.
+endif
+
+endmenu

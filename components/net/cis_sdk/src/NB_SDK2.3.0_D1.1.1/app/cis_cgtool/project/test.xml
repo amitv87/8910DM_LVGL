@@ -1,0 +1,34 @@
+<?xml version="1.0"  encoding="utf-8"?>
+
+<config>
+  <head>
+    <version>1</version>
+    <cfgcnt>3</cfgcnt>
+  </head>
+
+  <item id="1">
+  </item>
+
+  <item id="2">
+      <data name="Mtu">1024</data>
+      <data name="Linktype">1</data>
+      <data name="Bandtype">1</data>
+      <data name="BootstrapEnabled">1</data>
+      <data name="DTLSEnabled">1</data>
+      <data name="APN">CMIOT</data>
+      <data name="Username"></data>
+      <data name="Password"></data>
+      <data name="Host">183.230.40.39:5684</data>
+      <data name="Userdata">AuthCode:yangyanliu;PSK:yangyanliu;</data>
+  </item>
+
+  <item id="3">
+      <data name="LogEnabled">1</data>
+      <data name="LogExtOutput">1</data>
+      <data name="LogOutputType">2</data>
+      <data name="LogOutputLevel">4</data>
+	  <data name="LogBufferSize">200</data>
+	  <data name="Userdata"></data>
+  </item>
+  
+</config>

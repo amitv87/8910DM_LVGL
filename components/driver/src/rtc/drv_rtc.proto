@@ -1,0 +1,31 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+syntax = "proto2";
+
+message pbDrvRtcAlarm
+{
+    required uint32 owner = 1;
+    required uint32 name = 2;
+    required uint32 type = 3;
+    required uint64 expire_sec = 4;
+    required string info = 5;
+    optional uint32 repeated_wday_mask = 20;
+    optional uint32 repeated_sec_in_day = 21;
+    optional int32 repeated_timezone = 22;
+}
+
+message pbDrvRtc
+{
+    required uint64 last_time = 1;
+    repeated pbDrvRtcAlarm alarms = 2;
+}

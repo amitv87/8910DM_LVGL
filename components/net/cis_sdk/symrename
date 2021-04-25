@@ -1,0 +1,437 @@
+LENGTH
+MCU_SotaSize
+RESULT
+SHA256_Final
+SHA256_Init
+SHA256_Transform
+SHA256_Update
+SOTA_VERSION
+STATE
+VERSION
+bootstrap_connect
+bootstrap_create
+bootstrap_destory
+bootstrap_getStatus
+bootstrap_handleCommand
+bootstrap_handleFinish
+bootstrap_init
+bootstrap_step
+# cis_addobject
+# cis_check_object_instance_id
+# cis_clearFwState
+# cis_config_destory
+# cis_config_get
+# cis_config_init
+# cis_deinit
+# cis_delobject
+# cis_findObject
+# cis_free
+# cis_get_version
+# cis_init
+# cis_isRegister
+# cis_list_add
+# cis_list_count
+# cis_list_find
+# cis_list_find_u16
+# cis_list_free
+# cis_list_newId
+# cis_list_remove
+# cis_malloc
+# cis_notify
+# cis_notify_sota_result
+# cis_pump
+# cis_register
+# cis_response
+# cis_set_sota_info
+# cis_unregister
+# cis_update_reg
+# cis_uri_make
+# cis_uri_update
+# cis_version
+# cisnet_attached_state
+# cisnet_connect
+# cisnet_create
+# cisnet_destroy
+# cisnet_disconnect
+# cisnet_free
+# cisnet_init
+# cisnet_read
+# cisnet_write
+# cissys_ClearFwBytes
+# cissys_assert
+# cissys_checkFwValidation
+# cissys_eraseFwFlash
+# cissys_fault
+# cissys_free
+# cissys_getAltitude
+# cissys_getBearer
+# cissys_getCSQ
+# cissys_getCellId
+# cissys_getEARFCN
+# cissys_getECGI
+# cissys_getECL
+# cissys_getFwAvailableMemory
+# cissys_getFwBatteryLevel
+# cissys_getFwBatteryVoltage
+# cissys_getFwSavedBytes
+# cissys_getFwVersion
+# cissys_getIMEI
+# cissys_getIMSI
+# cissys_getLatitude
+# cissys_getLongitude
+# cissys_getPCI
+# cissys_getPCIFrist
+# cissys_getPCISecond
+# cissys_getPLMN
+# cissys_getRSRPFrist
+# cissys_getRSRPSecond
+# cissys_getRadioSignalStrength
+# cissys_getSINR
+# cissys_getSNR
+# cissys_getSotaMemory
+# cissys_getSotaVersion
+# cissys_getSwState
+# cissys_getUtilization
+# cissys_gettime
+# cissys_init
+# cissys_load
+# cissys_lock
+# cissys_lockcreate
+# cissys_lockdestory
+# cissys_logwrite
+# cissys_malloc
+# cissys_memcmp
+# cissys_memcpy
+# cissys_memmove
+# cissys_memset
+# cissys_rand
+# cissys_readContext
+# cissys_resetFwContext
+# cissys_save
+# cissys_savewritebypes
+# cissys_setFwSavedBytes
+# cissys_setFwState
+# cissys_setFwUpdateResult
+# cissys_setSotaMemory
+# cissys_setSotaVersion
+# cissys_setSwState
+# cissys_sleepms
+# cissys_tick
+# cissys_unlock
+# cissys_updateFirmware
+# cissys_writeFwBytes
+coap_add_multi_option
+coap_block1_handler
+coap_error_code
+coap_error_message
+coap_free_header
+coap_get_header_accept
+coap_get_header_block1
+coap_get_header_block2
+coap_get_header_content_type
+coap_get_header_etag
+coap_get_header_if_match
+coap_get_header_if_none_match
+coap_get_header_location_path
+coap_get_header_location_query
+coap_get_header_max_age
+coap_get_header_observe
+coap_get_header_proxy_uri
+coap_get_header_size
+coap_get_header_token
+coap_get_header_uri_host
+coap_get_header_uri_path
+coap_get_header_uri_query
+coap_get_mid
+coap_get_multi_option_as_string
+coap_get_payload
+coap_init_message
+coap_parse_message
+coap_serialize_get_size
+coap_serialize_message
+coap_set_header_accept
+coap_set_header_auth_code
+coap_set_header_block1
+coap_set_header_block2
+coap_set_header_content_type
+coap_set_header_etag
+coap_set_header_if_match
+coap_set_header_if_none_match
+coap_set_header_location_path
+coap_set_header_location_query
+coap_set_header_max_age
+coap_set_header_observe
+coap_set_header_proxy_uri
+coap_set_header_size
+coap_set_header_token
+coap_set_header_uri_host
+coap_set_header_uri_path
+coap_set_header_uri_path_segment
+coap_set_header_uri_query
+coap_set_payload
+coap_set_status_code
+core_callbackEvent
+core_updatePumpState
+data_decode_bool
+data_decode_float
+data_decode_int
+# data_encode_bool
+# data_encode_float
+# data_encode_instances
+# data_encode_int
+# data_encode_opaque
+# data_encode_string
+data_free
+data_include
+data_new
+data_parse
+data_serialize
+discover_serialize
+dmSdkInit
+dm_read_info_encode
+dsrv_hexdump_log
+dtls_ccm_decrypt_message
+dtls_ccm_encrypt_message
+dtls_check_retransmit
+dtls_close
+dtls_close_context
+dtls_connect
+dtls_connect_peer
+dtls_decrypt
+dtls_encrypt
+dtls_free_peer
+dtls_get_peer
+dtls_handle_message
+dtls_handshake_free
+dtls_handshake_new
+dtls_hmac_finalize
+dtls_hmac_free
+dtls_hmac_init
+dtls_hmac_new
+dtls_hmac_storage_init
+dtls_hmac_update
+dtls_init_context
+dtls_mac
+dtls_new_peer
+dtls_p_hash
+dtls_prf
+dtls_psk_pre_master_secret
+dtls_renegotiate
+dtls_security_free
+dtls_security_new
+dtls_session_equals
+dtls_write
+ecc_ecdh
+ecc_ecdsa_sign
+ecc_ecdsa_validate
+ecc_g_point_x
+ecc_g_point_y
+ecc_gen_pub_key
+ecc_is_valid_key
+eraseCallback
+executeFotaUpgrade
+free_block1_buffer
+free_multi_option
+fw_state_change
+gLogBufferLength
+gLogEnabled
+gLogExoutput
+gLogLevel
+genDmRegEndpointName
+genDmUpdateEndpointName
+get_dm_encode_info
+get_psk_info
+isupdatemcu
+j_base64_decode
+j_base64_encode
+j_base64_free
+log_config
+log_dump
+management_connectServer
+management_createNetwork
+management_destoryServer
+management_disconnectServer
+management_handleRequest
+management_makeServerList
+management_refreshDirtyServer
+mbedtls_aes_crypt_cbc
+mbedtls_aes_crypt_ecb
+mbedtls_aes_decrypt
+mbedtls_aes_encrypt
+mbedtls_aes_free
+mbedtls_aes_init
+mbedtls_aes_setkey_dec
+mbedtls_aes_setkey_enc
+mbedtls_internal_sha256_process
+mbedtls_sha256_clone_ex
+mbedtls_sha256_finish_ret
+mbedtls_sha256_free_ex
+mbedtls_sha256_init_ex
+mbedtls_sha256_ret
+mbedtls_sha256_starts_ret
+mbedtls_sha256_update_ret
+my_aes_encrypt
+my_sha256
+netq_delete_all
+netq_head
+netq_insert_node
+netq_next
+netq_node_free
+netq_node_new
+netq_pop_first
+netq_remove
+object_asynAckBlockWrite
+object_asynAckNodata
+object_asynAckReadData
+object_checkInstExisted
+object_discover
+object_execute
+object_getRegisterPayload
+object_isInstanceNew
+object_read
+object_removeAll
+object_write
+observe_asynAckNodata
+observe_asynReport
+observe_cancel
+observe_findByMsgid
+observe_findByUri
+observe_handleRequest
+observe_removeAll
+observe_setParameters
+packet_asynFindObserveRequest
+packet_asynPushRequest
+packet_asynRemoveNotifyAll
+packet_asynRemoveRequest
+packet_asynRemoveRequestAll
+packet_handle_packet
+packet_read
+packet_send
+packet_step
+# prv_findObject
+prv_getDmUpdateQuery
+prv_getDmUpdateQueryLength
+prv_notifyDiscoverReport
+prv_notifyObserveReport
+prv_notifyReadReport
+prv_onSySEventHandler
+prv_packet_handle_fota_block
+read_dm_device_info
+registration_deregister
+registration_getStatus
+registration_start
+registration_step
+registration_update_registration
+reset_fotaIDIL
+rijndaelEncrypt
+rijndaelKeySetupEnc
+rijndael_encrypt
+rijndael_set_key_enc_only
+std_conn_moniter_clean
+std_conn_moniter_create
+std_conn_moniter_discover
+std_conn_moniter_execute
+std_conn_moniter_read
+std_conn_moniter_write
+std_device_clean
+std_device_create
+std_device_discover
+std_device_execute
+std_device_read
+std_device_write
+std_dm_clean
+std_dm_create
+std_dm_discover
+std_dm_read
+std_dm_write
+std_dmd_execute
+std_firmware_clean
+std_firmware_create
+std_firmware_discover
+std_firmware_execute
+std_firmware_read
+std_firmware_write
+std_moniter_clean
+std_moniter_create
+std_moniter_discover
+std_moniter_execute
+std_moniter_read
+std_moniter_write
+std_object_discover_handler
+std_object_exec_handler
+std_object_get_conn
+std_object_get_device
+std_object_get_dm
+std_object_get_firmware
+std_object_get_moniter
+std_object_get_securitys
+std_object_isStdObject
+std_object_put_conn
+std_object_put_device
+std_object_put_dm
+std_object_put_firmware
+std_object_put_moniter
+std_object_put_securitys
+std_object_read_handler
+std_object_remove_conn
+std_object_remove_device
+std_object_remove_dm
+std_object_remove_firmware
+std_object_remove_moniter
+std_object_remove_securitys
+std_object_writeInstance
+std_object_write_handler
+std_security_clean
+std_security_create
+std_security_discover
+std_security_get_host
+std_security_read
+std_security_write
+tlv_decode_TLV
+tlv_parse
+tlv_serialize
+transaction_count
+transaction_free
+transaction_handleResponse
+transaction_new
+transaction_remove
+transaction_removeAll
+transaction_send
+transaction_step
+updateSuccessCallback
+uri_decode
+uri_exist
+uri_getNumber
+uri_make
+uri_stringToUri
+uri_toString
+utils_boolToPlainText
+utils_bufferdup
+utils_checkBigendian
+utils_convertMediaType
+utils_copyValue
+utils_encodeFloat
+utils_encodeInt
+utils_findBootstrapServer
+utils_float64ToPlainText
+utils_floatToText
+utils_gettime_s
+utils_int64ToPlainText
+utils_intCopy
+utils_intToText
+utils_opaqueToFloat
+utils_opaqueToInt
+utils_plainTextToFloat64
+utils_plainTextToInt64
+utils_snprintf
+utils_strdup
+utils_stringCopy
+utils_stringToBinding
+utils_strlen
+utils_strncasecmp
+utils_strncmp
+utils_strtoi
+utils_vsnprintf
+validateCallback
+writeCallback
+writeFotaUpgradeData

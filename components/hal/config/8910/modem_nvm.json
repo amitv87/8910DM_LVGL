@@ -1,0 +1,155 @@
+{
+    "_comment": [
+        "It is the central description about 8910 modem and nvm.",
+        "",
+        "Multiple sets of _cpfilelist_ can be defined. For each set of",
+        "cpfilelist, _copy_only_ means the file will be only copied to",
+        "modemgen directory, for debug puepose. It won't be included in",
+        "modem.img, and itis not an error that the specified file doesn't",
+        "exist. Otherwise, it is an error. So, when the file list in modem.img",
+        "is different, an independent set should be defined.",
+        "",
+        "_lzma3_ means that the file will be stored in blocked compressed",
+        "files. _file_ is the path in modem.img, must be relative path, and",
+        "related to modem.img mount point. When target file name is not the",
+        "same with file name in target, _local_file_ wcan be specifed. On host,",
+        "path is related to CP directory.",
+        "",
+        "_nvidfilelist_ just describes the map between nvid and file name. It",
+        "is not required that the specified nvid to be exist."
+    ],
+    "modemnv_dir": "nvm",
+    "lzma_block_size": "0x10000",
+    "fbdev_name": "FMOD",
+    "sffs_name": "FMOD",
+    "cpfilelist": {
+        "default": [
+            {
+                "file": "mem_index_list",
+                "local_file": "memory_index_list.bin"
+            },
+            {
+                "file": "cp.bin",
+                "lzma3": true
+            },
+            {
+                "file": "riscV.bin",
+                "lzma3": true
+            },
+            {
+                "file": "zsp.bin",
+                "lzma3": true
+            },
+            {
+                "file": "bcpu_gsm.bin",
+                "lzma3": true
+            },
+            {
+                "file": "rev_info.txt",
+                "copy_only": true
+            },
+            {
+                "file": "cp.axf",
+                "copy_only": true
+            },
+            {
+                "file": "zsp.elf",
+                "copy_only": true
+            },
+            {
+                "file": "bcpu_gsm.elf",
+                "copy_only": true
+            }
+        ]
+    },
+    "nvidfilelist": [
+        {
+            "nvid": "0x259",
+            "file": "static_nv.bin"
+        },
+        {
+            "nvid": "0x25a",
+            "file": "phy_nv.bin"
+        },
+        {
+            "nvid": "0x25b",
+            "file": "dynamic_nv.bin"
+        },
+        {
+            "nvid": "0x25c",
+            "file": "static_nv_2.bin"
+        },
+        {
+            "nvid": "0x25d",
+            "file": "phy_nv_2.bin"
+        },
+        {
+            "nvid": "0x25e",
+            "file": "dynamic_nv_2.bin"
+        },
+        {
+            "nvid": "0x26c",
+            "file": "rf_nv.bin"
+        },
+        {
+            "nvid": "0x277",
+            "file": "cfw_nv.bin"
+        },
+        {
+            "nvid": "0x278",
+            "file": "audio_calib.bin"
+        },
+        {
+            "nvid": "0x279",
+            "file": "phy_nv_catm.bin"
+        },
+        {
+            "nvid": "0x27a",
+            "file": "audio_codec_nv.bin"
+        },
+        {
+            "nvid": "0x1ba",
+            "file": "bt_sprd.bin"
+        },
+        {
+            "nvid": "0x1f0",
+            "file": "sim_lock_customize_data.bin"
+        },
+        {
+            "nvid": "0x1f1",
+            "file": "sim_lock_user_data.bin"
+        },
+        {
+            "nvid": "0x1f2",
+            "file": "sim_lock_control_key.bin"
+        },
+        {
+            "nvid": "0x800",
+            "file": "ims_csm_setting.bin"
+        },
+        {
+            "nvid": "0x801",
+            "file": "ims_sapp_setting.bin"
+        },
+        {
+            "nvid": "0x813",
+            "file": "ims_isim_setting.bin"
+        },
+        {
+            "nvid": "0x870",
+            "file": "sim_delta_nv.bin"
+        },
+        {
+            "nvid": "0x871",
+            "file": "sim_delta_nv_card2.bin"
+        },
+        {
+            "nvid": "0x872",
+            "file": "plmn_delta_nv.bin"
+        },
+        {
+            "nvid": "0x873",
+            "file": "plmn_delta_nv_card2.bin"
+        }
+    ]
+}

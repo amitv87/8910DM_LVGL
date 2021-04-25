@@ -1,0 +1,55 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "firmware update"
+
+config FUPDATE_PACK_FILE_NAME
+    string "update pack file name"
+    default "fota.pack"
+    help
+        This is the file name of firmware upgrade pack file name. It is
+        located under CONFIG_FS_FOTA_DATA_DIR. The configuration should
+        be the same in application and bootloader.
+
+        Don't change it unless you know what you are doing.
+
+config FUPDATE_STAGE_FILE_NAME
+    string "update stage file name"
+    default "fota.stage"
+    help
+        This file will record firmware updata stage. It is located under
+        CONFIG_FS_FOTA_DATA_DIR. The configuration should be the same in
+        application and bootloader.
+
+        Don't change it unless you know what you are doing.
+
+config FUPDATE_TEMP_FILE_NAME
+    string "update temporal file name"
+    default "fota.tmp"
+    help
+        This is temporal file create during update in bootloader.
+
+        Don't change it unless you know what you are doing.
+
+config FUPDATE_SUPPORT_FLASH_PATCH
+    bool "support flash differential update"
+    default y
+    help
+        Support differential update of flash regions.
+
+config FUPDATE_SUPPORT_FS_PATCH
+    bool "support file system differential update"
+    default y if SOC_8910
+    default n
+    help
+        Support differential update of file system. Only SFFS is supported.
+
+endmenu

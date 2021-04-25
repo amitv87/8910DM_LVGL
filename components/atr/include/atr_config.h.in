@@ -1,0 +1,277 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _ATR_CONFIG_H_
+#define _ATR_CONFIG_H_
+
+#include "srv_config.h"
+
+// @AUTO_GENERATION_NOTICE@
+
+/**
+ * maximum AT command parameter count
+ */
+#cmakedefine CONFIG_ATR_CMD_PARAM_MAX @CONFIG_ATR_CMD_PARAM_MAX@
+
+/**
+ * maximum AT command line size
+ *
+ * The trailing \r is included, and \0 is not included.
+ */
+#cmakedefine CONFIG_ATR_CMDLINE_MAX @CONFIG_ATR_CMDLINE_MAX@
+
+/**
+ * AT command engine worker thread stack size in bytes
+ */
+#cmakedefine CONFIG_ATR_CMD_WORKER_STACK_SIZE @CONFIG_ATR_CMD_WORKER_STACK_SIZE@
+
+/**
+ * whether AT command URC buffer is enabled
+ *
+ * When enabled, URC will be buffered when there are AT commands in
+ * execution. And URC buffer will be flushed after current AT command
+ * finished. When there are too many URC, either size overflow or count
+ * overflow, URC will be discarded.
+ */
+#cmakedefine CONFIG_ATR_URC_BUFF_ENABLE
+
+/**
+ * AT command URC buffer size
+ *
+ * Each AT channel will have separated URC buffer, this is the buffer size
+ * for each AT channel.
+ */
+#cmakedefine CONFIG_ATR_URC_BUFF_SIZE @CONFIG_ATR_URC_BUFF_SIZE@
+
+/**
+ * AT command URC buffering count
+ *
+ * Each AT channel will have separated URC buffer, this is the count
+ * for each AT channel.
+ */
+#cmakedefine CONFIG_ATR_URC_BUFF_COUNT @CONFIG_ATR_URC_BUFF_COUNT@
+
+/**
+ * whether to echo command only
+ *
+ * When defined, extra or invalid chracters not belongs to valid AT command
+ * line won't be echoed. For example, "AT\r\n" will be echoed as "AT\r" if
+ * defined.
+ */
+#cmakedefine CONFIG_ATR_ECHO_COMMAND_ONLY
+
+/**
+ * timeout in milliseconds to wait '\n' after '\r'
+ *
+ * It only take effects when \p CONFIG_ATR_ECHO_COMMAND_ONLY is not defined,
+ * and only affects echo.
+ *
+ * Though '\r' is the ending character of AT comamnd line, if '\n' comes
+ * immediately after '\r', '\n' is echoed before responses.
+ */
+#cmakedefine CONFIG_ATR_LF_WAIT_MS @CONFIG_ATR_LF_WAIT_MS@
+
+/**
+ * support +++ in command line mode (non-standard)
+ */
+#cmakedefine CONFIG_ATR_CMD_TPLUS_ENABLE
+
+/**
+ * whether enable AT command output cache
+ *
+ * When enabled, a small cache will be added to AT command output. It will
+ * make it easier to parse AT command response.
+ */
+#cmakedefine CONFIG_ATR_CMD_OUTPUT_CACHE_ENABLE
+
+/**
+ * AT command output cache
+ *
+ * There is only one global AT command output. This is the cache size.
+ */
+#cmakedefine CONFIG_ATR_CMD_OUTPUT_CACHE_SIZE @CONFIG_ATR_CMD_OUTPUT_CACHE_SIZE@
+
+/**
+ * data mode buffer size
+ *
+ * In PPP mode, it should be enough to hold a complete packet, with HDLC
+ * escape.
+ */
+#cmakedefine CONFIG_ATR_DATA_BUFF_SIZE @CONFIG_ATR_DATA_BUFF_SIZE@
+
+/**
+ * PPP packet check timeout after PPP end
+ *
+ * After PPP terminated, it is possible that peer will still send more PPP
+ * packets. If they are interpreted as AT commands, it is possible some "bad"
+ * commands will be interpreted.
+ */
+#cmakedefine CONFIG_ATR_PPP_END_CHECK_TIMEOUT @CONFIG_ATR_PPP_END_CHECK_TIMEOUT@
+
+/**
+ * whether CMUX is supported
+ */
+#cmakedefine CONFIG_ATR_CMUX_SUPPORT
+
+/**
+ * CMUX input buffer size
+ *
+ * It should be enough to hold the input packet. At buffer overflow, the
+ * content of the buffer will be dropped silently.
+ */
+#cmakedefine CONFIG_ATR_CMUX_IN_BUFF_SIZE @CONFIG_ATR_CMUX_IN_BUFF_SIZE@
+
+/**
+ * CMUX output buffer size
+ *
+ * It should be enough to hold the output packet. At buffer overflow, the
+ * content of the buffer will be dropped silently.
+ */
+#cmakedefine CONFIG_ATR_CMUX_OUT_BUFF_SIZE @CONFIG_ATR_CMUX_OUT_BUFF_SIZE@
+
+/**
+ * CMUX sub-channel minimum input buffer size
+ */
+#cmakedefine CONFIG_ATR_CMUX_SUBCHANNEL_MIN_IN_BUFF_SIZE @CONFIG_ATR_CMUX_SUBCHANNEL_MIN_IN_BUFF_SIZE@
+
+/**
+ * CMUX maximum DLC number
+ */
+#cmakedefine CONFIG_ATR_CMUX_DLC_NUM @CONFIG_ATR_CMUX_DLC_NUM@
+
+/**
+ * AT profile count
+ */
+#cmakedefine CONFIG_ATR_PROFILE_COUNT @CONFIG_ATR_PROFILE_COUNT@
+
+/**
+ * maximum count of delay free memory
+ */
+#cmakedefine CONFIG_ATR_MEM_FREE_LATER_COUNT @CONFIG_ATR_MEM_FREE_LATER_COUNT@
+
+/**
+ * whether to enable CINIT URC output
+ */
+#cmakedefine CONFIG_ATR_CINIT_URC_ENABLED
+
+/**
+ * maximum registered event count
+ */
+#cmakedefine CONFIG_ATR_EVENT_MAX_COUNT @CONFIG_ATR_EVENT_MAX_COUNT@
+
+/**
+ * maximum pending CFW UTI count
+ */
+#cmakedefine CONFIG_ATR_CFW_PENDING_UTI_COUNT @CONFIG_ATR_CFW_PENDING_UTI_COUNT@
+
+/**
+ * whether to create uart AT device
+ */
+#cmakedefine CONFIG_ATR_CREATE_UART
+
+/**
+ * default uart AT device name
+ */
+#cmakedefine CONFIG_ATR_DEFAULT_UART @CONFIG_ATR_DEFAULT_UART@
+
+/**
+ * default uart baud rate
+ */
+#cmakedefine CONFIG_ATR_DEFAULT_UART_BAUD @CONFIG_ATR_DEFAULT_UART_BAUD@
+
+/**
+ * uart auto sleep timeout
+ */
+#cmakedefine CONFIG_ATR_UART_AUTO_SLEEP_TIMEOUT @CONFIG_ATR_UART_AUTO_SLEEP_TIMEOUT@
+
+/**
+ * whether to power on CFW automatically
+ *
+ * When not defined, AT engine will wait \p EV_DM_POWER_ON_IND.
+ */
+#cmakedefine CONFIG_ATR_CFW_AUTO_POWER_ON
+
+/**
+ * whether to create usb serial AT device
+ */
+#cmakedefine CONFIG_ATR_CREATE_USB_SERIAL
+
+/**
+ * whether to create diag AT device
+ */
+#cmakedefine CONFIG_ATR_CREATE_DIAG
+
+/**
+ * whether to combine all AT configuration into one file
+ */
+#cmakedefine CONFIG_ATR_CFG_IN_ONE_FILE
+
+/**
+ * whether to support file system AT commands
+ */
+#cmakedefine CONFIG_ATS_FS_SUPPORT
+
+/**
+ * maximum download (write) file size
+ */
+#cmakedefine CONFIG_ATS_FS_DWN_SIZE_MAX @CONFIG_ATS_FS_DWN_SIZE_MAX@
+
+/**
+ * maximum read file size
+ */
+#cmakedefine CONFIG_ATS_FS_RD_SIZE_MAX @CONFIG_ATS_FS_RD_SIZE_MAX@
+
+/**
+ * whether to support +UPDATE AT commands
+ */
+#cmakedefine CONFIG_ATS_UPDATE_SUPPORT
+
+/**
+ * whether to support alarm AT commands
+ */
+#cmakedefine CONFIG_ATS_ALARM_SUPPORT
+
+/**
+ * maximum alarm count in AT
+ */
+#cmakedefine CONFIG_ATS_ALARM_COUNT @CONFIG_ATS_ALARM_COUNT@
+
+/**
+ * maximum alarm text length, not including \0
+ */
+#cmakedefine CONFIG_ATS_ALARM_TEXT_LEN @CONFIG_ATS_ALARM_TEXT_LEN@
+
+/**
+ * whether to support SGCC AT commands
+ */
+#cmakedefine CONFIG_ATS_SGCC_CATM_SUPPORT
+
+/**
+ * whether to support camera AT commands
+ */
+#cmakedefine CONFIG_AT_CAMERA_SUPPORT
+
+/**
+ * whether to support Dual SIM command
+ */
+#cmakedefine CONFIG_DUAL_SIM_SUPPORT
+
+/**
+ * whether to support OVERFLOW REEOR REPORT
+ */
+#cmakedefine CONFIG_ATR_OVERFLOW_REEOR_REPORT
+
+#undef CONFIG_AT_WITHOUT_SAT
+#undef CONFIG_AT_WITHOUT_SMS
+#undef CONFIG_AT_WITHOUT_PBK
+#undef CONFIG_AT_WITHOUT_GPRS
+#endif

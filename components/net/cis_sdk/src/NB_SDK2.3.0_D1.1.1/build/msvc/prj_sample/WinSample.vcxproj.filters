@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\sample\win\cis_sample_main.c" />
+    <ClCompile Include="..\..\..\src\sample\win\cis_sample_entry.c" />
+    <ClCompile Include="..\..\..\src\sample\win\cis_sample_dm_entry.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\sample\win\cis_sample_defs.h" />
+  </ItemGroup>
+</Project>

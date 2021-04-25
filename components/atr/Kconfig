@@ -1,0 +1,389 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "AT receiver"
+
+config ATR_CMD_PARAM_MAX
+    int "Max AT command parameter count"
+    default 24
+    help
+        Maximum parameter count for each AT command. When there are too many
+        parameters, AT parser will report it as an error.
+
+config ATR_CMDLINE_MAX
+    int "Max AT command line size"
+    default 2048 if SRV_SIMLOCK_ENABLE
+    default 1024
+    help
+        AT parser command line buffer, including \r and not including terminate
+        \0. When there are BACKSPACE, BACKSPACE won't occupy buffer. At buffer
+        overflow, the content of the buffer will be dropped silently, and start
+        AT or A/ search again.
+
+config ATR_CMD_WORKER_STACK_SIZE
+    int "ATR worker thread stack size"
+    default 2048
+    help
+        Each AT channel will have a worker thread for blocking calls. This is
+        the thread stack size for worker thread.
+
+config ATR_URC_BUFF_ENABLE
+    bool "Enable URC buffer"
+    default y
+    help
+        When enabled, URC will be buffered when there are AT command in excution.
+        And only after current AT command is finished, the buffered URC will be
+        outputed.
+
+        It is possible that URC during AT command execution will affect peer.
+        So, it is recommended to enable this.
+
+config ATR_URC_BUFF_SIZE
+    int "URC buffer size"
+    default 2048
+    help
+        When there are AT commands in excution, URC will be buffered. And only
+        after current AT command is finished, the buffered URC will be outputed.
+        This is the per channel URC buffer size.
+
+config ATR_URC_BUFF_COUNT
+    int "URC buffered count"
+    default 32
+    help
+        When URC is buffered, this is the max count of buffered URC. When the
+        URC count is larger than ATR_URC_BUFF_COUNT, or the total URC size
+        exceeds ATR_URC_BUFF_SIZE, the oldest URC will be discarded.
+
+config ATR_ECHO_COMMAND_ONLY
+    bool "Echo command line only"
+    default n
+    help
+        When this option is enabled, AT echo will only echo command line only.
+        AT command line is started with "AT" and ended with "\r". For example,
+        "AT\r\n" will echo "AT\r". "\n" will be regarded as invalid characters,
+        and won't echo. Also, other invalid characters not belongs to command
+        line will be ignored.
+
+        If the peer is robust enough, invalid character echo won't affect peer.
+        Only when the peer can't accept extra characters, this shall be enabled.
+
+        When it is enabled, it is suggested to set ATR_LF_WAIT_MS to zero to
+        disable the timer for waiting "\n", due to the purpose of this timer is
+        to make the echo more readable.
+
+config ATR_LF_WAIT_MS
+    int "Timeout in ms to wait \\n after \\r"
+    default 20
+    help
+        Though \r is the end character of AT command line, \n is followed
+        in most cases. In echo mode, it is weird to echo \n after the previous
+        command line is handled, and before the next command line.
+
+        So, after \r is received, AT engine will wait a while. If \n comes,
+        it will be echoed before handling the command line.
+
+config ATR_CMD_TPLUS_ENABLE
+    bool "support +++ in command line mode"
+    default n
+    help
+        It is a non-standard feature. When enabled, "+++" in command line mode
+        will be regarded as a dummy AT command.
+
+config ATR_CMD_OUTPUT_CACHE_ENABLE
+    bool "Enable command engine output cache"
+    default y
+    help
+        When enabled, line cache will be used for command engine output.
+        Without output line cache, AT command handlers may call more times
+        of device write. For example, "\r\nOK\r\n" may be output through
+        three write calls: "\r\n", "OK", "\r\n". It doesn't violate
+        specification, however it is possible that peer will has trouble
+        to parse AT command responses. With line cache, AT command response
+        will be easier to be parsed.
+
+if ATR_CMD_OUTPUT_CACHE_ENABLE
+config ATR_CMD_OUTPUT_CACHE_SIZE
+    int "Command engine output cache size"
+    default 1024
+    help
+        The output line cache is shared for all command engines.
+
+endif
+
+config ATR_DATA_BUFF_SIZE
+    int "Data mode buffer size"
+    default 4096
+    help
+        Buffer size for data mode. In PPP mode, it should be enough to hold the
+        packet before HDLC decoding. At buffer overflow, the content of the buffer
+        will be dropped silently.
+
+config ATR_PPP_END_CHECK_TIMEOUT
+    int "PPP packet check timeout after PPP end"
+    default 1000
+    help
+        After PPP terminated, it is possible that peer will still send more
+        PPP packets. If they are interpreted as AT commands, it is possible
+        some "bad" commands will be interpreted.
+
+        So, after PPP terminated, AT engine will still check incoming data.
+        If incoming data looks like PPP packet, the PPP packet will be dopped.
+        This is the timeout of the checking. It can be configured to be
+        relatively larger, due to AT engine will enter command line mode if
+        the incoming data don't look like PPP packet.
+
+        When it is set to 0, AT engine will enter command mode immediately
+        after PPP terminated. It should be only used when it is known that
+        peer won't send more data after PPP terminated.
+
+config ATR_CMUX_SUPPORT
+    bool "CMUX support"
+    default y
+    help
+        When enabled, +CMUX command will be supported.
+
+choice
+    prompt "Default UART"
+    default ATR_DEFAULT_UART1 if SOC_8910
+    default ATR_DEFAULT_UART3 if SOC_6760
+    default ATR_DEFAULT_UART2 if SOC_8955
+    default ATR_DEFAULT_UART2 if SOC_8909
+
+config ATR_DEFAULT_UART1
+    bool "UART1"
+
+config ATR_DEFAULT_UART2
+    bool "UART2"
+
+config ATR_DEFAULT_UART3
+    bool "UART3"
+
+endchoice
+
+config ATR_DEFAULT_UART
+    string
+    default "DRV_NAME_UART1" if ATR_DEFAULT_UART1
+    default "DRV_NAME_UART2" if ATR_DEFAULT_UART2
+    default "DRV_NAME_UART3" if ATR_DEFAULT_UART3
+    default "DRV_NAME_UART4" if ATR_DEFAULT_UART4
+    default "DRV_NAME_UART5" if ATR_DEFAULT_UART5
+    default ""
+
+config ATR_DEFAULT_UART_BAUD
+    int "Baud rate of default UART"
+    default 115200 if SOC_8910
+    default 921600 if SOC_6760
+    default 115200 if SOC_8955
+    default 57600 if SOC_8909
+    default 0
+
+config ATR_UART_AUTO_SLEEP_TIMEOUT
+    int "UART auto sleep timeout"
+    default 500
+    help
+        When UART auto sleep is enabled, UART will release system wake lock
+        when there are neither input nor output for a while. This is the
+        timeout.
+
+        In production, this timeout is wanted to be small for power saving.
+        However, at debug, it can be set to longer because interactive
+        operation is slow.
+
+config ATR_CFW_AUTO_POWER_ON
+    bool "AT auto power on"
+    default y if SOC_8955
+    default y if SOC_8909
+    default n
+    help
+        Normally, AT engine will wait EV_DM_POWER_ON_IND to power on CFW.
+        When defined, AT engine will power on CFW automatically. It should
+        only be defined on system that EV_DM_POWER_ON_IND is unavailable.
+
+if ATR_CMUX_SUPPORT
+config ATR_CMUX_DLC_NUM
+    int "CMUX DLC number"
+    default 63
+    help
+        Maximum DLC number
+
+config ATR_CMUX_IN_BUFF_SIZE
+    int "CMUX input buffer size"
+    default 4096
+    help
+        Input buffer size. It should be enough to hold the input packet. At buffer
+        overflow, the content of the buffer will be dropped silently.
+
+config ATR_CMUX_OUT_BUFF_SIZE
+    int "CMUX input buffer size"
+    default 4096
+    help
+        Output buffer size. It should be enough to hold the output packet. At buffer
+        overflow, the content of the buffer will be dropped silently, and no data
+        will be output for that packet.
+
+config ATR_CMUX_SUBCHANNEL_MIN_IN_BUFF_SIZE
+    int "CMUX sub-channel minimum input buffer size"
+    default 64
+    help
+        CMUX sub-channel input buffer should be able to hold a frame, which can be
+        determined by CMUX max frame size. However, it is possible that peer will
+        send frame larger than the max frame size parameter. So, this option can
+        set a minimum input buffer size. When max frame size parameter is less than
+        this option, the input buffer size will use this option.
+
+        It will just consume a little more memory, when max frame size parameter is
+        very small.
+
+endif
+
+config ATR_PROFILE_COUNT
+    int "ATR profile count"
+    default 2
+    help
+        Profile count.
+
+config ATR_MEM_FREE_LATER_COUNT
+    int "Maximum count of delay free memory"
+    default 16
+    help
+        Some memory will be freed after the event is processed. The typical use
+        case is pointer in event. It is tedious to free it at every return. And
+        "free later" concept is introduced. It means it will be freed in event
+        loop after the current event is processed.
+
+        The maximum count is to avoid dynamic management.
+
+config ATR_CINIT_URC_ENABLED
+    bool "Output CINIT URC"
+    default y
+
+config ATR_EVENT_MAX_COUNT
+    int "Maximum registered event count"
+    default 200
+    help
+        Static array is used for event registration, and this is the maximum count.
+
+config ATR_CFW_PENDING_UTI_COUNT
+    int "Maximum pending UTI count"
+    default 64
+    help
+        CFW response manager is used for CFW response callback. This is the
+        maximum count of pending UTI count.
+
+config ATR_CREATE_UART
+    bool "Create uart AT device"
+    default y
+    help
+        When defined, uart AT device will be created
+
+config ATR_CREATE_USB_SERIAL
+    bool "Create 2nd device of USB serial"
+    default y if SOC_8910
+    default n
+    help
+        When defined, USB serial device DRV_NAME_USRL_COM0 will be created
+        at AT engine initialization.
+
+config ATR_CREATE_DIAG
+    bool "Create diag AT device"
+    default y if SOC_8910
+    default n
+    help
+        When defined, diag AT device will be created.
+
+config ATR_CFG_IN_ONE_FILE
+    bool "Combine AT settings to one file"
+    default y if SOC_6760
+    default n
+    help
+        By defautl, AT settings are separated into several files. When this
+        if selected, all AT settings will be combined into one file.
+
+        If unsure, select n.
+
+config ATS_FS_SUPPORT
+    bool "Support file system AT commands"
+    default y
+    help
+        Whether to support file system related AT commands.
+
+config ATS_CISSDK_SUPPORT
+    bool "Support CISSDK AT commands"
+    default n
+    help
+        Whether to support CISSDK AT commands.
+
+if ATS_FS_SUPPORT
+config ATS_FS_DWN_SIZE_MAX
+    int "Maximum download file size"
+    default 500000
+    help
+        Buffer for the download file size will be allocated. To avoid memory
+        overflow, it is needed to set upper limit for it.
+
+config ATS_FS_RD_SIZE_MAX
+    int "Maximum read file size"
+    default 100000
+    help
+        When read a large file, AT UART will busy on output file data. It may
+        be frustrated when read a large file unintentionally.
+
+endif
+
+config ATS_UPDATE_SUPPORT
+    bool "Support +UPDATE for firmware update"
+    default n if SOC_6760
+    default y
+    help
+        +UPDATE is local firmware update. Firmware update pack data are sent
+        by AT command prompt.
+
+config ATS_ALARM_SUPPORT
+    bool "Support alarm AT commands"
+    default n if SOC_6760
+    default y
+    help
+        When enabled, +CALA and +CALD are supported.
+
+if ATS_ALARM_SUPPORT
+config ATS_ALARM_COUNT
+    int "Maximum alarm count"
+    default 16
+    help
+        Maximum alarm count supported.
+
+config ATS_ALARM_TEXT_LEN
+    int "Maximum alarm text length"
+    default 32
+    help
+        Maximum alarm text length, not including the terminating null byte.
+
+endif
+
+config ATS_SGCC_CATM_SUPPORT
+    bool "Support SGCC CATM command"
+    default n
+    help
+        When defined, SGCC CATM command will be used.
+
+config DUAL_SIM_SUPPORT
+    bool "DUAL SIM SUPPORT"
+    default n
+    help
+        When defined, the dual sim card will be support.
+
+config ATR_OVERFLOW_REEOR_REPORT
+    bool "AT overflow error report"
+    default n
+    help
+        Normally, When AT parameter is overfolow,return error.
+
+endmenu

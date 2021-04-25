@@ -1,0 +1,231 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "bootloader"
+
+config BOOT_LOG_ENABLED
+    bool "Enable log in bootloader"
+    default y if KERNEL_HOST_TRACE
+    default n
+    help
+        When host trace is enabled, log will be output through debughost.
+        When diag trace is enabled, log will be output through diag uart.
+
+        Usually, there are no reason to disable log through debughost.
+        However, there are cases that diag uart is expected to be "silent"
+        during bootloader.
+
+config FDL_LOG_ENABLED
+    bool "Enable log in fdl"
+    default y if KERNEL_HOST_TRACE
+    default n
+    help
+        When host trace is enabled, log will be output through debughost.
+        When diag trace is enabled, log will be output through diag uart.
+        When download is performed through diag uart, log will be disabled
+        forcedly.
+
+        Usually, there are no reason to disable log through debughost.
+        However, there are cases that diag uart is expected to be "silent"
+        during bootloader.
+
+if SOC_8910
+    config FDL_FLASH_SIGCHECK_BEFORE_WRITE
+        bool "signature check before flash write"
+        default n
+        help
+            When it is enabled, flash download will perform signature check
+            before erase and write flash. When the new image is not valid,
+            the existed content on flash won't be modified.
+
+            Download will be slower when it is enabled and secure boot is
+            enabled.
+
+    config FDL1_IMAGE_START
+        hex "FDL1 uimage SRAM start"
+        default 0x8000c0
+        help
+            FDL1 uimage SRAM start (not the code start address).
+
+    config FDL1_IMAGE_SIZE
+        hex "FDL1 uimage SRAM size"
+        default 0xff40
+        help
+            FDL1 sram size (including uimage header), including uimage header
+            and non-romed sram
+
+    config FDL2_IMAGE_START
+        hex "FDL2 uimage SRAM start"
+        default 0x810000
+        help
+            FDL2 uimage SRAM start (not the code start address).
+
+    config FDL2_IMAGE_SIZE
+        hex "FDL2 uimage SRAM size"
+        default 0x30000
+        help
+            FDL2 sram size (including uimage header), including uimage header
+            and non-romed sram
+
+    config BOOT2_IMAGE_START
+        hex "Bootloader stage2 SRAM start"
+        default 0x810000
+        help
+            Bootloader stage2 SRAM start (not the code start address).
+            Usually, it is the same as FDL2 to reuse SRAM.
+
+    config BOOT2_IMAGE_SIZE
+        hex "Bootloader stage2 SRAM size"
+        default 0x30000
+        help
+            Bootloader stage2 sram size, including uimage header and
+            non-romed sram. Usually, it is the same as FDL2 to reuse SRAM.
+
+    config BOOT_SYS_STACK_SIZE
+        hex "Boot/boot2/FDL1/FDL2 SYS stack size"
+        default 0x1800
+        help
+            Boot/boot2/FDL1/FDL2 are running in SYS mode. This is the
+            stack size. All modes share the same stack.
+
+    config BOOT_IRQ_STACK_SIZE
+        hex "Boot/boot2/FDL1/FDL2 SVC stack size"
+        default 0x800
+        help
+            Boot/boot2/FDL1/FDL2 IRQ stack size. All modes share the same
+            IRQ stack.
+
+    config BOOT_BLUE_SCREEN_SIZE
+        hex "Boot/boot2/FDL1/FDL2 blue screen stack size"
+        default 0x800
+
+    config BOOT_SMPL_ENABLE
+        bool "enblae SMPL(Sudden Momentary Power Loss)"
+        default n
+        help
+            Enable SMPL. If it occurs that battery is dropped below UVLO
+            threshold, all supplies will be shutdown simultaneously.
+
+    config BOOT_SMPL_THRESHOLD
+        int "SMPL(Sudden Momentary Power Loss)"
+        default 7
+        help
+            The SMPL programmable timer.If the timer has expired by the
+            time system supply recovers the PMIC does not auto boot and
+            remains in power down state. When the system supply recovers
+            before the timer expired the PMIC will boot up automatically.
+            SMPL timer threshold value is three bits: 0: 0.25s; 1: 0.5s;
+            2: 0.75s; ... 7: 2s
+
+    config BOOT_PB_7S_RESET_ENABLE
+        bool "support pb 7s reset"
+        default n
+
+    config BOOT_UART1_PDL_ENABLE
+        bool "enable uart1 download"
+        default n
+        help
+            When enabled, bootloader will use PDL protocol to support
+            download. The baud rate is fixed to 921600, and only Limited
+            PDL commands are supported.
+
+endif
+
+if SOC_8811
+    config DUAL_BOOTLOADER_ENABLE
+        bool "enable dual bootloader"
+        default y
+        help
+            When enabled, there will exist two copies of bootloader at the
+            beginning of FLASH.
+
+            8811 should always enable dual bootloader.
+
+    config BOOT_MAIN_STACK_SIZE
+        hex "bootloader/fdl main stack size"
+        default 0x800
+        help
+            Main stack size of bootloader and fdl.
+
+    config BOOT_PROCESS_STACK_SIZE
+        hex "bootloader/fdl process stack size"
+        default 0x800
+        help
+            Process stack size of bootloader and fdl.
+endif
+
+config BOOT_TIMER_IRQ_ENABLE
+    bool "enable timer IRQ"
+    default n
+    help
+        When enabled, interrupt will be enabled in bootloader, and timer
+        IRQ will be enabled. It is only used to feed external watchdog.
+
+if BOOT_TIMER_IRQ_ENABLE
+    config BOOT_TIMER_PERIOD
+    int "boot timer period (ms)"
+    default 500
+    help
+        Bootloader timer period, in milliseconds.
+endif
+
+config FDL1_PACKET_MAX_LEN
+    hex "Maximum FDL1 packet length"
+    default 0x840
+    help
+        Maximum FDL1 packet length. It should match configuration in
+        ResearchDownload.
+
+config FDL_PACKET_MAX_LEN
+    hex "Maximum FDL packet length"
+    default 0x3000
+    help
+        Maximum FDL packet length. It should match configuration in
+        ResearchDownload.
+
+config NVBIN_FIXED_SIZE
+    hex "NV bin fixed size"
+    depends on SOC_8910 || SOC_8811
+    default 0x20000 if SOC_8910
+    default 0x14000 if SOC_8811
+    help
+        At nv backup, fixed size is needed for nv bin read and write.
+        This size should be large enough to hold all fixed nv bin.
+
+if SOC_8910 || SOC_6760
+config FDL_UART_BAUD
+    int "Baud rate of default FDL UART"
+    default 921600 if SOC_8910
+    default 115200 if SOC_6760
+
+choice
+    prompt "FDL default UART"
+    default FDL_DEFAULT_UART2
+
+    config FDL_DEFAULT_UART1
+        bool "UART1"
+
+    config FDL_DEFAULT_UART2
+        bool "UART2"
+
+    config FDL_DEFAULT_UART3
+        bool "UART3"
+endchoice
+
+config FDL_DEFAULT_UART
+    string
+    default "DRV_NAME_UART1" if FDL_DEFAULT_UART1
+    default "DRV_NAME_UART2" if FDL_DEFAULT_UART2
+    default "DRV_NAME_UART3" if FDL_DEFAULT_UART3
+    default ""
+
+endif
+endmenu

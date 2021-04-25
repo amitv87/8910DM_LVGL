@@ -1,0 +1,8 @@
+﻿  cis_parser.cpp
+..\src\cis_parser.cpp(340): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          E:\VS2010\install\VC\include\stdio.h(234) : 参见“fopen”的声明
+  wingetopt.cpp
+  正在生成代码
+f:\company\nb-iot\sdk_nb_2.3.0_ota_0.0.3\app\cis_cgtool\src\cis_parser.cpp(668): warning C4700: 使用了未初始化的局部变量“dtlsEnabled”
+  已完成代码的生成
+  cis_cgtool.vcxproj -> F:\Company\NB-IoT\SDK_NB_2.3.0_OTA_0.0.3\app\cis_cgtool\project\..\bin\Release\cis_cgtool.exe

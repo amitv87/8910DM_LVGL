@@ -1,0 +1,250 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "kernel"
+
+config KERNEL_SYSNV_ENABLED
+    bool "Enable system NV"
+    default y
+    help
+        System NV is a mechanism to change compiler time options
+        to changable options.
+
+        When it is enabled, code size may be increased.
+
+config KERNEL_TICK_HZ
+    int "Tick per second"
+    default 50
+    help
+        Tick frequency. It should be chosen that 1000 (milliseconds per
+        second) can be divided by this exactly.
+
+config KERNEL_HWTICK_FREQ
+    int "Default hardware tick frequency"
+    default 2000000 if SOC_8910
+    default 1000000 if SOC_8811
+    default 16384 if SOC_8955 || SOC_8909
+    help
+        Default hardware tick frequency.
+
+config KERNEL_ASSERT_ENABLED
+    bool "Assert enabled"
+    default y
+    help
+        When enabled, OSI_ASSERT will call osiPanic on fail. Otherwise,
+        OSI_ASSERT will be expanded into a trace.
+
+        At not sure, select "y"
+
+config KERNEL_HIGH_PRECISION_TIMER
+    bool "Enable high precision timer"
+    default y
+    help
+        When enabled, OSI timer will be implemented on hardware high precision
+        timer. It doesn't depend on RTOS tick.
+
+        When disabled, OSI timer will be implemented based on RTOS timer.
+
+config KERNEL_OSTICK_RELAXED_TIME
+    int "OS tick relaxed time"
+    default 0
+    help
+        This is the relaxed time for OS tick based timeout, such as
+        osiThreadSleep, osiMutexTryLock and etc. When this is 0, that means
+        OS tick based timeout will wakeup system if system will suspend. When
+        this is set to -1, that means OS tick based timeout will never wakeup
+        system if system will suspend. When it is a positive value, OS tick
+        based timeout will wakeup system, with possibly the configured delay.
+
+        The default is 0, and user application shall take care of power
+        consumption optimization. Other values will change the meaning of OS
+        tick based timeout, and should only be used when there are no
+        opportunities to optimize application, and it is confirmed that the
+        API meaning change is acceptable.
+
+config KERNEL_TIMER_WQ_STACKSIZE
+    int "stack size of timer service work queue"
+    default 4096
+    help
+        Stack size of timer work queue. For thread callback timer, the timer
+        callback event will be sent inside timer service work queue. Also,
+        there is API to invoke callback inside timer service work queue.
+        Usually, the callback should be as simple as possible, and it
+        shouldn't consume too many stack spaces.
+
+config KERNEL_PERIODIC_TIMER_MIN_PERIOD
+    int "minimum periodic timer period"
+    default 10
+    help
+        When periodic timer period is too small, it will have impact to the
+        system. In worst case, a periodic timer with period 0 will occupy all
+        CPU resources. To avoid this case, when periodic timer period is small
+        than this configuration, the real period will be changed to it
+        silently.
+
+        It can't be larger than period of KERNEL_TICK_HZ, that is one RTOS tick.
+
+config KERNEL_HIGH_PRIO_WQ_ENABLED
+    bool "Enable high priority system work queue"
+    default y
+    help
+        When enabled, work queue with priority OSI_PRIORITY_HIGH will be
+        created.
+
+        At not sure, select "y"
+
+config KERNEL_LOW_PRIO_WQ_ENABLED
+    bool "Enable low priority system work queue"
+    default y
+    help
+        When enabled, work queue with priority OSI_PRIORITY_LOW will be
+        created.
+
+        At not sure, select "y"
+
+config KERNEL_FILE_WRITE_WQ_ENABLED
+    bool "Enable file write system work queue"
+    default y
+    help
+        When enabled, work queue with priority OSI_PRIORITY_BELOW_NORMAL
+        will be created, for asynchronuous file write.
+
+        At not sure, select "y"
+
+config KERNEL_MIN_UTC_SECOND
+    int "system minimum utc time in second"
+    default 946684800
+
+config KERNEL_MAX_UTC_SECOND
+    int "system maximum utc time in second"
+    default 4102444800
+
+
+if KERNEL_HIGH_PRIO_WQ_ENABLED
+config KERNEL_HIGH_PRIO_WQ_STACKSIZE
+    int "High priority system work queue stack size in bytes"
+    default 4096
+    help
+        The stack size in bytes of the high priority work queue thread.
+
+endif
+
+if KERNEL_LOW_PRIO_WQ_ENABLED
+config KERNEL_LOW_PRIO_WQ_STACKSIZE
+    int "Low priority system work queue stack size in bytes"
+    default 4096
+    help
+        The stack size in bytes of the low priority work queue thread.
+endif
+
+if KERNEL_FILE_WRITE_WQ_ENABLED
+config KERNEL_FILE_WRITE_WQ_STACKSIZE
+    int "File write system work queue stack size in bytes"
+    default 2048
+    help
+        The stack size in bytes of the asynchronuous file write work queue
+        thread.
+endif
+
+if SOC_8910
+choice
+    prompt "Profile clock source"
+    default KERNEL_PROFILE_CLOCK2M
+    help
+        When 2M clock is chosen, it will provide higher precision. However,
+        the clock will be discontinued at sleep. When 32K clock is chosen,
+        the precision is lower, and it may be continuous at sleep.
+
+        By default, 32K clock will be chosen to make the profile data easier
+        to be understood. When detailed timing or performance is needed, 2M
+        clock can be chosen.
+
+config KERNEL_PROFILE_CLOCK32K
+    bool "32768 Hz clock"
+
+config KERNEL_PROFILE_CLOCK2M
+    bool "2000000 Hz clock"
+
+endchoice
+endif
+
+config KERNEL_PROFILE_BUF_SIZE
+    hex "Profile buffer size"
+    default 0x1000 if SOC_8811
+    default 0xc000
+    help
+        Profile buffer size. Each profile record will use 4 bytes. So, the
+        profile record count is buffer size divided by 4.
+
+        When it is 0, profile will be disabled, though the profile related
+        APIs still exist.
+
+choice
+    prompt "Trace packet format"
+    default KERNEL_HOST_TRACE
+
+config KERNEL_HOST_TRACE
+    bool "Host packet"
+
+config KERNEL_DIAG_TRACE
+    bool "Diag packet"
+
+endchoice
+
+config KERNEL_TRACE_BUF_SIZE
+    hex "trace buffer size"
+    default 0x1000 if SOC_8955 || SOC_8811
+    default 0x2000
+    help
+        Trace will use multiple buffers. And this is the size of each buffer.
+
+config KERNEL_TRACE_BUF_COUNT
+    int "trace buffer count"
+    default 2 if SOC_8955
+    default 8
+    help
+        Trace will use multiple buffers. And this is the buffer count.
+
+config KERNEL_TRACE_EXTERNAL_BUF_COUNT
+    int "external trace buffer count"
+    default 8
+    help
+        For each external buffer, there is only a small management overhead.
+
+config KERNEL_DISABLE_TRACEID
+    bool "Disable trace ID"
+    default y if SOC_6760
+    default n
+    help
+        By default, in OSI_LOG macors, when the trcae ID is not zero, trace
+        ID will be used, otherwise the trace string will be used.
+        When selected, the trace string will be used forcedly.
+
+config KERNEL_MEM_RECORD_COUNT
+    int "Memory record count"
+    default 16 if SOC_6760
+    default 1024
+    help
+        A piece of memory will be reserved to record memory allocation and
+        free. The record memory is recycled, that is only the latest actions
+        are recorded.
+
+        It is helpful for debug memory issues. So, this feature can't be
+        disabled, just the count can be configured.
+
+config KERNEL_BLUE_SCREEN_HANDLER_COUNT
+    int "blue screen handler maximum count"
+    default 12
+    help
+        Callbacks can be registered to be called when entering and during
+        blue screen mode. This is the maximum count.
+
+endmenu

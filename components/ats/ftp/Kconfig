@@ -1,0 +1,38 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "at_ftp"
+
+choice
+	prompt "select ftp version"
+	default AT_NEWFTP_SUPPORT
+config AT_FTP_SUPPORT
+	bool "old ftp AT command"
+config AT_NEWFTP_SUPPORT
+	bool "new ftp AT command"
+	select FTP_MODULE_SUPPORT
+config AT_NOFTP_SUPPORT
+	bool "no ftp AT command"
+endchoice
+
+choice
+	prompt "select myftp version"
+	default AT_NEWMYFTP_SUPPORT
+config AT_MYFTP_SUPPORT
+	bool "old myftp AT command"
+config AT_NEWMYFTP_SUPPORT
+	bool "new myftp AT command"
+	select FTP_MODULE_SUPPORT
+config AT_NOMYFTP_SUPPORT
+	bool "no myftp AT command"
+endchoice
+
+endmenu

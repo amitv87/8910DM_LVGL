@@ -1,0 +1,58 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _DIAG_CONFIG_H_
+#define _DIAG_CONFIG_H_
+
+// @AUTO_GENERATION_NOTICE@
+
+/**
+ * whether diag is enabled
+ */
+#cmakedefine CONFIG_DIAG_ENABLED
+
+/**
+ * diag default uart device
+ */
+#cmakedefine CONFIG_DIAG_DEFAULT_UART @CONFIG_DIAG_DEFAULT_UART@
+
+/**
+ * diag uart default baud rate
+ */
+#cmakedefine CONFIG_DIAG_DEFAULT_UART_BAUD @CONFIG_DIAG_DEFAULT_UART_BAUD@
+
+/**
+ * whether diag through usb serial is supported
+ */
+#cmakedefine CONFIG_DIAG_DEVICE_USRL_SUPPORT
+
+/**
+ * diag default usb serial device
+ */
+#cmakedefine CONFIG_DIAG_DEFAULT_USERIAL @CONFIG_DIAG_DEFAULT_USERIAL@
+
+/**
+ * pre-allocated buffer size
+ */
+#cmakedefine CONFIG_DIAG_NORMAL_MODE_BUF_SIZE @CONFIG_DIAG_NORMAL_MODE_BUF_SIZE@
+
+/**
+ * allocated buffer size in calibratin mode
+ */
+#cmakedefine CONFIG_DIAG_CALIB_MODE_BUF_SIZE @CONFIG_DIAG_CALIB_MODE_BUF_SIZE@
+
+/**
+ * diag port debug support
+ */
+#cmakedefine CONFIG_DIAG_DEBUG_SUPPORT
+
+#endif

@@ -1,0 +1,68 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "file system"
+
+choice
+    prompt "flash block device version"
+    default FS_FBDEV_DEFAULT_V2
+    help
+        There are 2 versions of flash block device implementation. These
+        2 versions are incompatible.
+
+    config FS_FBDEV_DEFAULT_V1
+        bool "version 1"
+
+    config FS_FBDEV_DEFAULT_V2
+        bool "version 2"
+endchoice
+
+config FS_FBDEV_V1_SUPPORTED
+    bool "Support flash block device v1"
+    default n
+    help
+        When enabled, flash block device v1 will be supported. Except for
+        backward compatible consideration, don't enable it.
+
+config FS_FBDEV_V2_SUPPORTED
+    bool "Support flash block device v2"
+    default y
+    help
+        When enabled, flash block device v2 will be supported.
+
+config FS_FORMAT_FLASH_ON_MOUNT_FAIL
+    bool "format at mount fail"
+    default y if SOC_8955 || SOC_8909
+    default n
+    help
+        When file system mount failed, system can't go on. When this is
+        enabled, system will format the flash region, and try mount again.
+        Then system can go on, but all existed data will be lost.
+
+        Don't enable this in production.
+
+config FS_MOUNT_SDCARD
+    bool "Mount sdcard"
+    default n
+
+if FS_MOUNT_SDCARD
+
+config FS_FORMAT_SDCARD_ON_MOUNT_FAIL
+    bool "Format sdcard on mount fail"
+    default y
+
+config FS_SDCARD_MOUNT_POINT
+    string "Sdcard mount point"
+    default "/sdcard0"
+
+endif
+
+endmenu

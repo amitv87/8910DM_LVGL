@@ -1,0 +1,33 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "at_cfw"
+
+config AT_MYINFO_SUPPORT
+    bool "AT_MYINFO_SUPPORT enabled"
+    default y
+    help
+        When enabled, AT_MYINFO_SUPPORT will be defined
+
+config AT_IPR_SUPPORT_ANDW
+    bool "AT+IPR support &W"
+    default y
+    help
+        From specification, syntax of the command "AT+IPR=115200&W" is
+        incorrect. However, it is common used. This option is to support
+        this non-standard syntax.
+
+        To support this, the syntax parser of AT command line isn't changed.
+        Just +IPR command handler will process 115200&W parameter.
+
+        It is recommended to enable this option.
+
+endmenu

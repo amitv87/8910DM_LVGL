@@ -1,0 +1,93 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "Services"
+
+config USB_TRACE_ENABLE
+    bool "Enable trace through USB"
+    default y if SOC_8910
+    default n
+    help
+        When enabled, trace device can be selected to USB serial. Also,
+        USB serial can accept host commands from PC.
+
+config FS_TRACE_ENABLE
+    bool "Enable write trace to file system"
+    depends on FS_MOUNT_SDCARD
+    default y
+    help
+        When enabled, various trace data can be written to file system.
+        Typically, they should be written to SDCARD.
+
+config TWOLINE_WAKEUP_ENABLE
+    bool "Enable two line wakeup mechanism"
+    default n
+    help
+        Enable the funtion, you should call the srv2LineWakeUpInit and give the gpio id of
+        wakeup_in and wakeup_out to the init function.
+
+if TWOLINE_WAKEUP_ENABLE
+config TWOLINE_WAKEUP_IN_GPIO
+    int "The gpio id of wakeup_in"
+    default 17
+    help
+        Be used for 2line wake up mechanism, notify module wakeup.
+
+config TWOLINE_WAKEUP_OUT_GPIO
+    int "The gpio id of wakeup_out"
+    default 18
+    help
+        Be used for 2line wake up mechanism, notify mcu wakeup.
+endif
+
+config SRV_DTR_ENABLE
+    bool "Enable DTR"
+    default n
+    help
+        When enabled, one GPIO will be used to simulate DTR.
+
+if SRV_DTR_ENABLE
+config SRV_DTR_GPIO
+    int "DTR GPIO"
+    default 13 if SOC_8910
+    help
+        The GPIO to be used to simulate DTR.
+
+config SRV_DTR_DEBOUNCE_ENABLE
+    bool "Enable DTR GPIO software debounce"
+    default y
+    help
+        When enabled, there is software debounce for the DTR GPIO.
+
+if SRV_DTR_DEBOUNCE_ENABLE
+config SRV_DTR_DEBOUNCE_TIME
+    int "DTR GPIO software debounce time (ms)"
+    default 20
+    help
+        The software debounce time of DTR GPIO.
+endif
+endif
+
+config SRV_SIMLOCK_ENABLE
+    bool "Enable simlock service"
+    default y
+    help
+        Enbale simlock service.
+
+config SRV_POWER_ON_VOLTAGE
+    int "Power on voltage"
+    default 3400
+
+config SRV_POWER_OFF_VOLTAGE
+    int "Power off voltage"
+    default 3250
+
+endmenu

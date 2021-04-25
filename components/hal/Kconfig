@@ -1,0 +1,148 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "HAL Configurations"
+
+config NVM_VARIANTS
+    string "NVM variants"
+    default ""
+    help
+        For each target, multiple nvm variants are supported. For each nvm
+        variant, a separated pac file will be created.
+
+        NVM variant is just a name, and the definitions are located in
+        another configuration file. For 8910, each nvm variant will
+        configure modem bin path and nvm prj file.
+
+config PARTINFO_JSON_PATH
+    string "partition infomation json file path"
+    default ""
+    help
+        Partition information is stored as a json file. This json file
+        will be converted into binary file, and embedded into bootloader.
+
+        There are no default value, each target should specify the
+        partition information file.
+
+config PINMUX_JSON_PATH
+    string "pinfunc defination json file path"
+    default ""
+
+config PACKAGE_FILE_JSON_PATH
+    string "package raw file config path"
+    default "components/nvitem/8910/default/prepack/prepack.json" if SOC_8910
+    default ""
+
+config PACKAGE_FILE_APPIMG_JSON_PATH
+    string "package raw file config path for appimg example"
+    default ""
+    help
+        default "components/nvitem/8910/default/prepack/prepack_appimg.json" if SOC_8910
+        default "components/nvitem/8811/default/prepack/prepack_appimg.json" if SOC_8811
+
+config SUPPORT_IMS_DELTA_NV
+    bool "ims delta nv enable"
+    default n
+
+config PWRKEY_POWERUP
+    bool "power key power up enable"
+    default y
+
+config WAKEUP_PIN_POWERUP
+    bool "wakeup pin (psm_ext_int) power up enable"
+    default n
+
+config SHUTDOWN_NORMAL_POWER_OFF
+    bool "shutdown normal power off"
+    default n
+    help
+        This is a normal power off mode in pmic 2720,
+        more power consupmtion than PSM mode.
+
+config KEYPAD_CSV_PATH
+    string "keypad defination csv file path"
+    default "components/hal/include/8910/keypad_map_8910.csv" if SOC_8910
+    default "components/hal/include/8955/keypad_map_8955.csv" if SOC_8955
+    default "components/hal/include/8909/keypad_map_8909.csv" if SOC_8909
+
+config PWRKEY_WAKEUP_PSM
+    bool "power key wakeup psm"
+    default n
+
+config CHARGER_POWERUP
+    bool "charger powerup the chip"
+    default y
+
+if SOC_8910
+    config PMIC_INTR_GPIO
+        int "GPIO for PMIC interrupt"
+        default 6
+
+    config SLEEP32K_GPIO
+        int "GPIO for sleep 32K wakeup"
+        default 7
+
+    config TST_H_GROUND
+        bool "tst_h to the ground"
+        default n
+
+    config CP_LTE_NBIOT_SUPPORT
+        bool "CP Support Nbiot"
+        default n
+
+    config GPIO4_FORCE_PULL_UP
+        bool "gpio4 (for sim detect) force pull up"
+        default n
+
+    config CAMA_POWER_ON_INIT
+        bool "open CAMA power when init"
+        default n
+
+    config CAMA_CLK_FOR_AUDIO
+        bool "open camera clock for audio"
+        default n
+
+    config GPIO_X_USED_FOR_VBAT_RF
+        int "GPIO x is used for Vbat_RF switch"
+        default 8
+        help
+            Then set gpio used for Vbat_RF switch.
+
+    config GPIO_USED_FOR_VBAT_RF_SWITCH
+        bool "Whether GPIO x is used for Vbat_RF switch"
+        default y
+        help
+            Then set gpio used for Vbat_RF switch.
+
+endif
+
+config SYS_WDT_ENABLE
+    bool "whether to enable sys_wdt"
+    default y
+    help
+        sys_wdt is a mechanism to trigger blue screen when system is not
+        responsibile. Typically, it is implemented by NMI interrupt or FIQ.
+
+config SYS_WDT_TIMEOUT
+    int "sys_wdt timeout"
+    default 10000
+    help
+        This is sys_wdt timeout. The default strategy of watchdog feed is
+        in low priority thread. So, this timeout should be relative large,
+        not to hit by system busy.
+
+config SYS_WDT_FEED_INTERVAL
+    int "sys_wdt feed interval"
+    default 5000
+    help
+        This is the interval to feed sys_wdt.
+
+endmenu

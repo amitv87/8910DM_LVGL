@@ -1,0 +1,137 @@
+<!--
+Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+All rights reserved.
+
+This software is supplied "AS IS" without any warranties.
+RDA assumes no responsibility or liability for the use of the software,
+conveys no license or title under any patent, copyright, or mask work
+right to the product. RDA reserves the right to make changes in the
+software without notification.  RDA also make no representation or
+warranty that such application will be suitable for the specified use
+without further testing or modification.
+-->
+<deliver>
+    <!-- only included for prebuilts -->
+    <group inclusive="prebuilts">
+        <file src="prebuilts/linux/bin/ninja"/>
+        <file src="prebuilts/linux/bin/clang-format"/>
+        <recursive src="prebuilts/linux/cmake"/>
+        <recursive src="prebuilts/linux/gcc-arm-none-eabi"/>
+        <file src="prebuilts/win32/bin/ninja.exe"/>
+        <file src="prebuilts/win32/bin/clang-format.exe"/>
+        <recursive src="prebuilts/win32/cmake"/>
+        <recursive src="prebuilts/win32/gcc-arm-none-eabi"/>
+        <recursive src="prebuilts/win32/python3"/>
+    </group>
+
+    <!-- from TARGET_OUT -->
+    <globfile src="{TARGET_OUT}/include/*.h" dstdir="components/include"/>
+    <file src="{TARGET_OUT}/lib/core_config.cmake" dstdir="cmake"/>
+    <file src="{TARGET_OUT}/lib/core_stub.o" dstdir="components/lib"/>
+    <file src="{TARGET_OUT}/hex/fdl1.img" dstdir="components/lib" inclusive="8910"/>
+    <file src="{TARGET_OUT}/hex/fdl2.img" dstdir="components/lib" inclusive="8910"/>
+
+    <!-- newlib, headers and lib -->
+    <recursive src="components/newlib/include"/>
+    <recursive src="components/newlib/armca5" inclusive="8910"/>
+    <recursive src="components/newlib/armcm33f" inclusive="8811"/>
+    <recursive src="components/newlib/xcpu" inclusive="8955"/>
+    <recursive src="components/newlib/xcpu2" inclusive="8909"/>
+
+    <!-- tools -->
+    <file src="tools/pacgen.py"/>
+    <file src="tools/modemgen.py"/>
+    <recursive src="tools/linux"/>
+    <recursive src="tools/win32"/>
+
+    <!-- exported -->
+    <file src=".clang-format"/>
+    <file src=".gitignore"/>
+    <file src="cmake/toolchain-gcc.cmake"/>
+    <file src="components/kernel/include/osi_log.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_log_imp.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_api.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_compiler.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_vsmap.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_clock.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_mem.h" dstdir="components/include"/>
+    <!-- <file src="components/fs/include/vfs.h" dstdir="components/include"/>-->
+    <file src="components/nvitem/8910/default/prepack/prepack_appimg.json" dstdir="components/nvitem/8910/default/prepack"/>
+    <file src="components/nvitem/8910/default/prepack/example_appimg.txt" dstdir="components/nvitem/8910/default/prepack"/>
+
+    <!-- from apploader -->
+    <file src="components/apploader/pack/app_flashimg.ld" dstdir="tools/ldscripts"/>
+    <file src="components/apploader/pack/app_fileimg.ld" dstdir="tools/ldscripts"/>
+    <!-- <file src="components/apploader/pack/CMakeLists.txt" dst="CMakeLists.txt"/>-->
+    <!-- <file src="components/apploader/pack/hello_world.c" dst="hello_world.c"/>-->
+    <file src="components/apploader/pack/core_launch.sh" dstdir="tools"/>
+    <file src="components/apploader/pack/core_launch.bat" dstdir="tools"/>
+	
+    <!-- from cfw -->
+    <globfile src="components/cfw/include/*.h" dstdir="components/include"/>
+    <!-- from net -->
+    <globfile src="components/net/lwip/include/*.h" dstdir="components/net/lwip/include"/>
+    <recursive src="components/net/lwip/src/include" dst="components/net/lwip/src/include"/>
+    <globfile src="components/net/include/*.h" dstdir="components/net/include"/>
+		
+	<file src="components/quectel/system/include/ql_ssl.h" dstdir="components/ql-kernel/inc"/>
+	<file src="components/quectel/applications/include/ql_ping_app.h" dstdir="components/ql-kernel/inc"/>
+	<file src="components/quectel/applications/include/ql_ntp_client.h" dstdir="components/ql-kernel/inc"/>
+	<file src="components/quectel/applications/include/ql_lbs_client.h" dstdir="components/ql-kernel/inc"/>
+	<file src="components/quectel/applications/include/ql_ctsreg.h" dstdir="components/ql-kernel/inc"/>
+	<file src="components/quectel/applications/include/ql_mms_client.h" dstdir="components/ql-kernel/inc"/>
+    <!-- from ql_api -->
+    <file src="components/quectel/ql_open/ql_api/CMakeLists.txt" dstdir="components/ql-kernel"/>
+	<globfile src="components/quectel/ql_open/ql_api/include/*.h" dstdir="components/ql-kernel/inc"/>
+	<recursive src="components/quectel/ql_open/ql_api/third_party" dst="components/ql-kernel/third_party"/>
+	
+    <!-- from quectel -->
+    <file src="components/quectel/ql_target.cmake" dst="components/ql-application/ql_target.cmake"/>
+
+    <!-- from ql_examples -->
+	<file src="components/quectel/ql_open/ql_examples/CMakeLists.txt" dst="components/ql-application/CMakeLists.txt"/>
+	<file src="components/quectel/ql_open/ql_examples/ql_app_feature_config.cmake" dst="components/ql-application/ql_app_feature_config.cmake"/>
+	<file src="components/quectel/ql_open/ql_examples/ql_app_feature_config.h.in" dst="components/ql-application/ql_app_feature_config.h.in"/>
+	<recursive src="components/quectel/ql_open/ql_examples/audio" dst="components/ql-application/audio"/>
+	<recursive src="components/quectel/ql_open/ql_examples/bt" dst="components/ql-application/bt"/>
+	<recursive src="components/quectel/ql_open/ql_examples/gnss" dst="components/ql-application/gnss"/>
+	<recursive src="components/quectel/ql_open/ql_examples/http" dst="components/ql-application/http"/>
+	<recursive src="components/quectel/ql_open/ql_examples/ftp" dst="components/ql-application/ftp"/>
+	<recursive src="components/quectel/ql_open/ql_examples/lcd" dst="components/ql-application/lcd"/>
+	<recursive src="components/quectel/ql_open/ql_examples/mms" dst="components/ql-application/mms"/>
+	<recursive src="components/quectel/ql_open/ql_examples/mqtt" dst="components/ql-application/mqtt"/>
+	<recursive src="components/quectel/ql_open/ql_examples/ping" dst="components/ql-application/ping"/>
+	<recursive src="components/quectel/ql_open/ql_examples/ntp" dst="components/ql-application/ntp"/>
+	<recursive src="components/quectel/ql_open/ql_examples/lbs" dst="components/ql-application/lbs"/>
+	<recursive src="components/quectel/ql_open/ql_examples/socket" dst="components/ql-application/socket"/>
+	<recursive src="components/quectel/ql_open/ql_examples/nw" dst="components/ql-application/nw"/>
+	<recursive src="components/quectel/ql_open/ql_examples/wifi_scan" dst="components/ql-application/wifi_scan"/>
+	<recursive src="components/quectel/ql_open/ql_examples/peripheral" dst="components/ql-application/peripheral"/>
+	<recursive src="components/quectel/ql_open/ql_examples/dev" dst="components/ql-application/dev"/>
+	<recursive src="components/quectel/ql_open/ql_examples/osi" dst="components/ql-application/osi"/>
+	<recursive src="components/quectel/ql_open/ql_examples/sim" dst="components/ql-application/sim"/>
+	<recursive src="components/quectel/ql_open/ql_examples/power" dst="components/ql-application/power"/>
+	<recursive src="components/quectel/ql_open/ql_examples/fs" dst="components/ql-application/fs"/>
+	<recursive src="components/quectel/ql_open/ql_examples/ssl" dst="components/ql-application/ssl"/>
+	<recursive src="components/quectel/ql_open/ql_examples/sms" dst="components/ql-application/sms"/>
+	<recursive src="components/quectel/ql_open/ql_examples/spi" dst="components/ql-application/spi"/>
+	<recursive src="components/quectel/ql_open/ql_examples/spi_flash" dst="components/ql-application/spi_flash"/>
+	<recursive src="components/quectel/ql_open/ql_examples/http_fota" dst="components/ql-application/http_fota"/>
+	<recursive src="components/quectel/ql_open/ql_examples/voice_call" dst="components/ql-application/voice_call"/>
+	<recursive src="components/quectel/ql_open/ql_examples/camera" dst="components/ql-application/camera"/>
+	<recursive src="components/quectel/ql_open/ql_examples/decoder" dst="components/ql-application/decoder"/>
+	<!-- <globfile src="components/quectel/ql_open/ql_examples/init/inc/*.h" dstdir="components/ql-application/init/inc"/> -->
+	<globfile src="components/quectel/ql_open/ql_examples/init/*.c" dstdir="components/ql-application/init"/>
+	
+    <!-- from ql_open -->
+	<file src="components/quectel/ql_open/CMakeLists_app.txt" dst="CMakeLists.txt"/>
+	
+    <!-- from . -->
+	<file src="build_app.bat"/>
+	
+    <!-- from quectel_build -->
+	<file src="quectel_build/release/{QL_BUILD_VER}/{QL_BUILD_TARGET}.elf" dst="components/ql-config/download/pack/{QL_BUILD_TARGET}_core.elf"/>
+	<file src="quectel_build/release/{QL_BUILD_VER}/{QL_BUILD_TARGET}.map" dst="components/ql-config/download/pack/{QL_BUILD_TARGET}_core.map"/>
+	<file src="quectel_build/release/{QL_BUILD_VER}/{QL_BUILD_TARGET}_{QL_BUILD_VER}.pac" dst="components/ql-config/download/pack/{QL_BUILD_TARGET}_core.pac"/>
+	<file src="quectel_build/release/{QL_BUILD_VER}/{QL_BUILD_TARGET}_{QL_BUILD_VER}_merge.pac" dst="components/ql-config/download/pack/{QL_BUILD_TARGET}_merge.pac"/>
+</deliver>

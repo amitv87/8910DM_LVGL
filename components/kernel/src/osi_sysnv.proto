@@ -1,0 +1,29 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+syntax = "proto2";
+
+message PB_SysNvm
+{
+    optional uint32 gSysnvTraceEnabled = 1;
+    optional uint32 gSysnvDeepSleepEnabled = 2;
+    optional uint32 gSysnvPsmSleepEnabled = 3;
+    optional uint32 gSysnvUsbWorkMode = 4;
+    optional uint32 gSysnvTraceDevice = 5;
+    optional uint32 gSysnvDiagDevice = 6;
+    optional uint32 gSysnvSimHotPlug = 7;
+    optional uint32 gSysnvSimVoltTrigMode = 8;
+    optional uint32 gSysnvUsbDetMode = 9;
+    optional uint32 gSysnvNATCfg = 10;
+    optional uint32 gSysnvFstraceMask = 11;
+    optional uint32 gSysnvPoffChargeEnable = 12;
+}

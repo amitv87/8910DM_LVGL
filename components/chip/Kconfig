@@ -1,0 +1,404 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "Chip configuration"
+
+choice
+    prompt "CHIP"
+    optional
+
+config CHIP_8910_NOR16M_DDR32M
+    bool "8910A, NOR flash 16M, DDR 32M"
+    imply SOC_8910
+    imply NOR_FLASH
+    imply USE_DDR
+    imply FLASH_16M
+    imply RAM_32M
+
+config CHIP_8910_NOR16M_DDR64M
+    bool "8910B, NOR flash 16M, DDR 64M"
+    imply SOC_8910
+    imply NOR_FLASH
+    imply USE_DDR
+    imply FLASH_16M
+    imply RAM_64M
+
+config CHIP_8910_NOR16M_PSRAM16M
+    bool "8910C, NOR flash 16M, PSRAM 16M"
+    imply SOC_8910
+    imply NOR_FLASH
+    imply USE_PSRAM
+    imply FLASH_16M
+    imply RAM_16M
+
+config CHIP_8910_NOR8M_PSRAM16M
+    bool "8910DM, NOR flash 8M, PSRAM 16M"
+    imply SOC_8910
+    imply NOR_FLASH
+    imply USE_PSRAM
+    imply FLASH_8M
+    imply RAM_16M
+
+config CHIP_8910_NOR16M8M_DDR32M
+    bool "8910GF, NOR flash 16M+8M, DDR32M"
+    imply SOC_8910
+    imply NOR_FLASH
+    imply USE_DDR
+    imply FLASH_16M
+    imply RAM_32M
+
+endchoice
+
+config SOC
+    string
+    default "8910" if SOC_8910
+
+config RUN_ON_FPGA
+    bool
+config SOC_8910
+    bool
+    imply CPU_ARM
+    imply CPU_ARMV7A
+    imply CPU_ARM_CA5
+    imply HAVE_MMU
+config SOC_6760
+    bool
+    imply CPU_ARM
+    imply CPU_ARMV7M
+    imply CPU_ARM_CM4F
+config SOC_8955
+    bool
+    imply CPU_MIPS
+    imply CPU_MIPS_XCPU
+config SOC_8909
+    bool
+    imply CPU_MIPS
+    imply CPU_MIPS_XCPU2
+config CPU_ARM
+    bool
+config CPU_ARMV7A
+    bool
+config CPU_ARMV7M
+    bool
+config CPU_ARMV8M
+    bool
+config CPU_ARM_CA5
+    bool
+config CPU_ARM_CM4F
+    bool
+config CPU_ARM_CM33F
+    bool
+config CPU_MIPS
+    bool
+config CPU_MIPS_XCPU
+    bool
+config CPU_MIPS_XCPU2
+    bool
+config HAVE_MMU
+    bool
+config NOR_FLASH
+    bool
+config NAND_FLASH
+    bool
+config USE_PSRAM
+    bool
+    imply HAVE_EXT_RAM
+config USE_DDR
+    bool
+    imply HAVE_EXT_RAM
+config HAVE_EXT_RAM
+    bool
+config RAM_4M
+    bool
+config RAM_16M
+    bool
+config RAM_32M
+    bool
+config RAM_64M
+    bool
+config FLASH_2M
+    bool
+config FLASH_4M
+    bool
+config FLASH_8M
+    bool
+config FLASH_16M
+    bool
+config FLASH_SIZE
+    hex
+    default 0x200000 if FLASH_2M
+    default 0x400000 if FLASH_4M
+    default 0x800000 if FLASH_8M
+    default 0x1000000 if FLASH_16M
+config RAM_SIZE
+    hex
+    default 0x400000 if RAM_4M
+    default 0x1000000 if RAM_16M
+    default 0x2000000 if RAM_32M
+    default 0x4000000 if RAM_64M
+
+if SOC_8909
+config 8909_DUALMODE
+    bool "NB/GSM dual mode"
+    default y if CHIP_8909B
+    default n
+endif
+
+if SOC_8910
+config FLASH_LP_POWER_DOWN
+    bool "Power down flash in low power mode"
+    default y
+    help
+        Power down flash in low power mode.
+
+config PSRAM_LP_HALF_SLEEP
+    bool "PSRAM enter half sleep in low power mode"
+    default n
+    help
+        PSRAM enter half sleep in low power mode.
+endif
+
+menu "Frequency"
+
+if SOC_8910
+    config DEFAULT_CPUPLL_FREQ
+        int "CPUPLL frequency"
+        default 1000000000
+
+    config DEFAULT_MEMPLL_FREQ
+        int "MEMPLL frequency"
+        default 800000000
+
+    config DEFAULT_MEMBUS_HALF_DIV
+        int "PSRAM/DDR half divider from MEMPLL"
+        default 8
+
+    config DEFAULT_CPU_HALF_DIV
+        int "CPU half divider from CPUPLL"
+        default 4
+
+    config DEFAULT_SYSAXI_HALF_DIV
+        int "SYSAXI half divider from CPUPLL"
+        default 5
+
+    config DEFAULT_SYSAHB_HALF_DIV
+        int "SYSAHB half divider from SYSAXI"
+        default 4
+
+    config DEFAULT_SPIFLASH_CTRL_HALF_DIV
+        int "FLASH controller half divider from CPUPLL"
+        default 10
+
+    config DEFAULT_SPIFLASH_DEV_HALF_DIV
+        int "FLASH device half divider from CPUPLL"
+        default 10
+
+    config DEFAULT_SPIFLASH_INTF_DIV
+        int "FLASH interface divider from SPIFLASH_DEV"
+        default 2
+endif
+
+if SOC_8955
+    config SYSPLL_FREQ
+        int "SYSPLL frequency (fixed)"
+        default 624000000
+
+    config DEFAULT_SYS_CLK_HALF_DIV
+        int "sys_clk half divider from SYSPLL"
+        default 12
+
+    config MEM_CLK_HIGH_HALF_DIV
+        int "PSRAM controller half divider from SYSPLL when PLL is on"
+        default 8
+
+    config DEFAULT_SPIFLASH_INTF_HALF_DIV
+        int "FLASH interface half divider from SYSPLL"
+        default 16
+
+    config DEFAULT_BB_CLK_HALF_DIV
+        int "bb_clk half divider from SYSPLL"
+        default 16
+endif
+
+if SOC_8909
+    config DEFAULT_MCUPLL_FREQ
+        int "MCU PLL frequency"
+        default 312000000
+
+    config DEFAULT_MEM_CLK_HALF_DIV
+        int "PSRAM controller half divider from MCUPLL"
+        default 3
+
+    config DEFAULT_SYS_CLK_HALF_DIV
+        int "sys_clk half divider from MCUPLL"
+        default 6
+
+    config DEFAULT_SPIFLASH_INTF_HALF_DIV
+        int "FLASH interface half divider from MCUPLL"
+        default 8
+
+    config DEFAULT_BB_CLK_HALF_DIV
+        int "bb_clk half divider from MCUPLL"
+        default 3
+
+    config DEFAULT_RFDIG_CLK_DIV
+        int "rfdig divider from MCUPLL"
+        default 6
+endif
+endmenu
+
+menu "RAM layout"
+if SOC_8910
+    config APP_RAM_OFFSET
+        hex "Application RAM starting offset"
+        default 0xC00000
+        help
+            This should match CP RAM usage. Don't change unless you really
+            know what you are doing.
+
+    config APP_TOTAL_RAM_SIZE
+        hex "Application RAM size"
+        default 0x400000
+        help
+            This should match CP RAM usage. Don't change unless you really
+            know what you are doing.
+
+            This size may contain reserved size for other purpose, such as
+            flash and file appimg RAM size.
+
+    config APP_FLASHIMG_RAM_SIZE
+        hex "Reserved RAM size for application image from flash"
+        default 0x0 if !APPIMG_LOAD_FLASH
+        default 0x10000
+        help
+            It will be located from the end of application RAM.
+
+    config APP_FILEIMG_RAM_SIZE
+        hex "Reserved RAM size for application image from file"
+        default 0x0 if !APPIMG_LOAD_FILE
+        default 0x40000
+        help
+            It will be located from the end of reserved RAM for application
+            image from FLASH.
+
+    config APP_BTFW_RAM_SIZE
+        hex "Reserved RAM size for BT controller"
+        default 0x0 if !BT_NEED_FIRMWARE
+        default 0x40000
+        help
+            Reserved RAM for BT firmware.
+endif
+
+config BSCORE_ENABLE
+    bool "enable blue screen backup"
+    default y
+    help
+        When enabled, a block of memory will be reserved for blue screen
+        backup. At reset, this block of memory can be saved to file system or
+        upload to server through network, for basic blue screen analysis.
+
+if BSCORE_ENABLE
+config BSCORE_SIZE
+    hex "size for blue screen backup"
+    default 0x2000 if SOC_8910
+    default 0x800 if SOC_8811
+    help
+        When it is not zero, a block of memory will be reserved for blue screen
+        backup. At reset, this block of memory can be saved to file system or
+        upload to server through network, for basic blue screen analysis.
+
+config BSCORE_STACK_SIZE
+    hex "stack size in blue screen backup"
+    default 0x800 if SOC_8910
+    default 0x400 if SOC_8811
+    help
+        In blue screen backup, the stack will be saved. This is the total saved
+        stack size, even if BSCORE_STACK_EXTRA is not 0.
+
+config BSCORE_STACK_EXTRA
+    hex "extra stack size in blue screen backup"
+    depends on BSCORE_SIZE != 0x0
+    default 0x200 if SOC_8910
+    default 0x80 if SOC_8811
+    help
+        At save stack in blue screen backup, extra memory may be saved.
+
+config BSCORE_PROFILE_SIZE
+    hex "profile size in blue screen backup"
+    depends on BSCORE_SIZE != 0x0
+    default 0x400 if SOC_8910
+    default 0x100 if SOC_8811
+    help
+        Size of latest profile data in blue screen backup.
+endif
+endmenu
+
+endmenu
+
+menu "Board configuration"
+
+config BOARD_ENTER_CALIB_BY_GPIO
+    bool "enter calibration mode by detect GPIO"
+    depends on SOC_8910
+    default n
+    help
+        When enabled, GPIO will be checked at the beginning of system boot.
+        System will enter calibration mode when the specified GPIO is high.
+
+        The standard method to enter calibration mode is SIMBA enter mode
+        feature. So, this feature is not enabled by default.
+
+config BOARD_ENTER_CALIB_GPIO
+    int "enter calibration mode GPIO number"
+    depends on BOARD_ENTER_CALIB_BY_GPIO
+    default 13
+    help
+        When the feature of detect GPIO to enter calibration mode is enabled,
+        this configures the GPIO.
+
+config BOARD_SUPPORT_SIM1_DETECT
+    bool "sim 1 hot plug support"
+    default n
+    help
+        Then board support sim hot plug detect by GPIO.
+
+config BOARD_SIM1_DETECT_GPIO
+    int "sim 1 detect GPIO number"
+    depends on BOARD_SUPPORT_SIM1_DETECT
+    default 4
+    help
+        Then GPIO to use to detect SIM1 hot plug.
+
+config BOARD_SUPPORT_SIM2_DETECT
+    bool "sim 2 hot plug support"
+    default n
+    help
+        Then board support sim hot plug detect by GPIO.
+
+config BOARD_SIM2_DETECT_GPIO
+    int "sim 2 detect GPIO number"
+    depends on BOARD_SUPPORT_SIM2_DETECT
+    help
+        Then GPIO to use to detect SIM2 hot plug.
+
+config BOARD_KPLED_USED_FOR_RF_SWITCH
+    bool "pmic kpled used for rf switch"
+    default n
+    help
+        Then board set Kpled used for rf switch.
+
+config BOARD_WITH_EXT_FLASH
+    bool "external flash on board"
+    default n
+    help
+        Whether there are external flash on board.
+
+endmenu

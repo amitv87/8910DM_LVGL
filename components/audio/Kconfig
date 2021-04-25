@@ -1,0 +1,84 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "audio"
+
+config AUDIO_ENABLE
+    bool "audio feature supported"
+    default y if SOC_8910
+    default n
+    help
+        Whether audio feature is enabled
+
+config AUDIO_WQ_STACK_SIZE
+    int "audio qork queue stack size"
+    default 16384
+    help
+        By default, audio decoder and audio encoder may be excuted in this
+        thread. And it should be large enough to ensure audio codec work.
+
+config AUDIO_MP3_DEC_ENABLE
+    bool "MP3 decoder enable"
+    default y if SOC_8910
+    default n
+    help
+        MP3 decoder will need ~1000 bytes of stack.
+
+config AUDIO_AMRNB_DEC_ENABLE
+    bool "AMR-NB decoder enable"
+    default y if SOC_8910
+    default n
+    help
+        AMR-NB decoder will need ~1500 bytes of stack.
+
+config AUDIO_AMRWB_DEC_ENABLE
+    bool "AMR-WB decoder enable"
+    default y if SOC_8910
+    default n
+    help
+        AMR-WB decoder will need ~500 bytes of stack.
+
+config AUDIO_SBC_DEC_ENABLE
+    bool "SBC decoder enable"
+    default y if SOC_8910
+    default n
+    help
+        SBC decoder will need ~1500 bytes of stack.
+
+config AUDIO_AMRNB_ENC_ENABLE
+    bool "AMR-NB encoder enable"
+    default y if SOC_8910
+    default n
+    help
+        AMR-NB encoder will need ~6300 bytes of stack.
+
+config AUDIO_AMRWB_ENC_ENABLE
+    bool "AMR-WB encoder enable"
+    default y if SOC_8910
+    default n
+    help
+        AMR-WB encoder will need ~10500 bytes of stack.
+
+if AUDIO_ENABLE
+config AUDIO_EXT_I2S_ENABLE
+    bool "ext i2s enable"
+    default n
+    help
+        ext i2s chip config by i2c.
+endif
+if AUDIO_ENABLE
+config AUDIO_IPC_SET_TRIGGER_MODE_ENABLE
+    bool "customer config audio ipc trigger mode enable"
+    default n
+    help
+        customer can set trigger in normal mode 0,or trigger by frame time in cust mode.
+endif
+endmenu

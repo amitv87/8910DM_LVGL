@@ -1,0 +1,58 @@
+Setting Name,Uiorder,MVNO Type,MVNO Value,MCC,MNC,Account Type,APN,Access Type,Access Option,Proxy Server IP,Port,User Name,Password,First DNS,Second DNS,Home Page,Auth Type,Reserved,Visible,Roaming,roaming_protocol
+CMNET,5,,,460,0,0,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,0,7,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,0,8,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMWAP,5,,,460,0,0,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+中国移动彩信 (China Mobile),5,,,460,0,1,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.monternet.com,0,2,TRUE,FALSE,0
+IMS,5,,,460,0,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+沃宽带用户连接互联网,5,,,460,1,0,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户连接互联网,5,,,460,1,7,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户连接互联网,5,,,460,1,8,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户手机上网,5,,,460,1,1,3gwap,1,1,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.myuni.com.cn,0,2,TRUE,FALSE,0
+沃宽带用户手机上网,5,,,460,1,0,3gwap,1,1,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.myuni.com.cn,0,2,TRUE,FALSE,0
+CMNET,5,,,460,2,0,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,2,7,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,2,8,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMWAP,5,,,460,2,0,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+中国移动彩信 (China Mobile),5,,,460,2,1,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.monternet.com,0,2,TRUE,FALSE,0
+IMS,5,,,460,2,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+CTWAP,5,,,460,3,0,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,3,7,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,3,8,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,3,0,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,3,7,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,3,1,ctwap,1,1,10.0.0.200,80,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,http://mmsc.vnet.mobi,3,2,TRUE,FALSE,0
+CMNET,5,,,460,7,0,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,7,7,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,7,8,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMWAP,5,,,460,7,0,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+中国移动彩信 (China Mobile),5,,,460,7,1,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.monternet.com,0,2,TRUE,FALSE,0
+IMS,5,,,460,7,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+CMNET,5,,,460,8,0,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,8,7,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMNET,5,,,460,8,8,cmnet,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+CMWAP,5,,,460,8,0,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+中国移动彩信 (China Mobile),5,,,460,8,1,cmwap,1,0,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.monternet.com,0,2,TRUE,FALSE,0
+IMS,5,,,460,8,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+沃宽带用户连接互联网,5,,,460,9,0,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户连接互联网,5,,,460,9,7,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户连接互联网,5,,,460,9,8,3gnet,1,1,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,0
+沃宽带用户手机上网,5,,,460,9,1,3gwap,1,1,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.myuni.com.cn,0,2,TRUE,FALSE,0
+沃宽带用户手机上网,5,,,460,9,0,3gwap,1,1,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.myuni.com.cn,0,2,TRUE,FALSE,0
+CTNET,5,,,460,11,0,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,11,7,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,11,8,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,11,1,ctwap,1,1,10.0.0.200,80,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,http://mmsc.vnet.mobi,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,12,0,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,12,7,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,12,8,ctwap,1,1,,,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,12,0,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTNET,5,,,460,12,7,ctnet,1,1,,,ctnet@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,0
+CTWAP,5,,,460,12,1,ctwap,1,1,10.0.0.200,80,ctwap@mycdma.cn,vnet.mobi,0.0.0.0,0.0.0.0,http://mmsc.vnet.mobi,3,2,TRUE,FALSE,0
+IA,5,,,460,0,6,,1,0,,,,,0.0.0.0,0.0.0.0,,,2,TRUE,,2
+IA,5,,,460,2,6,,1,0,,,,,0.0.0.0,0.0.0.0,,,2,TRUE,,2
+IA,5,,,460,7,6,,1,0,,,,,0.0.0.0,0.0.0.0,,,2,TRUE,,2
+联通彩信,5,,,460,1,1,3gwap,1,1,10.0.0.172,80,,,0.0.0.0,0.0.0.0,http://mmsc.myuni.com.cn,0,0,TRUE,FALSE,0
+IMS,5,,,460,1,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+IMS,5,,,460,9,5,ims,1,0,,,,,0.0.0.0,0.0.0.0,,0,2,TRUE,FALSE,2
+China Telecom (IMS),5,,,460,11,5,IMS,1,1,,,,,0.0.0.0,0.0.0.0,,3,2,TRUE,FALSE,2

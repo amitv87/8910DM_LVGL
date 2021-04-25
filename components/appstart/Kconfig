@@ -1,0 +1,83 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "Application start"
+
+config APP_START_ATR
+    bool "Start AT receiver"
+    default y
+    help
+      Start AT receiver at application start.
+
+config APP_RUN_ON_FLASH
+    bool "Application run on flash"
+    default y
+    help
+        When enabled, application will run from flash directly. Otherwise,
+        application codes will be copied to RAM and executed on RAM.
+
+config APP_WDT_MAX_INTERVAL
+    int "Application watchdog max feed interval (ms)"
+    default 20000
+    help
+        If not feed watchdog more than this interval the chip will restart
+        by watchdog. (Ignore in DEBUG mode)
+
+config APP_WDT_FEED_INTERVAL
+    int "Application watchdog normal feed interval (ms)"
+    default 4000
+    help
+        Normal feed interval. (Ignore in DEBUG mode)
+
+config APP_SSIM_SUPPORT
+    bool "Support soft sim hot plug"
+    default n
+    help
+        When defined, soft sim hot plug can be used.
+
+config APPIMG_LOAD_FLASH
+    bool "Load application image from flash"
+    default n
+    help
+        When enabled, the application image at the reserved flash location
+        will tried to be loaded at system startup.
+
+config APPIMG_LOAD_FILE
+    bool "Load application image from file"
+    default n
+    help
+        When enabled, the application image at file will tried to be loaded
+        at system startup.
+
+if APPIMG_LOAD_FILE
+config APPIMG_LOAD_FILE_NAME
+    string "Application image file name"
+    default "/appload.img"
+    help
+        The file name of application image.
+
+endif
+
+config APPIMG_SIGCHECK_ENABLE
+    bool "Enable application image signature check"
+    default y
+    help
+        When enabled and secure boot is enabled, application image signature
+        will be verified.
+
+config ATR_UART_BLUE_SCREEN_DEBUG
+    bool "Reuse AT UART for debugging in blue screen"
+    default y
+    help
+        When enable, the AT UART will be reused as debugging at blue screen
+        mode.
+
+endmenu
