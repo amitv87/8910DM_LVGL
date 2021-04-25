@@ -1,0 +1,1074 @@
+<Operators version="1">
+
+    <Operator carrier="default">
+        <Item mcc="65535" mnc="65535"/>
+    </Operator>
+
+    <Operator carrier="GCF">
+        <Item mcc="1" mnc="1"/>
+        <Item mcc="2" mnc="101"/>
+    </Operator>
+
+    <Operator carrier="AE_du">
+        <Item mcc="424" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="AE_Etisalat">
+        <Item mcc="424" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="AL_VDF">
+        <Item mcc="276" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="AR_Claro">
+        <Item mcc="722" mnc="310"/>
+        <Item mcc="722" mnc="320"/>
+        <Item mcc="722" mnc="330"/>
+    </Operator>
+
+    <Operator carrier="AR_Movistar">
+        <Item mcc="722" mnc="010"/>
+        <Item mcc="722" mnc="070"/>
+        <Item mcc="722" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="AR_Personal">
+        <Item mcc="722" mnc="034"/>
+    </Operator>
+
+    <Operator carrier="AT_3">
+        <Item mcc="232" mnc="5"/>
+        <Item mcc="232" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="AT_A1">
+        <Item mcc="232" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="AT_DTAG">
+        <Item mcc="232" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="AU_Optus">
+        <Item mcc="505" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="AU_Telstra">
+        <Item mcc="505" mnc="1"/>
+        <Item mcc="505" mnc="11"/>
+        <Item mcc="505" mnc="39"/>
+        <Item mcc="505" mnc="71"/>
+        <Item mcc="505" mnc="72"/>
+    </Operator>
+
+    <Operator carrier="AU_VDF">
+        <Item mcc="505" mnc="3"/>
+        <Item mcc="505" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="BD_Grameenphone">
+        <Item mcc="470" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="BD_Robi">
+        <Item mcc="470" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="BE_Orange">
+        <Item mcc="206" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="BE_Proximus">
+        <Item mcc="206" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="BG_Vivicom">
+        <Item mcc="284" mnc="3"/>
+        <Item mcc="284" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="BH_Batelco">
+        <Item mcc="426" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="BH_VIVA">
+        <Item mcc="426" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="BH_Zain">
+        <Item mcc="426" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="BG_Telenor">
+        <Item mcc="284" mnc="05"/>
+    </Operator>
+
+    <Operator carrier="BR_Claro">
+        <Item mcc="724" mnc="5"/>
+        <Item mcc="724" mnc="38"/>
+    </Operator>
+
+    <Operator carrier="BR_TIM">
+        <Item mcc="724" mnc="2"/>
+        <Item mcc="724" mnc="3"/>
+        <Item mcc="724" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="BR_VIVO">
+        <Item mcc="724" mnc="6"/>
+        <Item mcc="724" mnc="10"/>
+        <Item mcc="724" mnc="11"/>
+        <Item mcc="724" mnc="23"/>
+    </Operator>
+
+    <Operator carrier="BY_Velcom">
+        <Item mcc="257" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="CH_Sunrise">
+        <Item mcc="228" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="CH_Swisscom">
+        <Item mcc="228" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="CL_Claro">
+        <Item mcc="730" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="CL_Entel">
+        <Item mcc="730" mnc="1"/>
+        <Item mcc="730" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="CL_Movistar">
+        <Item mcc="730" mnc="2"/>
+        <Item mcc="730" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="CL_WOM">
+        <Item mcc="730" mnc="9"/>
+    </Operator>
+
+    <Operator carrier="CN_CMCC">
+        <Item mcc="460" mnc="0"/>
+        <Item mcc="460" mnc="2"/>
+        <Item mcc="460" mnc="4"/>
+        <Item mcc="460" mnc="7"/>
+        <Item mcc="460" mnc="8"/>
+    </Operator>
+
+    <Operator carrier="CN_CTCC">
+        <Item mcc="460" mnc="3"/>
+        <Item mcc="460" mnc="5"/>
+        <Item mcc="460" mnc="11"/>
+    </Operator>
+
+    <Operator carrier="CN_CUCC">
+        <Item mcc="460" mnc="1"/>
+        <Item mcc="460" mnc="6"/>
+        <Item mcc="460" mnc="9"/>
+        <Item mcc="460" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="CO_Avantel">
+        <Item mcc="732" mnc="130"/>
+    </Operator>
+
+    <Operator carrier="CO_Claro">
+        <Item mcc="732" mnc="101"/>
+    </Operator>
+
+    <Operator carrier="CO_Movistar">
+        <Item mcc="732" mnc="001"/>
+        <Item mcc="732" mnc="123"/>
+    </Operator>
+	
+    <Operator carrier="CO_Tigo">
+        <Item mcc="732" mnc="111"/>
+        <Item mcc="732" mnc="103"/>
+    </Operator>
+	
+    <Operator carrier="CZ_DTAG">
+        <Item mcc="230" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="CZ_O2">
+        <Item mcc="230" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="CZ_VDF">
+        <Item mcc="230" mnc="3"/>
+        <Item mcc="230" mnc="99"/>
+    </Operator>
+
+    <Operator carrier="DE_DTAG">
+        <Item mcc="262" mnc="1"/>
+        <Item mcc="262" mnc="6"/>
+        <Item mcc="262" mnc="78"/>
+    </Operator>
+
+    <Operator carrier="DE_O2">
+        <Item mcc="262" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="DE_VDF">
+        <Item mcc="262" mnc="2"/>
+        <Item mcc="262" mnc="4"/>
+        <Item mcc="262" mnc="9"/>
+    </Operator>
+
+    <Operator carrier="DK_Hutchison">
+        <Item mcc="238" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="DO_Claro">
+        <Item mcc="370" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="DZ_Mobilis">
+        <Item mcc="603" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="EC_Movistar">
+        <Item mcc="740" mnc="0"/>
+    </Operator>
+
+    <Operator carrier="EE_Telia">
+        <Item mcc="248" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="EG_Etisalat">
+        <Item mcc="602" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="EG_Orange">
+        <Item mcc="602" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="EG_Telecom_Egypt">
+        <Item mcc="602" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="EG_VDF">
+        <Item mcc="602" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="ES_Orange">
+        <Item mcc="214" mnc="3"/>
+        <Item mcc="214" mnc="9"/>
+    </Operator>
+
+    <Operator carrier="ES_VDF">
+        <Item mcc="214" mnc="1"/>
+        <Item mcc="214" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="FI_DNA">
+        <Item mcc="244" mnc="12"/>
+        <Item mcc="244" mnc="13"/>
+    </Operator>
+
+    <Operator carrier="FI_Elisa">
+        <Item mcc="244" mnc="05"/>
+        <Item mcc="244" mnc="21"/>
+    </Operator>
+
+    <Operator carrier="FI_Telia">
+        <Item mcc="244" mnc="91"/>
+    </Operator>
+
+    <Operator carrier="FR_Altice">
+        <Item mcc="208" mnc="9"/>
+        <Item mcc="208" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="FR_Bouygues">
+        <Item mcc="208" mnc="20"/>
+    </Operator>
+
+    <Operator carrier="FR_Orange">
+        <Item mcc="208" mnc="1"/>
+        <Item mcc="208" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="GR_DTAG">
+        <Item mcc="202" mnc="1"/>
+        <Item mcc="202" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="GR_VDF">
+        <Item mcc="202" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="GR_WIND">
+        <Item mcc="202" mnc="10"/>
+		<Item mcc="202" mnc="09"/>
+    </Operator>
+
+    <Operator carrier="GT_Tigo">
+        <Item mcc="704" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="HK_3">
+        <Item mcc="454" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="HK_CMCC">
+        <Item mcc="454" mnc="12"/>
+        <Item mcc="454" mnc="13"/>
+    </Operator>
+
+    <Operator carrier="HK_CSL">
+        <Item mcc="454" mnc="0"/>
+        <Item mcc="454" mnc="2"/>
+        <Item mcc="454" mnc="10"/>
+        <Item mcc="454" mnc="18"/>
+	<Item mcc="454" mnc="19"/>
+    </Operator>
+
+    <Operator carrier="HK_PCCW">
+        <Item mcc="454" mnc="16"/>
+        <Item mcc="454" mnc="19"/>
+        <Item mcc="454" mnc="20"/>
+        <Item mcc="454" mnc="29"/>
+    </Operator>
+
+    <Operator carrier="HK_SmarTone">
+        <Item mcc="454" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="HU_Digi">
+        <Item mcc="216" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="HU_DTAG">
+        <Item mcc="216" mnc="30"/>
+    </Operator>
+
+    <Operator carrier="HU_Telenor">
+        <Item mcc="216" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="HU_VDF">
+        <Item mcc="216" mnc="70"/>
+    </Operator>
+
+    <Operator carrier="HR_A1">
+        <Item mcc="219" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="HR_DTAG">
+        <Item mcc="219" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="ID_Smartfren">
+        <Item mcc="510" mnc="9"/>
+        <Item mcc="510" mnc="28"/>
+    </Operator>
+
+    <Operator carrier="ID_Telkomsel">
+        <Item mcc="510" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="IE_EIR">
+        <Item mcc="272" mnc="3"/>
+        <Item mcc="272" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="IE_VDF">
+        <Item mcc="272" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="IL_Cellcom">
+        <Item mcc="425" mnc="02"/>
+    </Operator>
+
+    <Operator carrier="IL_Partner">
+        <Item mcc="425" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="IL_Pelephone">
+        <Item mcc="425" mnc="03"/>
+    </Operator>
+
+    <Operator carrier="IL_HotMobile">
+        <Item mcc="425" mnc="07"/>
+    </Operator>
+
+    <Operator carrier="IN_Airtel">
+        <Item mcc="404" mnc="2"/>
+        <Item mcc="404" mnc="3"/>
+        <Item mcc="404" mnc="10"/>
+        <Item mcc="404" mnc="16"/>
+        <Item mcc="404" mnc="31"/>
+        <Item mcc="404" mnc="40"/>
+        <Item mcc="404" mnc="45"/>
+        <Item mcc="404" mnc="49"/>
+        <Item mcc="404" mnc="70"/>
+        <Item mcc="404" mnc="90"/>
+        <Item mcc="404" mnc="92"/>
+        <Item mcc="404" mnc="93"/>
+        <Item mcc="404" mnc="94"/>
+        <Item mcc="404" mnc="95"/>
+        <Item mcc="404" mnc="96"/>
+        <Item mcc="404" mnc="97"/>
+        <Item mcc="404" mnc="98"/>
+        <Item mcc="405" mnc="51"/>
+        <Item mcc="405" mnc="52"/>
+        <Item mcc="405" mnc="53"/>
+        <Item mcc="405" mnc="54"/>
+        <Item mcc="405" mnc="55"/>
+        <Item mcc="405" mnc="56"/>
+    </Operator>
+
+    <Operator carrier="IN_BSNL">
+        <Item mcc="404" mnc="34"/>
+        <Item mcc="404" mnc="38"/>
+        <Item mcc="404" mnc="51"/>
+        <Item mcc="404" mnc="53"/>
+        <Item mcc="404" mnc="54"/>
+        <Item mcc="404" mnc="55"/>
+        <Item mcc="404" mnc="57"/>
+        <Item mcc="404" mnc="58"/>
+        <Item mcc="404" mnc="59"/>
+        <Item mcc="404" mnc="62"/>
+        <Item mcc="404" mnc="64"/>
+        <Item mcc="404" mnc="66"/>
+        <Item mcc="404" mnc="71"/>
+        <Item mcc="404" mnc="72"/>
+        <Item mcc="404" mnc="73"/>
+        <Item mcc="404" mnc="74"/>
+        <Item mcc="404" mnc="75"/>
+        <Item mcc="404" mnc="76"/>
+        <Item mcc="404" mnc="77"/>
+        <Item mcc="404" mnc="79"/>
+        <Item mcc="404" mnc="80"/>
+        <Item mcc="404" mnc="81"/>
+    </Operator>
+
+    <Operator carrier="IN_Idea">
+        <Item mcc="404" mnc="4"/>
+        <Item mcc="404" mnc="7"/>
+        <Item mcc="404" mnc="12"/>
+        <Item mcc="404" mnc="14"/>
+        <Item mcc="404" mnc="19"/>
+        <Item mcc="404" mnc="22"/>
+        <Item mcc="404" mnc="24"/>
+        <Item mcc="404" mnc="44"/>
+        <Item mcc="404" mnc="56"/>
+        <Item mcc="404" mnc="78"/>
+        <Item mcc="404" mnc="82"/>
+        <Item mcc="404" mnc="87"/>
+        <Item mcc="404" mnc="89"/>
+        <Item mcc="405" mnc="70"/>
+        <Item mcc="405" mnc="799"/>
+        <Item mcc="405" mnc="845"/>
+        <Item mcc="405" mnc="846"/>
+        <Item mcc="405" mnc="848"/>
+        <Item mcc="405" mnc="849"/>
+        <Item mcc="405" mnc="850"/>
+        <Item mcc="405" mnc="852"/>
+        <Item mcc="405" mnc="853"/>
+    </Operator>
+
+    <Operator carrier="IN_Reliance">
+        <Item mcc="405" mnc="840"/>
+        <Item mcc="405" mnc="854"/>
+        <Item mcc="405" mnc="855"/>
+        <Item mcc="405" mnc="856"/>
+        <Item mcc="405" mnc="857"/>
+        <Item mcc="405" mnc="858"/>
+        <Item mcc="405" mnc="859"/>
+        <Item mcc="405" mnc="860"/>
+        <Item mcc="405" mnc="861"/>
+        <Item mcc="405" mnc="862"/>
+        <Item mcc="405" mnc="863"/>
+        <Item mcc="405" mnc="864"/>
+        <Item mcc="405" mnc="865"/>
+        <Item mcc="405" mnc="866"/>
+        <Item mcc="405" mnc="867"/>
+        <Item mcc="405" mnc="868"/>
+        <Item mcc="405" mnc="869"/>
+        <Item mcc="405" mnc="870"/>
+        <Item mcc="405" mnc="871"/>
+        <Item mcc="405" mnc="872"/>
+        <Item mcc="405" mnc="873"/>
+        <Item mcc="405" mnc="874"/>
+    </Operator>
+
+    <Operator carrier="IN_VDF">
+        <Item mcc="404" mnc="1"/>
+        <Item mcc="404" mnc="5"/>
+        <Item mcc="404" mnc="11"/>
+        <Item mcc="404" mnc="13"/>
+        <Item mcc="404" mnc="15"/>
+        <Item mcc="404" mnc="20"/>
+        <Item mcc="404" mnc="27"/>
+        <Item mcc="404" mnc="30"/>
+        <Item mcc="404" mnc="43"/>
+        <Item mcc="404" mnc="46"/>
+        <Item mcc="404" mnc="60"/>
+        <Item mcc="404" mnc="84"/>
+        <Item mcc="404" mnc="86"/>
+        <Item mcc="404" mnc="88"/>
+        <Item mcc="405" mnc="66"/>
+        <Item mcc="405" mnc="67"/>
+        <Item mcc="405" mnc="750"/>
+        <Item mcc="405" mnc="751"/>
+        <Item mcc="405" mnc="752"/>
+        <Item mcc="405" mnc="753"/>
+        <Item mcc="405" mnc="754"/>
+        <Item mcc="405" mnc="755"/>
+        <Item mcc="405" mnc="756"/>
+    </Operator>
+
+    <Operator carrier="IR_Avacell">
+        <Item mcc="432" mnc="12"/>
+    </Operator>
+
+    <Operator carrier="IR_Irancell">
+        <Item mcc="432" mnc="35"/>
+    </Operator>
+
+    <Operator carrier="IT_TIM">
+        <Item mcc="222" mnc="1"/>
+        <Item mcc="222" mnc="43"/>
+        <Item mcc="222" mnc="48"/>
+    </Operator>
+
+    <Operator carrier="IT_VDF">
+        <Item mcc="222" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="IT_Wind">
+        <Item mcc="222" mnc="88"/>
+    </Operator>
+
+    <Operator carrier="JP_Docomo">
+        <Item mcc="440" mnc="1"/>
+        <Item mcc="440" mnc="2"/>
+        <Item mcc="440" mnc="3"/>
+        <Item mcc="440" mnc="9"/>
+        <Item mcc="440" mnc="10"/>
+        <Item mcc="440" mnc="11"/>
+        <Item mcc="440" mnc="12"/>
+        <Item mcc="440" mnc="13"/>
+        <Item mcc="440" mnc="14"/>
+        <Item mcc="440" mnc="15"/>
+        <Item mcc="440" mnc="16"/>
+        <Item mcc="440" mnc="17"/>
+        <Item mcc="440" mnc="18"/>
+        <Item mcc="440" mnc="19"/>
+        <Item mcc="440" mnc="21"/>
+        <Item mcc="440" mnc="22"/>
+        <Item mcc="440" mnc="23"/>
+        <Item mcc="440" mnc="24"/>
+        <Item mcc="440" mnc="25"/>
+        <Item mcc="440" mnc="26"/>
+        <Item mcc="440" mnc="27"/>
+        <Item mcc="440" mnc="28"/>
+        <Item mcc="440" mnc="29"/>
+        <Item mcc="440" mnc="30"/>
+        <Item mcc="440" mnc="31"/>
+        <Item mcc="440" mnc="32"/>
+        <Item mcc="440" mnc="33"/>
+        <Item mcc="440" mnc="34"/>
+        <Item mcc="440" mnc="35"/>
+        <Item mcc="440" mnc="36"/>
+        <Item mcc="440" mnc="37"/>
+        <Item mcc="440" mnc="38"/>
+        <Item mcc="440" mnc="39"/>
+        <Item mcc="440" mnc="49"/>
+        <Item mcc="440" mnc="58"/>
+        <Item mcc="440" mnc="60"/>
+        <Item mcc="440" mnc="61"/>
+        <Item mcc="440" mnc="62"/>
+        <Item mcc="440" mnc="63"/>
+        <Item mcc="440" mnc="64"/>
+        <Item mcc="440" mnc="65"/>
+        <Item mcc="440" mnc="66"/>
+        <Item mcc="440" mnc="67"/>
+        <Item mcc="440" mnc="68"/>
+        <Item mcc="440" mnc="69"/>
+        <Item mcc="440" mnc="87"/>
+        <Item mcc="440" mnc="99"/>
+        <Item mcc="441" mnc="40"/>
+        <Item mcc="441" mnc="41"/>
+        <Item mcc="441" mnc="42"/>
+        <Item mcc="441" mnc="43"/>
+        <Item mcc="441" mnc="44"/>
+        <Item mcc="441" mnc="45"/>
+        <Item mcc="441" mnc="90"/>
+        <Item mcc="441" mnc="91"/>
+        <Item mcc="441" mnc="92"/>
+        <Item mcc="441" mnc="93"/>
+        <Item mcc="441" mnc="94"/>
+        <Item mcc="441" mnc="98"/>
+        <Item mcc="441" mnc="99"/>
+    </Operator>
+
+    <Operator carrier="JP_Softbank">
+        <Item mcc="440" mnc="4"/>
+        <Item mcc="440" mnc="6"/>
+        <Item mcc="440" mnc="20"/>
+        <Item mcc="440" mnc="40"/>
+        <Item mcc="440" mnc="41"/>
+        <Item mcc="440" mnc="42"/>
+        <Item mcc="440" mnc="43"/>
+        <Item mcc="440" mnc="44"/>
+        <Item mcc="440" mnc="45"/>
+        <Item mcc="440" mnc="46"/>
+        <Item mcc="440" mnc="47"/>
+        <Item mcc="440" mnc="48"/>
+        <Item mcc="440" mnc="90"/>
+        <Item mcc="440" mnc="92"/>
+        <Item mcc="440" mnc="93"/>
+        <Item mcc="440" mnc="94"/>
+        <Item mcc="440" mnc="95"/>
+        <Item mcc="440" mnc="96"/> 
+        <Item mcc="440" mnc="97"/>
+        <Item mcc="440" mnc="98"/>
+        <Item mcc="441" mnc="61"/>
+        <Item mcc="441" mnc="62"/>
+        <Item mcc="441" mnc="63"/>
+        <Item mcc="441" mnc="64"/>
+        <Item mcc="441" mnc="65"/>
+    </Operator>
+
+    <Operator carrier="KE_Airtel">
+        <Item mcc="639" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="KE_JTL">
+        <Item mcc="639" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="KE_Safaricom">
+        <Item mcc="639" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="KH_Seatel">
+        <Item mcc="456" mnc="11"/>
+    </Operator>
+
+    <Operator carrier="KH_SmaAxiata">
+        <Item mcc="456" mnc="2"/>
+        <Item mcc="456" mnc="5"/>
+        <Item mcc="456" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="KR_KT">
+        <Item mcc="450" mnc="8"/>
+    </Operator>
+
+    <Operator carrier="KR_SKT">
+        <Item mcc="450" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="KW_Ooredoo">
+        <Item mcc="419" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="KW_Zain">
+        <Item mcc="419" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="LK_Dialog">
+        <Item mcc="413" mnc="2"/>
+        <Item mcc="413" mnc="11"/>
+    </Operator>
+
+    <Operator carrier="LU_Orange">
+        <Item mcc="270" mnc="99"/>
+    </Operator>
+
+    <Operator carrier="LT_Telia">
+        <Item mcc="246" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="MA_INWI">
+        <Item mcc="604" mnc="2"/>
+        <Item mcc="604" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="MK_A1">
+        <Item mcc="294" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="MA_Moroc_Telecom">
+        <Item mcc="604" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="MM_MPT">
+        <Item mcc="414" mnc="0"/>
+        <Item mcc="414" mnc="1"/>
+        <Item mcc="414" mnc="2"/>
+        <Item mcc="414" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="MM_Mytel">
+        <Item mcc="414" mnc="9"/>
+    </Operator>
+
+    <Operator carrier="MM_Telenor">
+        <Item mcc="414" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="MO_CTM">
+        <Item mcc="455" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="MX_ALTAN">
+        <Item mcc="334" mnc="140"/>
+    </Operator>
+
+    <Operator carrier="MX_AT&T">
+        <Item mcc="334" mnc="010"/>
+        <Item mcc="334" mnc="050"/>
+        <Item mcc="334" mnc="090"/>
+    </Operator>
+
+    <Operator carrier="MX_Movistar">
+        <Item mcc="334" mnc="030"/>
+        <Item mcc="334" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="MX_Telcel">
+        <Item mcc="334" mnc="020"/>
+    </Operator>
+
+    <Operator carrier="MY_Celcom">
+        <Item mcc="502" mnc="19"/>
+    </Operator>
+
+    <Operator carrier="MY_Digi">
+        <Item mcc="502" mnc="16"/>
+    </Operator>
+
+    <Operator carrier="MY_Umobile">
+        <Item mcc="502" mnc="18"/>
+    </Operator>
+
+    <Operator carrier="MY_Unifi">
+        <Item mcc="502" mnc="153"/>
+    </Operator>
+
+    <Operator carrier="MY_YTLC">
+        <Item mcc="502" mnc="152"/>
+    </Operator>
+
+    <Operator carrier="NG_Ntel">
+        <Item mcc="621" mnc="40"/>
+    </Operator>
+
+    <Operator carrier="NG_Smile">
+        <Item mcc="621" mnc="27"/>
+    </Operator>
+
+    <Operator carrier="NL_KPN">
+        <Item mcc="204" mnc="08"/>
+    </Operator>
+
+    <Operator carrier="NL_Tele2">
+        <Item mcc="204" mnc="02"/>
+    </Operator>
+
+    <Operator carrier="NO_ICE">
+        <Item mcc="242" mnc="14"/>
+    </Operator>
+
+    <Operator carrier="NO_Telenor">
+        <Item mcc="242" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="NO_Telia">
+        <Item mcc="242" mnc="02"/>
+        <Item mcc="242" mnc="05"/>
+    </Operator>
+
+    <Operator carrier="NL_VDF">
+        <Item mcc="204" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="OM_Omantel">
+        <Item mcc="422" mnc="02"/>
+    </Operator>
+
+    <Operator carrier="PA_Digicel">
+        <Item mcc="714" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="PE_Claro">
+        <Item mcc="716" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="PE_Entel">
+        <Item mcc="716" mnc="7"/>
+        <Item mcc="716" mnc="17"/>
+    </Operator>
+
+    <Operator carrier="PE_Movistar">
+        <Item mcc="716" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="PH_Smart">
+        <Item mcc="515" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="PK_Telenor">
+        <Item mcc="410" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="PL_DTAG">
+        <Item mcc="260" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="PL_Orange">
+        <Item mcc="260" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="PL_Play">
+        <Item mcc="260" mnc="6"/>
+        <Item mcc="260" mnc="98"/>
+    </Operator>
+
+    <Operator carrier="PL_Polkomtel">
+        <Item mcc="260" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="PT_VDF">
+        <Item mcc="268" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="QA_Ooredoo">
+        <Item mcc="427" mnc="01"/>
+    </Operator>
+
+    <Operator carrier="RO_Digi">
+        <Item mcc="226" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="RO_DTAG">
+        <Item mcc="226" mnc="3"/>
+        <Item mcc="226" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="RO_Orange">
+        <Item mcc="226" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="RU_Beeline">
+        <Item mcc="250" mnc="99"/>
+    </Operator>
+
+    <Operator carrier="RU_Megafon">
+        <Item mcc="250" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="RU_MOTIV">
+        <Item mcc="250" mnc="35"/>
+    </Operator>
+
+    <Operator carrier="RU_MTS">
+        <Item mcc="250" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="RU_Tele2">
+        <Item mcc="250" mnc="20"/>
+    </Operator>
+
+    <Operator carrier="SA_STC">
+        <Item mcc="420" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="SA_ZAIN">
+        <Item mcc="420" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="SG_M1">
+        <Item mcc="525" mnc="03"/>
+    </Operator>
+
+    <Operator carrier="SI_Telekom">
+        <Item mcc="293" mnc="41"/>
+    </Operator>
+
+    <Operator carrier="SK_DTAG">
+        <Item mcc="231" mnc="02"/>
+    </Operator>
+
+    <Operator carrier="SK_O2">
+        <Item mcc="231" mnc="6"/>
+    </Operator>
+
+    <Operator carrier="SK_Orange">
+        <Item mcc="231" mnc="1"/>
+        <Item mcc="231" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="SK_SWAN">
+        <Item mcc="231" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="SS_CSonly">
+        <Item mcc="520" mnc="1"/>
+        <Item mcc="520" mnc="2"/>
+        <Item mcc="520" mnc="9"/>
+        <Item mcc="520" mnc="15"/>
+        <Item mcc="520" mnc="20"/>
+        <Item mcc="520" mnc="23"/>
+        <Item mcc="520" mnc="25"/>
+        <Item mcc="520" mnc="99"/>
+        <Item mcc="515" mnc="2"/>
+        <Item mcc="452" mnc="4"/>
+        <Item mcc="410" mnc="4"/>
+        <Item mcc="244" mnc="5"/>
+        <Item mcc="714" mnc="1"/>
+        <Item mcc="214" mnc="4"/>
+        <Item mcc="214" mnc="6"/>
+        <Item mcc="214" mnc="7"/>
+        <Item mcc="214" mnc="8"/>
+        <Item mcc="214" mnc="15"/>
+        <Item mcc="214" mnc="16"/>
+        <Item mcc="214" mnc="17"/>
+        <Item mcc="214" mnc="21"/>
+    </Operator>
+
+    <Operator carrier="TH_AIS">
+        <Item mcc="520" mnc="3"/>
+    </Operator>
+
+    <Operator carrier="TH_DTAC">
+        <Item mcc="520" mnc="5"/>
+        <Item mcc="520" mnc="18"/>
+        <Item mcc="520" mnc="47"/>
+    </Operator>
+
+    <Operator carrier="TH_True">
+        <Item mcc="520" mnc="0"/>
+        <Item mcc="520" mnc="4"/>
+    </Operator>
+
+    <Operator carrier="TK_Teletok">
+        <Item mcc="554" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="TR_VDF">
+        <Item mcc="286" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="TW_APTG">
+        <Item mcc="466" mnc="5"/>
+    </Operator>
+
+    <Operator carrier="TW_CHT">
+        <Item mcc="466" mnc="11"/>
+        <Item mcc="466" mnc="92"/>
+    </Operator>
+
+    <Operator carrier="TW_FET">
+        <Item mcc="466" mnc="1"/>
+        <Item mcc="466" mnc="2"/>
+        <Item mcc="466" mnc="3"/>
+        <Item mcc="466" mnc="6"/>
+        <Item mcc="466" mnc="7"/>
+        <Item mcc="466" mnc="88"/>
+    </Operator>
+
+    <Operator carrier="TW_TWM">
+        <Item mcc="466" mnc="97"/>
+    </Operator>
+
+    <Operator carrier="TR_Turkcell">
+        <Item mcc="286" mnc="1"/>
+    </Operator>
+
+    <Operator carrier="TR_VDF">
+        <Item mcc="286" mnc="2"/>
+    </Operator>
+
+    <Operator carrier="TZ_Smile">
+        <Item mcc="640" mnc="11"/>
+    </Operator>
+
+    <Operator carrier="UG_Smile">
+        <Item mcc="641" mnc="33"/>
+    </Operator>
+
+    <Operator carrier="UK_EE">
+        <Item mcc="234" mnc="30"/>
+        <Item mcc="234" mnc="31"/>
+        <Item mcc="234" mnc="32"/>
+        <Item mcc="234" mnc="33"/>
+        <Item mcc="234" mnc="34"/>
+    </Operator>
+
+    <Operator carrier="UK_Hutchison">
+        <Item mcc="234" mnc="20"/>
+        <Item mcc="234" mnc="94"/>
+    </Operator>
+
+    <Operator carrier="UK_O2">
+        <Item mcc="234" mnc="2"/>
+        <Item mcc="234" mnc="10"/>
+        <Item mcc="234" mnc="11"/>
+    </Operator>
+
+    <Operator carrier="UK_VDF">
+        <Item mcc="234" mnc="15"/>
+    </Operator>
+
+    <Operator carrier="US_Tmobile">
+        <Item mcc="310" mnc="260"/>
+    </Operator>
+
+    <Operator carrier="VN_Viettel">
+        <Item mcc="452" mnc="04"/>
+    </Operator>
+
+    <Operator carrier="VN_VNM">
+        <Item mcc="452" mnc="05"/>
+    </Operator>
+
+    <Operator carrier="ZA_CellC">
+        <Item mcc="655" mnc="7"/>
+    </Operator>
+
+    <Operator carrier="ZA_MTN">
+        <Item mcc="655" mnc="10"/>
+    </Operator>
+
+    <Operator carrier="ZA_Vodacom">
+        <Item mcc="655" mnc="1"/>
+    </Operator>
+
+
+</Operators>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

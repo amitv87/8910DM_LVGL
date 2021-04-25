@@ -1,0 +1,50 @@
+﻿*********************************************************************************
+NV XML化之前的Delta NV项添加方法
+
+1. 使用NV Editor工具在delta NV的结构中添加NV项
+   路径：PS\nv\nv_type_td
+   文件：td_nv_type.nvm
+   SIM相关nv结构体（对应双卡）：PS_NV_PARAMS\NV_PARAM_TYPE_SIM_DELTA_NV， PS_NV_PARAMS\NV_PARAM_TYPE_SIM_DELTA_NV_CARD2
+   PLMN相关nv结构体（对应双卡）：PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV， PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV_CARD2
+   * 注意一定要保证两个卡的结构定义一致
+
+2. 修改delta NV头文件定义
+   SIM相关： PS\nv\operator_delta\h\NV_PARAM_TYPE_SIM_DELTA_NV.h
+   PLMN相关: PS\nv\operator_delta\h\NV_PARAM_TYPE_PLMN_DELTA_NV.h
+   * 注意头文件定义和前面nvm中的结构体一定要保持一致
+
+3. 代码中使用新增的NV项，可以调用
+      nvm_get_delta_nv， nvm_read_delta_sim， nvm_read_delta_plmn
+      nvm_write_delta_sim， nvm_write_delta_plmn
+
+4. 在 PS\nv\operator_delta\operator_config_all\中的Default_P.nv或者Default_S.nv中添加新增NV项的默认值定义。
+   Default_P.nv和Default_S.nv中包含所有可动态加载参数的默认值，运营商配置文件可以只包含与默认参数值不同的项目。
+
+5. 对于取值和默认值不同的运营商，需要在配置文件"**_*****_S.nv"或者"**_*****_P.nv"中添加NV项，设置自己的特殊值
+
+6. 在CMD窗口中，MS_Code目录下，运行
+      make p=[project_name] job=* -j* m=nv_parameter
+   成功的话，会在"MS_Code\build\[project_name]_builddir\img"目录生成[projectname]_deltanv.bin
+
+
+
+*********************************************************************************
+新增运营商delta nv文件添加方法
+
+1. 对于每个运营商需要添加一个 SIM(HPLMN)相关NV项配置和一个PLMN(VPLMN)相关NV项配置
+
+2. 两种配置的文件名定义为 "国家名称缩写_运营商名称_S.nv"和"国家名称缩写_运营商名称_P.nv"
+   国家名称缩写为2字符，请参考 "_全球国家2字母缩写中英文全称.csv"
+   运营商名称最长15字符，超过请使用缩写
+
+3. Default_P.nv和Default_S.nv中包含所有可动态加载参数的默认值，新增NV项需要在相应 Default NV中增加默认值定义。
+   运营商配置文件可以只包含与默认参数值不同的项目。
+
+4. 新增运营商或者PLMN需要在 Index.xml 中添加运营商名称和PLMN对应关系定义，请按照国家缩写排序。
+   如果MNC为3位，前几位的0需要携带；否则，前面的0不需要。如：
+     3位MNC： 001， 010
+     2位MNC： 1, 10
+
+5. NV添加完成，请在CMD窗口中，MS_Code目录下，运行
+      make p=[project_name] job=* -j* m=nv_parameter
+   成功的话，会在"MS_Code\build\[project_name]_builddir\img"目录生成[projectname]_deltanv.bin

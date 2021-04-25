@@ -1,0 +1,13 @@
+========shell script========
+shell_8910M_chip_cat1_UIS8915DM_BB_RF_SS_cus
+
+========svn info==========
+URL: http://shsvn05/svn/prj_src/modem_iot/branches/Integration/2020/uis8910dm_cp_v1.4
+Last Changed Rev: 44840
+Repository Root: http://shsvn05/svn/prj_src
+Revision: 44907
+
+========nvitem info==========
+nvitem dir is Module/uis8910dm_cat1
+
+========end==========

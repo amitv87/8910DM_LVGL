@@ -1,0 +1,210 @@
+/* Copyright (C) 2020 QUECTEL Technologies Limited and/or its affiliates("QUECTEL").
+ * All rights reserved.
+ */
+ 
+#ifndef _QL_APP_FEATURE_CONFIG_H_
+#define _QL_APP_FEATURE_CONFIG_H_
+
+// @AUTO_GENERATION_NOTICE@
+
+/**
+ * APP Version label
+ */
+#define QL_APP_VERSION "@QL_APP_BUILD_VER@"
+
+/**
+ * whether to eanble APP feature FTP
+ */
+#cmakedefine QL_APP_FEATURE_FTP
+
+/**
+ * whether to eanble APP feature HTTP
+ */
+#cmakedefine QL_APP_FEATURE_HTTP
+
+/**
+ * whether to eanble APP feature MQTT
+ */
+#cmakedefine QL_APP_FEATURE_MQTT
+
+/**
+ * whether to eanble APP feature MMS 
+ */
+#cmakedefine QL_APP_FEATURE_MMS
+
+/**
+ * whether to eanble APP feature SSL
+ */
+#cmakedefine QL_APP_FEATURE_SSL
+
+/**
+ * whether to eanble APP feature PING
+ */
+#cmakedefine QL_APP_FEATURE_PING
+
+/**
+ * whether to eanble APP feature NTP
+ */
+#cmakedefine QL_APP_FEATURE_NTP
+
+/**
+ * whether to eanble APP feature LBS
+ */
+#cmakedefine QL_APP_FEATURE_LBS
+
+/**
+ * whether to eanble APP feature SOCKET
+ */
+#cmakedefine QL_APP_FEATURE_SOCKET
+
+/**
+ * whether to eanble APP feature ct self register
+ */
+#cmakedefine QL_APP_FEATURE_CTSREG
+
+/**
+ * whether to eanble APP feature FILE
+ */
+#cmakedefine QL_APP_FEATURE_FILE
+
+/**
+ * whether to eanble APP feature AUDIO
+ */
+#cmakedefine QL_APP_FEATURE_AUDIO
+
+/**
+ * whether to eanble APP feature TTS
+ * if TTS is eanbled, you need enable AUDIO too
+ */
+#cmakedefine QL_APP_FEATURE_AUDIO_TTS
+
+/**
+ * whether to eanble APP feature WIFI-Scan
+ */
+#cmakedefine QL_APP_FEATURE_WIFISCAN
+
+/**
+ * whether to eanble APP feature BT
+ */
+#cmakedefine QL_APP_FEATURE_BT
+
+/**
+ * whether to eanble APP feature GNSS
+ */
+#cmakedefine QL_APP_FEATURE_GNSS
+
+/**
+ * whether to eanble APP feature LCD
+ */
+#cmakedefine QL_APP_FEATURE_LCD
+
+/**
+ * whether to eanble APP feature LVGL
+ */
+#cmakedefine QL_APP_FEATURE_LVGL
+
+/**
+ * whether to eanble APP feature LVGL V7
+ */
+#cmakedefine QL_APP_FEATURE_LVGL_V7
+
+/**
+ * whether to eanble APP feature CAMERA
+ */
+#cmakedefine QL_APP_FEATURE_CAMERA
+
+/**
+ * whether to eanble APP feature SMS
+ */
+#cmakedefine QL_APP_FEATURE_SMS
+
+/**
+ * whether to eanble APP feature Voice Call
+ */
+#cmakedefine QL_APP_FEATURE_VOICE_CALL
+
+/**
+ * whether to eanble APP feature VoLTE
+ */
+#cmakedefine QL_APP_FEATURE_VOLTE
+
+/**
+ * whether to eanble APP feature SPI
+ */
+#cmakedefine QL_APP_FEATURE_SPI
+
+/**
+ * whether to eanble APP feature SPI_FLASH
+ */
+#cmakedefine QL_APP_FEATURE_SPI_FLASH
+
+/**
+ * whether to eanble APP feature UART
+ */
+#cmakedefine QL_APP_FEATURE_UART
+
+/**
+ * whether to eanble APP feature LEDCFG
+ */
+#cmakedefine QL_APP_FEATURE_LEDCFG
+
+/**
+ * whether to eanble APP feature KEYPAD
+ */
+#cmakedefine QL_APP_FEATURE_KEYPAD
+
+/**
+ * whether to eanble APP feature HTTP_FOTA
+ */
+#cmakedefine QL_APP_FEATURE_HTTP_FOTA
+
+/**
+ * whether to eanble APP feature DECODER
+ */
+#cmakedefine QL_APP_FEATURE_DECODER
+
+/**
+ * whether to eanble APP feature AUDIO
+ */
+#cmakedefine QL_APP_FEATURE_AUDIO
+
+/**
+ * whether to eanble APP feature EXT_CODEC
+ */
+#cmakedefine QL_APP_FEATURE_EXT_CODEC
+
+/**
+ * whether to eanble APP feature RTC
+ */
+#cmakedefine QL_APP_FEATURE_RTC
+
+/**
+ * whether to eanble APP feature ali LinkSDK
+ */
+#cmakedefine QL_APP_FEATURE_ALI_LINKSDK
+
+/**
+ * whether to eanble APP feature SECURE BOOT
+ */
+#cmakedefine QL_APP_FEATURE_SECURE_BOOT
+
+/**
+ * whether to eanble APP feature USB CHARGE
+ */
+#cmakedefine QL_APP_FEATURE_USB_CHARGE
+
+/**
+ * whether to eanble APP feature VIRT AT
+ */
+#cmakedefine QL_APP_FEATURE_VIRT_AT
+
+/**
+ * whether to eanble APP feature CTP
+ */
+#cmakedefine INCAR_APP_FEATURE_CTP
+
+/**
+ * whether to eanble APP feature CTP BL6133
+ */
+#cmakedefine INCAR_APP_FEATURE_CTP_BL6133
+#endif

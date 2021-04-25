@@ -1,0 +1,21 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// midCall: Support mid-call SRVCC
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\midCall=0
+
+// pre_alerting: Support pre-alerting SRVCC (bSRVCC)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\pre_alerting=0
+
+// TCP MTU; If set to 0, use UDP.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_mtu=1280
+
+// sip_preconditionEnabled: Control the precondition of all cases.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_preconditionEnabled=1
+
+// sip_PreconditionEnabledOnActive: Control the precondition used in upgrade.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_PreconditionEnabledOnActive=1
+
+// sip_ipsecCipherAlgo: BIT0:null;  BIT1:aes-cbc;  BIT2:des-ede3-sbc
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_ipsecCipherAlgo=6
+

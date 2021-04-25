@@ -1,0 +1,8 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+//Support Local CW or NW CW: 0: NW cw,1: local CW, default:1
+PS_NV_PARAMS\NV_PARAM_TYPE_SIM_DELTA_NV\ims_sim_nvinfo\ss_CwEnable=1
+
+
+PS_NV_PARAMS\NV_PARAM_TYPE_SIM_DELTA_NV\mn_sim_nvinfo\cw_strategy=0x1

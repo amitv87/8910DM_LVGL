@@ -1,0 +1,15 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// alerting: Support alerting SRVCC (aSRVCC)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\alerting=0
+
+// midCall: Support mid-call SRVCC
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\midCall=0
+
+// sip_preconditionEnabled: Control the precondition of all cases.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_preconditionEnabled=1
+
+
+//////////////////////////////////////////// COMMON ///////////////////////////////////////////
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\common_plmn_nvinfo\sms_using_ims=0x0

@@ -1,0 +1,10 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// amr_mo_oa_mode: For both amr-nb and amr-wb: 0: be; 1: be>oa; 2: oa; 3: oa>be;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_mo_oa_mode=0
+
+// sip_directAlert: Send 180 directly when receive INVITE (not send 183)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_directAlert=1
+
+

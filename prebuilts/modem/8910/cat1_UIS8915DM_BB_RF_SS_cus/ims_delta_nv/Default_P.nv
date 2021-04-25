@@ -1,0 +1,115 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// alerting: Support alerting SRVCC (aSRVCC)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\alerting=1
+
+// midCall: Support mid-call SRVCC
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\midCall=1
+
+// pre_alerting: Support pre-alerting SRVCC (bSRVCC)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_srvccCapabilities\pre_alerting=1
+
+// audio_codec_type: Bit 0:evs;  Bit 1:amr-wb; Bit 2:amr-nb
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\audio_codec_type=6
+
+// amr_nb_modeset: Bit 0:4.75kbps;1:5.15kbps;2:5.90kbps;3:6.70kbps;4:7.40kbps;5:7.95kbps;6:10.20kbps;7:12.20kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_nb_modeset=0xFF
+
+// amr_wb_modeset: Bit 0:6.60kbps;1:8.85kbps;2:12.65kbps;3:14.25kbps;4:15.85kbps;5:18.25kbps;6:19.85kbps;7:23.05kbps;8:23.85kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_wb_modeset=0x1FF
+
+// evs_io_modeset: Bit 0:6.60kbps;1:8.85kbps;2:12.65kbps;3:14.25kbps;4:15.85kbps;5:18.25kbps;6:19.85kbps;7:23.05kbps;8:23.85kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_io_modeset=0x1FF
+
+// evs_prim_min_bw: 0:nb; 1:wb; 2:swb; 3:fb
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_prim_min_bw=0
+
+// evs_prim_max_bw: 0:nb; 1:wb; 2:swb; 3:fb
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_prim_max_bw=2
+
+// evs_prim_min_br: 0:5.9; 1:7.2; 2:8.0; 3:9.6; 4:13.2; 5:16.4; 6:24.4; 7:32; 8:48; 9:64; 10:96; 11:128;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_prim_min_br=0
+
+// evs_prim_max_br: 0:5.9; 1:7.2; 2:8.0; 3:9.6; 4:13.2; 5:16.4; 6:24.4; 7:32; 8:48; 9:64; 10:96; 11:128;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_prim_max_br=6
+
+// evs_ch_aw_mode: 255:Disable; 0:Enable; 2/3/5/7:Enable and use frame offset 2/3/5/7 at begining;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_ch_aw_mode=0
+
+// amr_nb_def_mode: 0:4.75kbps;1:5.15kbps;2:5.90kbps;3:6.70kbps;4:7.40kbps;5:7.95kbps;6:10.20kbps;7:12.20kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_nb_def_mode=7
+
+// amr_wb_def_mode: 0:6.60kbps;1:8.85kbps;2:12.65kbps;3:14.25kbps;4:15.85kbps;5:18.25kbps;6:19.85kbps;7:23.05kbps;8:23.85kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_wb_def_mode=8
+
+// evs_io_def_mode: 0:6.60kbps;1:8.85kbps;2:12.65kbps;3:14.25kbps;4:15.85kbps;5:18.25kbps;6:19.85kbps;7:23.05kbps;8:23.85kbps
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_io_def_mode=8
+
+// evs_prim_def_br: 0:5.9; 1:7.2; 2:8.0; 3:9.6; 4:13.2; 5:16.4; 6:24.4; 7:32; 8:48; 9:64; 10:96; 11:128;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\evs_prim_def_br=4
+
+// amr_mo_oa_mode: For both amr-nb and amr-wb: 0: be; 1: be>oa; 2: oa; 3: oa>be;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\amr_mo_oa_mode=1
+
+// 0: DTMF transfered with voice band RTP packet (Audio DSP); 1: DTMF transfered with telephone event RTP packet
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\supportNamedTelEvt=1
+
+// Max PDU size can be transfered by UDP, use TCP if bigger than it;
+// If set to 0, use UDP. Set to a small value to use TCP always;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_mtu=1300
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_pcscf_port=5060
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_ue_port=5060
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\audio_rs=600
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\audio_rr=2000
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_rs=8000
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_rr=6000
+
+// sip_preconditionEnabled: Control the precondition of all cases.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_preconditionEnabled=0
+
+// sip_PreconditionEnabledOnActive: Control the precondition used in upgrade.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_PreconditionEnabledOnActive=0
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_ipsecEnabled=1
+
+// sip_ipsecIntegrAlgo: BIT0:hmac-sha-1-96; BIT1:hmac-md5-96;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_ipsecIntegrAlgo=3
+
+// sip_ipsecCipherAlgo: BIT0:null;  BIT1:aes-cbc;  BIT2:des-ede3-sbc
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_ipsecCipherAlgo=7
+
+// sip_imsiEnabled: Contact header with userinfo
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_imsiEnabled=1
+
+// sip_directAlert: Send 180 directly when receive INVITE (not send 183)
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_directAlert=0
+
+// sip_reliableAlert: Send 180 reliably
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_reliableAlert=0
+
+// video_codec_type: Bitmask: Bit 0:H264,Bit 1: H265
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_codec_type=1
+
+// resourceAlwaysReady: When use precondition, not check resource status, resource is ready by default
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\resourceAlwaysReady=0
+
+// confSubscribe_inDialog: 1 : When send SUBSCRIBE of confernce in dialog
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\confSubscribe_inDialog=0
+
+// 0: Not set; 1: QCIF; 2: QVGA-15; 3: CIF; 4: QVGA-30; 5: VGA-15; 6: VGA-30; 7: 1280x720;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_max_resolution=6
+
+
+
+///////////////////////////////////////////// NAS /////////////////////////////////////////////
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\nas_plmn_nvinfo\attach_without_esm_flag=0
+
+//////////////////////////////////////////// COMMON ///////////////////////////////////////////
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\common_plmn_nvinfo\sms_using_ims=0x1

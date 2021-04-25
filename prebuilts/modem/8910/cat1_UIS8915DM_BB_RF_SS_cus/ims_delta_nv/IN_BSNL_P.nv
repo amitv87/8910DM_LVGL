@@ -1,0 +1,15 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// sip_preconditionEnabled: Control the precondition of all cases.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_preconditionEnabled=1
+
+// audio_codec_type: Bit 0:evs;  Bit 1:amr-wb; Bit 2:amr-nb
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\volte_audio_codec\audio_codec_type=7
+
+// 0: 1280x720; 1: VGA-15; 2:VGA-30; 3: QVGA-15; 4: QVGA-30; 5: CIF; 6: QCIF;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_max_resolution=4
+
+// Max PDU size can be transfered by UDP, use TCP if bigger than it;
+// If set to 0, use UDP. Set to a small value to use TCP always;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_mtu=1500

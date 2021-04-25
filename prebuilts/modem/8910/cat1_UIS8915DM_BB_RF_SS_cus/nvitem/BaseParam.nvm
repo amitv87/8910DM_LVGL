@@ -1,0 +1,3444 @@
+# SpreadTrum NVEditor NV Module File, Format Version 1.0
+# WARNING: DO NOT EDIT OR DELETE THIS NV Module FILE!
+
+###############################################################################
+  MODULE      = BaseParam
+  DESCRIPTION = 
+
+################################################################################
+
+# Begin Module Item
+  BEGIN_ITEM
+    ITEM_NAME    = SIM_LOCK_CUSTOMIZE_DATA
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 0
+    ITEM_PARENT  = -1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = company_id
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 1
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sim_lock_status
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xFFFFFFFF
+    ITEM_INDEX   = 2
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = max_num_trials
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xA
+    ITEM_INDEX   = 3
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = time_interval
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x2
+    ITEM_INDEX   = 4
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = time_multiplier
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x2
+    ITEM_INDEX   = 5
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_locks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 6
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = numLocks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 7
+    ITEM_PARENT  = 6
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 8
+    ITEM_PARENT  = 6
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 9
+    ITEM_PARENT  = 6
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 10
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 11
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 12
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 13
+    ITEM_PARENT  = 6
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 14
+    ITEM_PARENT  = 13
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 15
+    ITEM_PARENT  = 13
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 16
+    ITEM_PARENT  = 13
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[2]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 17
+    ITEM_PARENT  = 6
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 18
+    ITEM_PARENT  = 17
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 19
+    ITEM_PARENT  = 17
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 20
+    ITEM_PARENT  = 17
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset_locks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 21
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = numLocks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 22
+    ITEM_PARENT  = 21
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 23
+    ITEM_PARENT  = 21
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 24
+    ITEM_PARENT  = 21
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 25
+    ITEM_PARENT  = 24
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 26
+    ITEM_PARENT  = 25
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 27
+    ITEM_PARENT  = 25
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 28
+    ITEM_PARENT  = 25
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 29
+    ITEM_PARENT  = 24
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 30
+    ITEM_PARENT  = 24
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 31
+    ITEM_PARENT  = 21
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 32
+    ITEM_PARENT  = 31
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 33
+    ITEM_PARENT  = 32
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 34
+    ITEM_PARENT  = 32
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 35
+    ITEM_PARENT  = 32
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 36
+    ITEM_PARENT  = 31
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 37
+    ITEM_PARENT  = 31
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[2]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 38
+    ITEM_PARENT  = 21
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 39
+    ITEM_PARENT  = 38
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 40
+    ITEM_PARENT  = 39
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 41
+    ITEM_PARENT  = 39
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 42
+    ITEM_PARENT  = 39
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 43
+    ITEM_PARENT  = 38
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 44
+    ITEM_PARENT  = 38
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp_locks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 45
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = numLocks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 46
+    ITEM_PARENT  = 45
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 47
+    ITEM_PARENT  = 45
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 48
+    ITEM_PARENT  = 45
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 49
+    ITEM_PARENT  = 48
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 50
+    ITEM_PARENT  = 49
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 51
+    ITEM_PARENT  = 49
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 52
+    ITEM_PARENT  = 49
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 53
+    ITEM_PARENT  = 48
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 54
+    ITEM_PARENT  = 48
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 55
+    ITEM_PARENT  = 45
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 56
+    ITEM_PARENT  = 55
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 57
+    ITEM_PARENT  = 56
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 58
+    ITEM_PARENT  = 56
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 59
+    ITEM_PARENT  = 56
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 60
+    ITEM_PARENT  = 55
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 61
+    ITEM_PARENT  = 55
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[2]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 62
+    ITEM_PARENT  = 45
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 63
+    ITEM_PARENT  = 62
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 64
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 65
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 66
+    ITEM_PARENT  = 63
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 67
+    ITEM_PARENT  = 62
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 68
+    ITEM_PARENT  = 62
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = corporate_locks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 69
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = numLocks
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 70
+    ITEM_PARENT  = 69
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = reserved
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 71
+    ITEM_PARENT  = 69
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 72
+    ITEM_PARENT  = 69
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 73
+    ITEM_PARENT  = 72
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 74
+    ITEM_PARENT  = 73
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 75
+    ITEM_PARENT  = 73
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 76
+    ITEM_PARENT  = 73
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 77
+    ITEM_PARENT  = 72
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = corporate
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 78
+    ITEM_PARENT  = 72
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 79
+    ITEM_PARENT  = 69
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 80
+    ITEM_PARENT  = 79
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 81
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 82
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 83
+    ITEM_PARENT  = 80
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 84
+    ITEM_PARENT  = 79
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = corporate
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 85
+    ITEM_PARENT  = 79
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[2]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 86
+    ITEM_PARENT  = 69
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = plmn
+    ITEM_ID      = 496
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 87
+    ITEM_PARENT  = 86
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mcc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1CC
+    ITEM_INDEX   = 88
+    ITEM_PARENT  = 87
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 89
+    ITEM_PARENT  = 87
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = mnc_digit_num
+    ITEM_ID      = 496
+    ITEM_TYPE    = 2 (SHORT)
+    ITEM_CONTENT = 0x2
+    ITEM_INDEX   = 90
+    ITEM_PARENT  = 87
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 91
+    ITEM_PARENT  = 86
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = corporate
+    ITEM_ID      = 496
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 92
+    ITEM_PARENT  = 86
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy1
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 93
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy2
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 94
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy3
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 95
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy4
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 96
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[0]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 97
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[1]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 98
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[2]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 99
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[3]
+    ITEM_ID      = 496
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 100
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = SIM_LOCK_USER_DATA
+    ITEM_ID      = 497
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 101
+    ITEM_PARENT  = -1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sim_lock_status
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0xFFFFFFFF
+    ITEM_INDEX   = 102
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = nck_trials
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 103
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = nck_unlock_time
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 104
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = nsck_trials
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 105
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = nsck_unlock_time
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 106
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = spck_trials
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 107
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = spck_unlock_time
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 108
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = cck_trials
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 109
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = cck_unlock_time
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 110
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = pck_trials
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 111
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = pck_unlock_time
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 112
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy1
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 113
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy2
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 114
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy3
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 115
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = dummy4
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 116
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = user_locks
+    ITEM_ID      = 497
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 117
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = numLocks
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 118
+    ITEM_PARENT  = 117
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[0]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 119
+    ITEM_PARENT  = 117
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_len
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 120
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[0]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 121
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[1]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 122
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[2]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 123
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[3]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 124
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[4]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 125
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[5]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 126
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[6]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 127
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[7]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 128
+    ITEM_PARENT  = 119
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[1]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 129
+    ITEM_PARENT  = 117
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_len
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 130
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[0]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 131
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[1]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 132
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[2]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 133
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[3]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 134
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[4]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 135
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[5]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 136
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[6]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 137
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[7]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 138
+    ITEM_PARENT  = 129
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = locks[2]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 139
+    ITEM_PARENT  = 117
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_len
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 140
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[0]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 141
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[1]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 142
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[2]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 143
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[3]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 144
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[4]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 145
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[5]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 146
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[6]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 147
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = imsi_val[7]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 148
+    ITEM_PARENT  = 139
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[0]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 149
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[1]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 150
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[2]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 151
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[3]
+    ITEM_ID      = 497
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 152
+    ITEM_PARENT  = 101
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = SIM_LOCK_CONTROL_KEY
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 153
+    ITEM_PARENT  = -1
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = simlock_support
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x3
+    ITEM_INDEX   = 154
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = oper_mode
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 155
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = control_key_type
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 156
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = unlock_keys
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 157
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 158
+    ITEM_PARENT  = 157
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 159
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 160
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 161
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 162
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 163
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 164
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 165
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 166
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 167
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 168
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 169
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 170
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 171
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 172
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 173
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 174
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 175
+    ITEM_PARENT  = 158
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 176
+    ITEM_PARENT  = 157
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 177
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 178
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 179
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 180
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 181
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 182
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 183
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 184
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 185
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 186
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 187
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 188
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 189
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 190
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 191
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 192
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 193
+    ITEM_PARENT  = 176
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 194
+    ITEM_PARENT  = 157
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 195
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 196
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 197
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 198
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 199
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 200
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 201
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 202
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 203
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 204
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 205
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 206
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 207
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 208
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 209
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 210
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 211
+    ITEM_PARENT  = 194
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = corporate_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 212
+    ITEM_PARENT  = 157
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 213
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 214
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 215
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 216
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 217
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 218
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 219
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 220
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 221
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 222
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 223
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 224
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 225
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 226
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 227
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 228
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 229
+    ITEM_PARENT  = 212
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sim_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 230
+    ITEM_PARENT  = 157
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 231
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 232
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 233
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 234
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 235
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 236
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 237
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 238
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 239
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 240
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 241
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 242
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 243
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 244
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 245
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 246
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 247
+    ITEM_PARENT  = 230
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = lock_keys
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 248
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 249
+    ITEM_PARENT  = 248
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 250
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 251
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 252
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 253
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 254
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 255
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 256
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 257
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 258
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 259
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 260
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 261
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 262
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 263
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 264
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 265
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 266
+    ITEM_PARENT  = 249
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = network_subset_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 267
+    ITEM_PARENT  = 248
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 268
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 269
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 270
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 271
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 272
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 273
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 274
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 275
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 276
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 277
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 278
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 279
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 280
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 281
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 282
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 283
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 284
+    ITEM_PARENT  = 267
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sp_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 285
+    ITEM_PARENT  = 248
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 286
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 287
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 288
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 289
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 290
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 291
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 292
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 293
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 294
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 295
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 296
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 297
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 298
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 299
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 300
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 301
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 302
+    ITEM_PARENT  = 285
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = coporate_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 303
+    ITEM_PARENT  = 248
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 304
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 305
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 306
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 307
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 308
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 309
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 310
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 311
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 312
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 313
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 314
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 315
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 316
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 317
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 318
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 319
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 320
+    ITEM_PARENT  = 303
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = sim_key
+    ITEM_ID      = 498
+    ITEM_TYPE    = 7 (STRUCT)
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 321
+    ITEM_PARENT  = 248
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key_length
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 322
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 323
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 324
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 325
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 326
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[4]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 327
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[5]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 328
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[6]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 329
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[7]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 330
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[8]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 331
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[9]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 332
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[10]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 333
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[11]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 334
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[12]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 335
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[13]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 336
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[14]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 337
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = key[15]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 338
+    ITEM_PARENT  = 321
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[0]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 339
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[1]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 340
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[2]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 341
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = encrypted_crc[3]
+    ITEM_ID      = 498
+    ITEM_TYPE    = 4 (LONG)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 342
+    ITEM_PARENT  = 153
+    ITEM_DESC    =  
+  END_ITEM
+
+
+# End Module Item
+
+################################################################################

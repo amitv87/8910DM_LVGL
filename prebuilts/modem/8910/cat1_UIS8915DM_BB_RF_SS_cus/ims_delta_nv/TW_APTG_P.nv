@@ -1,0 +1,6 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// TCP MTU; If set to 0, use UDP.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_mtu=1260
+

@@ -1,0 +1,378 @@
+# SpreadTrum NVEditor NV Module File, Format Version 1.0
+# WARNING: DO NOT EDIT OR DELETE THIS NV Module FILE!
+
+###############################################################################
+  MODULE      = nv_type
+  DESCRIPTION = 
+
+################################################################################
+
+# Begin Module Item
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI
+    ITEM_ID      = 5
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 0
+    ITEM_PARENT  = -1
+    ITEM_DESC    = IMEI,encode by BCD
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[0]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3A
+    ITEM_INDEX   = 1
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[1]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x25
+    ITEM_INDEX   = 2
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[2]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x72
+    ITEM_INDEX   = 3
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[3]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3
+    ITEM_INDEX   = 4
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[4]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x71
+    ITEM_INDEX   = 5
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[5]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x83
+    ITEM_INDEX   = 6
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[6]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x36
+    ITEM_INDEX   = 7
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI[7]
+    ITEM_ID      = 5
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x4
+    ITEM_INDEX   = 8
+    ITEM_PARENT  = 0
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2
+    ITEM_ID      = 377
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 9
+    ITEM_PARENT  = -1
+    ITEM_DESC    = IMEI2, encode by BCD
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[0]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3A
+    ITEM_INDEX   = 10
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[1]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x25
+    ITEM_INDEX   = 11
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[2]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x57
+    ITEM_INDEX   = 12
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[3]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 13
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[4]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x91
+    ITEM_INDEX   = 14
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[5]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x25
+    ITEM_INDEX   = 15
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[6]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x23
+    ITEM_INDEX   = 16
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI2[7]
+    ITEM_ID      = 377
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x76
+    ITEM_INDEX   = 17
+    ITEM_PARENT  = 9
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3
+    ITEM_ID      = 390
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 18
+    ITEM_PARENT  = -1
+    ITEM_DESC    = IMEI3,encode by BCD
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[0]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x3A
+    ITEM_INDEX   = 19
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[1]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x85
+    ITEM_INDEX   = 20
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[2]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x75
+    ITEM_INDEX   = 21
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[3]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x0
+    ITEM_INDEX   = 22
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[4]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 23
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[5]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 24
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[6]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x83
+    ITEM_INDEX   = 25
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI3[7]
+    ITEM_ID      = 390
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x39
+    ITEM_INDEX   = 26
+    ITEM_PARENT  = 18
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4
+    ITEM_ID      = 484
+    ITEM_TYPE    = 5 (ARRAY)
+    ITEM_SIZE    = 8
+    ITEM_CONTENT = 
+    ITEM_INDEX   = 27
+    ITEM_PARENT  = -1
+    ITEM_DESC    = IMEI4, encode by BCD
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[0]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x9A
+    ITEM_INDEX   = 28
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[1]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x1
+    ITEM_INDEX   = 29
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[2]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x75
+    ITEM_INDEX   = 30
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[3]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x65
+    ITEM_INDEX   = 31
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[4]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x10
+    ITEM_INDEX   = 32
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[5]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x4
+    ITEM_INDEX   = 33
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[6]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x40
+    ITEM_INDEX   = 34
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+  BEGIN_ITEM
+    ITEM_NAME    = NV_IMEI4[7]
+    ITEM_ID      = 484
+    ITEM_TYPE    = 1 (CHAR)
+    ITEM_CONTENT = 0x86
+    ITEM_INDEX   = 35
+    ITEM_PARENT  = 27
+    ITEM_DESC    =  
+  END_ITEM
+
+
+# End Module Item
+
+################################################################################

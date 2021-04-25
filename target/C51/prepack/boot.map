@@ -1,0 +1,2288 @@
+Archive member included to satisfy reference by file (symbol)
+
+lib/libbootloader.a(boot_platform_8910.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_secure.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_entry_v7a.S.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_sffs_port.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_stub.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_delay.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_mem.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_spi_flash.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_debuguart.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_trace.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_fdl.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_fdl_dnld.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_aes.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_vfs.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_irq.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_timer.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_uart.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_uart_cmn.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_mmu.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_uimage.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_udc.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_pdl.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(boot_pdl_uimage.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(quec_boot_fota.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(quec_boot_uart.c.obj)
+                              (--whole-archive)
+lib/libbootloader.a(quec_boot_pin_index.c.obj)
+                              (--whole-archive)
+lib/libhal.a(hal_clock_init.c.obj)
+                              components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj (halClockInit)
+lib/libhal.a(hal_chip_8910.c.obj)
+                              lib/libbootloader.a(boot_usb_fdl_channel.c.obj) (osiDCacheClean)
+lib/libhal.a(hal_pmu_8910.c.obj)
+                              lib/libbootloader.a(boot_fdl_dnld.c.obj) (halPmuExtFlashPowerOn)
+lib/libhal.a(hal_efuse_8910.c.obj)
+                              lib/libbootloader.a(boot_secure.c.obj) (halEfuseOpen)
+lib/libhal.a(hal_delay.c.obj)
+                              lib/libbootloader.a(boot_platform_8910.c.obj) (osiDelayUS)
+lib/libhal.a(hal_iomux.c.obj)
+                              lib/libhal.a(hal_chip_8910.c.obj) (halIomuxSetFunction)
+lib/libhal.a(hal_reg_apply.c.obj)
+                              lib/libhal.a(hal_clock_init.c.obj) (halApplyRegisters)
+lib/libhal.a(hal_chip.c.obj)  lib/libbootloader.a(boot_uart.c.obj) (halCalcDivider20)
+lib/libhal.a(hal_adi_bus.c.obj)
+                              components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj (halAdiBusInit)
+lib/libhal.a(hal_hwspinlock.c.obj)
+                              lib/libhal.a(hal_efuse_8910.c.obj) (halHwspinlockAcquire)
+lib/libhal.a(hal_lzma.c.obj)  components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj (halLzmaDecompressFile)
+lib/libhal.a(hal_spi_flash.c.obj)
+                              lib/libbootloader.a(boot_spi_flash.c.obj) (halSpiFlashPageProgram)
+lib/libhal.a(hal_blue_screen.c.obj)
+                              lib/libbootloader.a(boot_platform_8910.c.obj) (halBlueScreenSaveContext)
+lib/libcalclib.a(crc32.c.obj)
+                              lib/libbootloader.a(boot_fdl_dnld.c.obj) (crc32Init)
+../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+                              lib/libbootloader.a(boot_secure.c.obj) (memcmp)
+../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+                              lib/libbootloader.a(boot_spi_flash.c.obj) (memcpy)
+../../components/newlib/armca5/libc.a(lib_a-memset.o)
+                              lib/libbootloader.a(boot_secure.c.obj) (memset)
+../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+                              lib/libhal.a(hal_blue_screen.c.obj) (snprintf)
+../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+                              lib/libbootloader.a(boot_vfs.c.obj) (strcat)
+../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+                              lib/libbootloader.a(boot_vfs.c.obj) (strchr)
+../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-strcat.o) (strcpy)
+../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+                              lib/libbootloader.a(boot_vfs.c.obj) (strdup)
+../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-strdup.o) (_strdup_r)
+../../components/newlib/armca5/libc.a(lib_a-strlen.o)
+                              lib/libbootloader.a(boot_fdl_dnld.c.obj) (strlen)
+../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+                              lib/libbootloader.a(boot_vfs.c.obj) (strrchr)
+../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-snprintf.o) (_svfprintf_r)
+../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (_dtoa_r)
+../../components/newlib/armca5/libc.a(lib_a-impure.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-snprintf.o) (_impure_ptr)
+../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (_localeconv_r)
+../../components/newlib/armca5/libc.a(lib_a-locale.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-localeconv.o) (__global_locale)
+../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-locale.o) (__ascii_mbtowc)
+../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (memchr)
+../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-dtoa.o) (_Balloc)
+../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (frexp)
+../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-locale.o) (strcmp)
+../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (strncpy)
+../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o) (__ssprint_r)
+../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-locale.o) (__ascii_wctomb)
+../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-locale.o) (_ctype_)
+../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+                              ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o) (memmove)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)
+                              lib/libbootloader.a(boot_udc.c.obj) (__aeabi_uidiv)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+                              lib/libbootloader.a(quec_boot_uart.c.obj) (__aeabi_idiv)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_dvmd_tls.o)
+                              ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+                              lib/libhal.a(hal_pmu_8910.c.obj) (__aeabi_ldivmod)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+                              lib/libhal.a(hal_chip.c.obj) (__aeabi_uldivmod)
+../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+                              ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+lib/libdriver.a(drv_gpio_8910.c.obj)
+                              lib/libhal.a(hal_pmu_8910.c.obj) (drvGpioOpen)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .data          0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .bss           0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .data          0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot2.img.lzmar.S.obj
+ .bss           0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot2.img.lzmar.S.obj
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootReset
+                0x00000000       0x48 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text._psmPrepare
+                0x00000000      0x144 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootPowerOff
+                0x00000000       0x34 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootIsFromPsmSleep
+                0x00000000       0x3c lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootSecondOffsetBytes
+                0x00000000        0x4 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootPowerOnCause
+                0x00000000       0x44 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text.bootBlueScreen
+                0x00000000        0xc lib/libbootloader.a(boot_platform_8910.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_secure.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_secure.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_secure.c.obj)
+ .text.prvRomHashInit
+                0x00000000       0x10 lib/libbootloader.a(boot_secure.c.obj)
+ .text.prvRomHashUpdate
+                0x00000000        0xc lib/libbootloader.a(boot_secure.c.obj)
+ .text.prvSecureInit
+                0x00000000       0x8c lib/libbootloader.a(boot_secure.c.obj)
+ .text.prvEmbeddedSigCheck
+                0x00000000      0x100 lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootFakeEnableSecure
+                0x00000000       0x68 lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootSecureBootEnable
+                0x00000000       0x28 lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootSecureUimageSigCheck
+                0x00000000       0x22 lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootSecureEmbeddedSigCheck
+                0x00000000       0x20 lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootAntiCloneEncryption
+                0x00000000       0x4c lib/libbootloader.a(boot_secure.c.obj)
+ .text.bootAntiCloneDecryption
+                0x00000000       0x34 lib/libbootloader.a(boot_secure.c.obj)
+ .bss.gSecureCtx
+                0x00000000       0x30 lib/libbootloader.a(boot_secure.c.obj)
+ .rodata.prvEmbeddedSigCheck.str1.1
+                0x00000000       0x10 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_info    0x00000000     0x1ba9 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_abbrev  0x00000000      0x4d4 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_loc     0x00000000      0x691 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_aranges
+                0x00000000       0x68 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_ranges  0x00000000      0x128 lib/libbootloader.a(boot_secure.c.obj)
+ .debug_line    0x00000000      0x3aa lib/libbootloader.a(boot_secure.c.obj)
+ .debug_str     0x00000000     0x1124 lib/libbootloader.a(boot_secure.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_secure.c.obj)
+ .debug_frame   0x00000000      0x140 lib/libbootloader.a(boot_secure.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_secure.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.osiMutexCreate
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.osiMutexDelete
+                0x00000000        0x2 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.osiMutexLock
+                0x00000000        0x2 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.osiMutexUnlock
+                0x00000000        0x2 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashOpen
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashMapAddress
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashWrite
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashErase
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashRead
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashReadCheck
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text.drvSpiFlashCapacity
+                0x00000000        0x4 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_info    0x00000000      0x495 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_abbrev  0x00000000      0x12f lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_loc     0x00000000      0x339 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_aranges
+                0x00000000       0x60 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_ranges  0x00000000       0x50 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_line    0x00000000      0x1e9 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_str     0x00000000      0x3ba lib/libbootloader.a(boot_sffs_port.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_sffs_port.c.obj)
+ .debug_frame   0x00000000       0xc0 lib/libbootloader.a(boot_sffs_port.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_sffs_port.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_stub.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_stub.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_stub.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_delay.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_delay.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_delay.c.obj)
+ .text.bootElapsedTime
+                0x00000000       0x1c lib/libbootloader.a(boot_delay.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_mem.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_mem.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_mem.c.obj)
+ .text._heap_malloc
+                0x00000000       0x38 lib/libbootloader.a(boot_mem.c.obj)
+ .text._heap_calloc
+                0x00000000       0x26 lib/libbootloader.a(boot_mem.c.obj)
+ .text._heap_free
+                0x00000000       0x76 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootHeapInit
+                0x00000000       0x48 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootFree
+                0x00000000       0x38 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootShowMemInfo
+                0x00000000       0x48 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootHeapDefaultIram
+                0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootHeapDefaultExtRam
+                0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootIramMalloc
+                0x00000000        0xc lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootIramCalloc
+                0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootExtRamMalloc
+                0x00000000        0xc lib/libbootloader.a(boot_mem.c.obj)
+ .text.bootExtRamCalloc
+                0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.malloc   0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.calloc   0x00000000       0x10 lib/libbootloader.a(boot_mem.c.obj)
+ .text.realloc  0x00000000       0x6c lib/libbootloader.a(boot_mem.c.obj)
+ .text.free     0x00000000        0x4 lib/libbootloader.a(boot_mem.c.obj)
+ .bss.gDefaultHeap
+                0x00000000        0x4 lib/libbootloader.a(boot_mem.c.obj)
+ .bss.gExtRamHeap
+                0x00000000        0xc lib/libbootloader.a(boot_mem.c.obj)
+ .bss.gIramHeap
+                0x00000000        0xc lib/libbootloader.a(boot_mem.c.obj)
+ .rodata.bootShowMemInfo.str1.1
+                0x00000000       0x1d lib/libbootloader.a(boot_mem.c.obj)
+ .debug_info    0x00000000      0x97f lib/libbootloader.a(boot_mem.c.obj)
+ .debug_abbrev  0x00000000      0x2fe lib/libbootloader.a(boot_mem.c.obj)
+ .debug_loc     0x00000000      0x94c lib/libbootloader.a(boot_mem.c.obj)
+ .debug_aranges
+                0x00000000       0x98 lib/libbootloader.a(boot_mem.c.obj)
+ .debug_ranges  0x00000000      0x158 lib/libbootloader.a(boot_mem.c.obj)
+ .debug_line    0x00000000      0x2be lib/libbootloader.a(boot_mem.c.obj)
+ .debug_str     0x00000000      0x479 lib/libbootloader.a(boot_mem.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_mem.c.obj)
+ .debug_frame   0x00000000      0x170 lib/libbootloader.a(boot_mem.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_mem.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.prvErase
+                0x00000000       0x1e lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashOpen
+                0x00000000       0x38 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashSetRangeWriteProhibit
+                0x00000000       0x38 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashClearRangeWriteProhibit
+                0x00000000       0x3a lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashID
+                0x00000000        0x6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashCapacity
+                0x00000000        0x6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashMapAddress
+                0x00000000        0x6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashOffsetValid
+                0x00000000        0xc lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashMapAddressValid
+                0x00000000       0x18 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashIsDone
+                0x00000000        0x6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashWaitDone
+                0x00000000       0x16 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashWriteNoWait
+                0x00000000       0x72 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashEraseNoWait
+                0x00000000       0xb2 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashChipErase
+                0x00000000       0x36 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashErase
+                0x00000000       0x3c lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashWrite
+                0x00000000       0x46 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashRead
+                0x00000000       0x26 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashReadCheck
+                0x00000000       0x2e lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text.bootSpiFlashReadUniqueId
+                0x00000000        0x6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .data.gDrvSpiFlashCtx
+                0x00000000       0x80 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_info    0x00000000     0x18ca lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_abbrev  0x00000000      0x411 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_loc     0x00000000      0xae6 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_aranges
+                0x00000000       0xb0 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_ranges  0x00000000      0x1b8 lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_line    0x00000000      0x51f lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_str     0x00000000      0xdda lib/libbootloader.a(boot_spi_flash.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_spi_flash.c.obj)
+ .debug_frame   0x00000000      0x1ec lib/libbootloader.a(boot_spi_flash.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_spi_flash.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_debuguart.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_debuguart.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_debuguart.c.obj)
+ .text.bootDebuguartInit
+                0x00000000       0x3c lib/libbootloader.a(boot_debuguart.c.obj)
+ .text.bootDebuguartWrite
+                0x00000000       0x34 lib/libbootloader.a(boot_debuguart.c.obj)
+ .text.bootDebuguartWriteAll
+                0x00000000       0x2e lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_info    0x00000000      0x601 lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_abbrev  0x00000000      0x159 lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_loc     0x00000000      0x1b5 lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_aranges
+                0x00000000       0x30 lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_ranges  0x00000000       0x50 lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_line    0x00000000      0x1ea lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_str     0x00000000      0x58d lib/libbootloader.a(boot_debuguart.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_debuguart.c.obj)
+ .debug_frame   0x00000000       0x58 lib/libbootloader.a(boot_debuguart.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_debuguart.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_trace.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_trace.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_trace.c.obj)
+ .text.bootTraceInit
+                0x00000000       0x18 lib/libbootloader.a(boot_trace.c.obj)
+ .text.bootTraceBufPut
+                0x00000000        0xa lib/libbootloader.a(boot_trace.c.obj)
+ .text.bootTraceBufPutMulti
+                0x00000000       0x22 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_info    0x00000000      0x1f8 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_abbrev  0x00000000      0x116 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_loc     0x00000000       0xf8 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_aranges
+                0x00000000       0x30 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_ranges  0x00000000       0x38 lib/libbootloader.a(boot_trace.c.obj)
+ .debug_line    0x00000000      0x17b lib/libbootloader.a(boot_trace.c.obj)
+ .debug_str     0x00000000      0x2bc lib/libbootloader.a(boot_trace.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_trace.c.obj)
+ .debug_frame   0x00000000       0x5c lib/libbootloader.a(boot_trace.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_trace.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_fdl.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_fdl.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_fdl.c.obj)
+ .text._fdl_read.isra.1
+                0x00000000       0x2e lib/libbootloader.a(boot_fdl.c.obj)
+ .text._fdl_write_all.isra.2
+                0x00000000       0x1c lib/libbootloader.a(boot_fdl.c.obj)
+ .text._calc_crc16_frm
+                0x00000000       0x4e lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineCreate
+                0x00000000       0x34 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineDestroy
+                0x00000000       0x18 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineGetChannel
+                0x00000000        0x4 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineGetMaxPacketLen
+                0x00000000        0x4 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineReadRaw
+                0x00000000        0xe lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineWriteRaw
+                0x00000000       0x18 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineSendPacket
+                0x00000000      0x114 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineSendVersion
+                0x00000000       0x40 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineSendRespNoData
+                0x00000000       0x1a lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineSendRespData
+                0x00000000       0x60 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineSetBaud
+                0x00000000        0xa lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineProcess
+                0x00000000      0x178 lib/libbootloader.a(boot_fdl.c.obj)
+ .text.fdlEngineIdentify
+                0x00000000       0x42 lib/libbootloader.a(boot_fdl.c.obj)
+ .rodata.fdlEngineCreate.str1.1
+                0x00000000       0x23 lib/libbootloader.a(boot_fdl.c.obj)
+ .rodata.fdlEngineProcess.str1.1
+                0x00000000       0x7e lib/libbootloader.a(boot_fdl.c.obj)
+ .rodata.fdlEngineSendRespData.str1.1
+                0x00000000       0x1d lib/libbootloader.a(boot_fdl.c.obj)
+ .rodata.fdlEngineSendVersion.str1.1
+                0x00000000       0x22 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_info    0x00000000     0x1b28 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_abbrev  0x00000000      0x4b3 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_loc     0x00000000      0xc38 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_aranges
+                0x00000000       0x98 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_ranges  0x00000000      0x138 lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_line    0x00000000      0x4bf lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_str     0x00000000     0x151e lib/libbootloader.a(boot_fdl.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_fdl.c.obj)
+ .debug_frame   0x00000000      0x1d8 lib/libbootloader.a(boot_fdl.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_fdl.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvFlashPolling
+                0x00000000       0xa0 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvPolling
+                0x00000000       0x8c lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvMountModem.isra.2
+                0x00000000        0xc lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvFactoryNvHack
+                0x00000000       0x70 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvMountFactory
+                0x00000000       0x20 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvFsPrepare.part.5
+                0x00000000       0x2c lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.prvProcessPkt
+                0x00000000      0x974 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text.fdlDnldStart
+                0x00000000       0xbc lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata        0x00000000        0x8 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata.fdlDnldStart.str1.1
+                0x00000000        0x2 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata.prvMountFactory.str1.1
+                0x00000000        0x9 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata.prvMountModem.isra.2.str1.1
+                0x00000000        0x7 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata.prvPolling.str1.1
+                0x00000000       0x4f lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .rodata.prvProcessPkt.str1.1
+                0x00000000      0x31f lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_info    0x00000000     0x3635 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_abbrev  0x00000000      0x4b0 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_loc     0x00000000     0x1d73 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_aranges
+                0x00000000       0x58 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_ranges  0x00000000      0x2c8 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_line    0x00000000      0x6f9 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_str     0x00000000     0x200f lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .debug_frame   0x00000000       0xf4 lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_fdl_dnld.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_aes.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_aes.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_aes.c.obj)
+ .text._addRoundKey
+                0x00000000       0x1c lib/libbootloader.a(boot_aes.c.obj)
+ .text.aesEncryptObj
+                0x00000000      0x394 lib/libbootloader.a(boot_aes.c.obj)
+ .rodata.rcon   0x00000000        0xb lib/libbootloader.a(boot_aes.c.obj)
+ .rodata.sbox   0x00000000      0x100 lib/libbootloader.a(boot_aes.c.obj)
+ .rodata.x2_sbox
+                0x00000000      0x100 lib/libbootloader.a(boot_aes.c.obj)
+ .rodata.x3_sbox
+                0x00000000      0x100 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_info    0x00000000      0xd02 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_abbrev  0x00000000      0x362 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_loc     0x00000000      0x390 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_aranges
+                0x00000000       0x28 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_ranges  0x00000000       0x68 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_line    0x00000000      0x261 lib/libbootloader.a(boot_aes.c.obj)
+ .debug_str     0x00000000      0x6fe lib/libbootloader.a(boot_aes.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_aes.c.obj)
+ .debug_frame   0x00000000       0x58 lib/libbootloader.a(boot_aes.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_aes.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_vfs.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_vfs.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_vfs.c.obj)
+ .text._getFileByFd
+                0x00000000       0x34 lib/libbootloader.a(boot_vfs.c.obj)
+ .text._getFileByPath
+                0x00000000       0x70 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsMount
+                0x00000000       0x6c lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsMountHandle
+                0x00000000       0x34 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsUmount
+                0x00000000       0x50 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsRemount
+                0x00000000       0x38 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsUmountAll
+                0x00000000       0x20 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsOpen
+                0x00000000       0x34 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsRead
+                0x00000000       0x2e lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsWrite
+                0x00000000       0x2e lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsLseek
+                0x00000000       0x2e lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsFstat
+                0x00000000       0x28 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsClose
+                0x00000000       0x26 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsUnlink
+                0x00000000       0x24 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsRename
+                0x00000000       0x3a lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsMkDir
+                0x00000000       0x24 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsRmDir
+                0x00000000       0x24 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsStatVfs
+                0x00000000       0x24 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsFileSize
+                0x00000000       0x2c lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsFileRead
+                0x00000000       0x2a lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsFileWrite
+                0x00000000       0x2c lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsSfileInit
+                0x00000000        0xa lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsSfileWrite
+                0x00000000        0x4 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsMkPath
+                0x00000000       0x60 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsMkFilePath
+                0x00000000       0x70 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootVfsRmChildren
+                0x00000000       0xd0 lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootSffsMount
+                0x00000000       0x3e lib/libbootloader.a(boot_vfs.c.obj)
+ .text.bootSffsMkfs
+                0x00000000        0xa lib/libbootloader.a(boot_vfs.c.obj)
+ .bss.gBootVfsRegList
+                0x00000000        0x4 lib/libbootloader.a(boot_vfs.c.obj)
+ .rodata.bootVfsRmChildren.str1.1
+                0x00000000        0x2 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_info    0x00000000     0x21e6 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_abbrev  0x00000000      0x388 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_loc     0x00000000      0xfb2 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_aranges
+                0x00000000       0xf0 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_ranges  0x00000000      0x140 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_line    0x00000000      0x5c1 lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_str     0x00000000      0xd5f lib/libbootloader.a(boot_vfs.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_vfs.c.obj)
+ .debug_frame   0x00000000      0x398 lib/libbootloader.a(boot_vfs.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_vfs.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_irq.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_irq.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_irq.c.obj)
+ .text.GIC_SetPriority
+                0x00000000       0x2e lib/libbootloader.a(boot_irq.c.obj)
+ .text.GIC_SetConfiguration.constprop.0
+                0x00000000       0x26 lib/libbootloader.a(boot_irq.c.obj)
+ .text.bootIrqHandler
+                0x00000000       0x1c lib/libbootloader.a(boot_irq.c.obj)
+ .text.bootEnableInterrupt
+                0x00000000       0xec lib/libbootloader.a(boot_irq.c.obj)
+ .text.bootDisableInterrupt
+                0x00000000       0x20 lib/libbootloader.a(boot_irq.c.obj)
+ .text.bootEnableIrq
+                0x00000000       0x24 lib/libbootloader.a(boot_irq.c.obj)
+ .text.bootDisableIrq
+                0x00000000       0x1c lib/libbootloader.a(boot_irq.c.obj)
+ .debug_info    0x00000000     0x14d5 lib/libbootloader.a(boot_irq.c.obj)
+ .debug_abbrev  0x00000000      0x3db lib/libbootloader.a(boot_irq.c.obj)
+ .debug_loc     0x00000000      0x2be lib/libbootloader.a(boot_irq.c.obj)
+ .debug_aranges
+                0x00000000       0x50 lib/libbootloader.a(boot_irq.c.obj)
+ .debug_ranges  0x00000000      0x148 lib/libbootloader.a(boot_irq.c.obj)
+ .debug_line    0x00000000      0x380 lib/libbootloader.a(boot_irq.c.obj)
+ .debug_str     0x00000000     0x10ec lib/libbootloader.a(boot_irq.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_irq.c.obj)
+ .debug_frame   0x00000000       0xb0 lib/libbootloader.a(boot_irq.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_irq.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_timer.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_timer.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_timer.c.obj)
+ .text.bootTimerISR
+                0x00000000       0x1c lib/libbootloader.a(boot_timer.c.obj)
+ .text.bootEnableTimer
+                0x00000000       0x34 lib/libbootloader.a(boot_timer.c.obj)
+ .text.bootDisableTimer
+                0x00000000       0x20 lib/libbootloader.a(boot_timer.c.obj)
+ .bss.gTimerCb  0x00000000        0x8 lib/libbootloader.a(boot_timer.c.obj)
+ .debug_info    0x00000000      0xe69 lib/libbootloader.a(boot_timer.c.obj)
+ .debug_abbrev  0x00000000      0x273 lib/libbootloader.a(boot_timer.c.obj)
+ .debug_loc     0x00000000       0xdb lib/libbootloader.a(boot_timer.c.obj)
+ .debug_aranges
+                0x00000000       0x30 lib/libbootloader.a(boot_timer.c.obj)
+ .debug_ranges  0x00000000       0x20 lib/libbootloader.a(boot_timer.c.obj)
+ .debug_line    0x00000000      0x23e lib/libbootloader.a(boot_timer.c.obj)
+ .debug_str     0x00000000      0xf78 lib/libbootloader.a(boot_timer.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_timer.c.obj)
+ .debug_frame   0x00000000       0x48 lib/libbootloader.a(boot_timer.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_timer.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_uart.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_uart.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartAvail
+                0x00000000        0xa lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartFlush
+                0x00000000        0x2 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartConnected
+                0x00000000        0x4 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartDestroy
+                0x00000000        0x4 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartBaudSupported
+                0x00000000        0x4 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartBaudSupported
+                0x00000000        0x4 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartSetBaud
+                0x00000000       0x18 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartOpen
+                0x00000000       0x94 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartSetBaud
+                0x00000000        0x6 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartAvail
+                0x00000000        0x8 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartRead
+                0x00000000       0x24 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartFlushInput
+                0x00000000       0x18 lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartRead
+                0x00000000        0x6 lib/libbootloader.a(boot_uart.c.obj)
+ .text.bootUartWrite
+                0x00000000       0x2e lib/libbootloader.a(boot_uart.c.obj)
+ .text.prvUartWrite
+                0x00000000        0x6 lib/libbootloader.a(boot_uart.c.obj)
+ .text.fdlOpenUart
+                0x00000000       0x70 lib/libbootloader.a(boot_uart.c.obj)
+ .data.gBootUarts
+                0x00000000       0x18 lib/libbootloader.a(boot_uart.c.obj)
+ .debug_info    0x00000000     0x154a lib/libbootloader.a(boot_uart.c.obj)
+ .debug_abbrev  0x00000000      0x3ea lib/libbootloader.a(boot_uart.c.obj)
+ .debug_loc     0x00000000      0x710 lib/libbootloader.a(boot_uart.c.obj)
+ .debug_aranges
+                0x00000000       0x90 lib/libbootloader.a(boot_uart.c.obj)
+ .debug_ranges  0x00000000       0xc8 lib/libbootloader.a(boot_uart.c.obj)
+ .debug_line    0x00000000      0x3b7 lib/libbootloader.a(boot_uart.c.obj)
+ .debug_str     0x00000000      0xa9d lib/libbootloader.a(boot_uart.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_uart.c.obj)
+ .debug_frame   0x00000000      0x150 lib/libbootloader.a(boot_uart.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_uart.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text.bootUartWriteAll
+                0x00000000       0x2a lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text.prvUartWriteByte
+                0x00000000       0x16 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text.prvUartSendHdlc
+                0x00000000       0x32 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text.bootUartWriteHdlc
+                0x00000000       0x2e lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text.bootUartWriteMultiHdlc
+                0x00000000       0x3c lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_info    0x00000000      0x3c8 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_abbrev  0x00000000      0x1d3 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_loc     0x00000000      0x32f lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_aranges
+                0x00000000       0x40 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_ranges  0x00000000       0x48 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_line    0x00000000      0x236 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_str     0x00000000      0x2b5 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .debug_frame   0x00000000       0xa0 lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_uart_cmn.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_mmu.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_mmu.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_mmu.c.obj)
+ .text.bootMmuEnable
+                0x00000000      0x214 lib/libbootloader.a(boot_mmu.c.obj)
+ .text.bootMmuDisable
+                0x00000000       0xd6 lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_info    0x00000000      0xe5f lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_abbrev  0x00000000      0x21e lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_loc     0x00000000      0xc13 lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_aranges
+                0x00000000       0x28 lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_ranges  0x00000000       0xe8 lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_line    0x00000000      0x2ff lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_str     0x00000000      0x4c4 lib/libbootloader.a(boot_mmu.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_mmu.c.obj)
+ .debug_frame   0x00000000       0x64 lib/libbootloader.a(boot_mmu.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_mmu.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_uimage.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_uimage.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_uimage.c.obj)
+ .text.bootUimageCheck
+                0x00000000       0x64 lib/libbootloader.a(boot_uimage.c.obj)
+ .text.bootUimageQuickCheck
+                0x00000000       0x54 lib/libbootloader.a(boot_uimage.c.obj)
+ .text.bootUimageSize
+                0x00000000        0xe lib/libbootloader.a(boot_uimage.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_udc.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_udc.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_udc.c.obj)
+ .text._giveBackComplete.isra.1
+                0x00000000       0x1e lib/libbootloader.a(boot_udc.c.obj)
+ .text._epXferStart
+                0x00000000      0x140 lib/libbootloader.a(boot_udc.c.obj)
+ .text._txFifoFlush.isra.4
+                0x00000000       0x18 lib/libbootloader.a(boot_udc.c.obj)
+ .text._epIsr   0x00000000      0x18c lib/libbootloader.a(boot_udc.c.obj)
+ .text._initUdcCommonConfig.constprop.8
+                0x00000000       0x78 lib/libbootloader.a(boot_udc.c.obj)
+ .text._setHwEpMps.isra.0.constprop.9
+                0x00000000       0x2e lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcOpen
+                0x00000000       0xa0 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcClose
+                0x00000000        0x2 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcConnected
+                0x00000000       0x18 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcIsrPoll
+                0x00000000       0xd4 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcXferEnqueue
+                0x00000000       0xa0 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcXferDequeue
+                0x00000000      0x100 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcXferAlloc
+                0x00000000       0x24 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcXferFree
+                0x00000000        0x6 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcRomSerialInEp
+                0x00000000        0x6 lib/libbootloader.a(boot_udc.c.obj)
+ .text.bootUdcRomSerialOutEp
+                0x00000000        0x8 lib/libbootloader.a(boot_udc.c.obj)
+ .data.gUdc20   0x00000000      0x210 lib/libbootloader.a(boot_udc.c.obj)
+ .rodata._epIsr.str1.1
+                0x00000000       0xb7 lib/libbootloader.a(boot_udc.c.obj)
+ .rodata._epXferStart.str1.1
+                0x00000000       0x1e lib/libbootloader.a(boot_udc.c.obj)
+ .rodata.bootUdcIsrPoll.str1.1
+                0x00000000       0x2e lib/libbootloader.a(boot_udc.c.obj)
+ .rodata.bootUdcXferAlloc.str1.1
+                0x00000000       0x1c lib/libbootloader.a(boot_udc.c.obj)
+ .rodata.bootUdcXferDequeue.str1.1
+                0x00000000       0x63 lib/libbootloader.a(boot_udc.c.obj)
+ .rodata.bootUdcXferEnqueue.str1.1
+                0x00000000       0x32 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_info    0x00000000     0x4099 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_abbrev  0x00000000      0x5d0 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_loc     0x00000000     0x1037 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_aranges
+                0x00000000       0x98 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_ranges  0x00000000      0x278 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_line    0x00000000      0x5b4 lib/libbootloader.a(boot_udc.c.obj)
+ .debug_str     0x00000000     0x1e0a lib/libbootloader.a(boot_udc.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_udc.c.obj)
+ .debug_frame   0x00000000      0x1d0 lib/libbootloader.a(boot_udc.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_udc.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._setBaud
+                0x00000000        0x4 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._flush   0x00000000        0x2 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._connected
+                0x00000000        0x6 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._txComp  0x00000000       0x24 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._destroy
+                0x00000000       0x24 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._rxComp  0x00000000       0x5c lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._write   0x00000000       0xb8 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._startRx
+                0x00000000       0x54 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._poll    0x00000000       0x34 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._flushInput
+                0x00000000       0x14 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._read    0x00000000       0x1c lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text._avail   0x00000000       0x10 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text.fdlOpenUsbSerial
+                0x00000000      0x110 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .rodata._poll.str1.1
+                0x00000000       0x15 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .rodata._rxComp.str1.1
+                0x00000000       0x43 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .rodata._startRx.str1.1
+                0x00000000       0x16 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .rodata._txComp.str1.1
+                0x00000000       0x19 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .rodata._write.str1.1
+                0x00000000       0x39 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_info    0x00000000     0x1708 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_abbrev  0x00000000      0x41e lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_loc     0x00000000      0x889 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_aranges
+                0x00000000       0x80 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_ranges  0x00000000       0xc8 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_line    0x00000000      0x3c3 lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_str     0x00000000      0xa2f lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .debug_frame   0x00000000      0x16c lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_usb_fdl_channel.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_pdl.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_pdl.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_pdl.c.obj)
+ .text.prvPdlWriteAll.isra.1
+                0x00000000       0x1a lib/libbootloader.a(boot_pdl.c.obj)
+ .text.pdlEngineSendResp
+                0x00000000       0x38 lib/libbootloader.a(boot_pdl.c.obj)
+ .text.pdlEngineCreate
+                0x00000000       0x10 lib/libbootloader.a(boot_pdl.c.obj)
+ .text.pdlEngineDelete
+                0x00000000        0x2 lib/libbootloader.a(boot_pdl.c.obj)
+ .text.pdlEngineLoop
+                0x00000000       0xee lib/libbootloader.a(boot_pdl.c.obj)
+ .bss.gPdlEngine
+                0x00000000        0x8 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_info    0x00000000     0x1067 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_abbrev  0x00000000      0x3dd lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_loc     0x00000000      0x397 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_aranges
+                0x00000000       0x40 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_ranges  0x00000000      0x120 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_line    0x00000000      0x2b5 lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_str     0x00000000      0x8f0 lib/libbootloader.a(boot_pdl.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_pdl.c.obj)
+ .debug_frame   0x00000000       0x98 lib/libbootloader.a(boot_pdl.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_pdl.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .text.prvPdlProcess
+                0x00000000       0xb6 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .text.prvPdlPolling
+                0x00000000       0x22 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .text.pdlDnldUimage
+                0x00000000       0x50 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_info    0x00000000      0xf29 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_abbrev  0x00000000      0x322 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_loc     0x00000000      0x41a lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_aranges
+                0x00000000       0x30 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_ranges  0x00000000       0x58 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_line    0x00000000      0x288 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_str     0x00000000      0xa77 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .debug_frame   0x00000000       0x84 lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(boot_pdl_uimage.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .text.prvQuec_Load_Fota_nv_Cfg
+                0x00000000       0x7c lib/libbootloader.a(quec_boot_fota.c.obj)
+ .rodata.__FUNCTION__.7564
+                0x00000000       0x19 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .rodata.prvQuec_Load_Fota_nv_Cfg.str1.1
+                0x00000000       0xd6 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_info    0x00000000      0xb30 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_abbrev  0x00000000      0x249 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_loc     0x00000000       0x5e lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_aranges
+                0x00000000       0x20 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_ranges  0x00000000       0x10 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_line    0x00000000      0x216 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_str     0x00000000      0x781 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(quec_boot_fota.c.obj)
+ .debug_frame   0x00000000       0x30 lib/libbootloader.a(quec_boot_fota.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(quec_boot_fota.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_boot_uart_open
+                0x00000000       0x8c lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_pin_set_func_internal
+                0x00000000       0x70 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_boot_write_to_uart
+                0x00000000       0x4c lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_pin_get_func
+                0x00000000       0x58 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_boot_uart_pin_init
+                0x00000000       0xc4 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_verify_output
+                0x00000000       0xc8 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_boot_urc_send
+                0x00000000       0x34 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text.quec_boot_urc_init
+                0x00000000       0xb4 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .bss.updata_urc_step
+                0x00000000        0x4 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data.g_quec_boot_uart_baud
+                0x00000000        0x4 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data.quec_uart_info
+                0x00000000       0x24 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data.quec_uart_pin_func
+                0x00000000        0xa lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data.urc_count.47376
+                0x00000000        0x4 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .data.urc_output_first
+                0x00000000        0x1 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_boot_uart_open.str1.1
+                0x00000000       0x6f lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_boot_uart_pin_init.str1.1
+                0x00000000       0x2f lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_boot_urc_init.str1.1
+                0x00000000       0x7c lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_boot_write_to_uart.str1.1
+                0x00000000       0x3a lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_pin_get_func.str1.1
+                0x00000000       0x1c lib/libbootloader.a(quec_boot_uart.c.obj)
+ .rodata.quec_pin_set_func_internal.str1.1
+                0x00000000       0x56 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_info    0x00000000     0x14ab lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_abbrev  0x00000000      0x3f8 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_loc     0x00000000      0x5b8 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_aranges
+                0x00000000       0x58 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_ranges  0x00000000       0x90 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_line    0x00000000      0x3ea lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_str     0x00000000      0xaa3 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(quec_boot_uart.c.obj)
+ .debug_frame   0x00000000      0x138 lib/libbootloader.a(quec_boot_uart.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(quec_boot_uart.c.obj)
+ .text          0x00000000        0x0 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .data          0x00000000        0x0 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .bss           0x00000000        0x0 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .data.quec_pin_cfg_map
+                0x00000000       0x30 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .debug_info    0x00000000      0x588 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .debug_abbrev  0x00000000       0xad lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .debug_aranges
+                0x00000000       0x18 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .debug_line    0x00000000      0x134 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .debug_str     0x00000000      0xaa8 lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .comment       0x00000000       0x7f lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libbootloader.a(quec_boot_pin_index.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_clock_init.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_clock_init.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_clock_init.c.obj)
+ .text.prvRamPhyPadCfg
+                0x00000000       0xb4 lib/libhal.a(hal_clock_init.c.obj)
+ .text.prvRamDmcCfg
+                0x00000000       0xbc lib/libhal.a(hal_clock_init.c.obj)
+ .text._dmc400QosConfig
+                0x00000000      0x164 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halPsramPllTrainAds0
+                0x00000000       0x3c lib/libhal.a(hal_clock_init.c.obj)
+ .text.halPsramPllTrainAds1
+                0x00000000       0x3c lib/libhal.a(hal_clock_init.c.obj)
+ .text.halWriteDllTrain
+                0x00000000       0x40 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halRamInit
+                0x00000000       0xb8 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halRamWakeInit
+                0x00000000       0x80 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halRamSuspend
+                0x00000000        0x2 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halRamSuspendAbort
+                0x00000000        0x2 lib/libhal.a(hal_clock_init.c.obj)
+ .rodata        0x00000000        0x8 lib/libhal.a(hal_clock_init.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_chip_8910.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_chip_8910.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halGetChipId
+                0x00000000       0x24 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halGetMetalId
+                0x00000000       0x10 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halChangeSysClk
+                0x00000000        0x2 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiDCacheCleanInvalidate
+                0x00000000       0x1c lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiICacheInvalidate
+                0x00000000       0x10 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiICacheSync
+                0x00000000        0xc lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiDCacheCleanAll
+                0x00000000       0xac lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiDCacheInvalidateAll
+                0x00000000       0xac lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiDCacheCleanInvalidateAll
+                0x00000000       0xac lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiICacheInvalidateAll
+                0x00000000       0x10 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.osiICacheSyncAll
+                0x00000000       0xb2 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halClock26MRequest
+                0x00000000       0x6c lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halClock26MRelease
+                0x00000000       0x80 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halCameraClockRequest
+                0x00000000      0x110 lib/libhal.a(hal_chip_8910.c.obj)
+ .text.halCameraClockRelease
+                0x00000000       0x4c lib/libhal.a(hal_chip_8910.c.obj)
+ .bss.gCameraClkFlag
+                0x00000000        0x1 lib/libhal.a(hal_chip_8910.c.obj)
+ .bss.gClock26MUseMap
+                0x00000000        0x4 lib/libhal.a(hal_chip_8910.c.obj)
+ .rodata.halCameraClockRelease.str1.1
+                0x00000000       0x29 lib/libhal.a(hal_chip_8910.c.obj)
+ .rodata.halCameraClockRequest.str1.1
+                0x00000000       0x5d lib/libhal.a(hal_chip_8910.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_pmu_8910.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_pmu_8910.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuReadPsmInitCnt
+                0x00000000       0x40 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuRtcReadSecond
+                0x00000000       0x7c lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuCheckPsm
+                0x00000000       0xfc lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halBootCauseMode
+                0x00000000      0x178 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halWatchdogReset
+                0x00000000       0x50 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuExtFlashPowerOn
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuEnterPm1
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuAbortPm1
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuExitPm1
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuEnterPm2
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuAbortPm2
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuExitPm2
+                0x00000000        0x2 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuUnlockPowerReg
+                0x00000000       0x20 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuUnlockPsmReg
+                0x00000000       0x20 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuSwitchPower
+                0x00000000      0x3dc lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuInit
+                0x00000000      0x1d8 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuSet7sReset
+                0x00000000       0x14 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuSetCamFlashLevel
+                0x00000000       0x20 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuSetPowerLevel
+                0x00000000      0x16c lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halPmuPsmPrepare
+                0x00000000      0x144 lib/libhal.a(hal_pmu_8910.c.obj)
+ .text.halShutdown
+                0x00000000      0x184 lib/libhal.a(hal_pmu_8910.c.obj)
+ .rodata.halBootCauseMode.str1.1
+                0x00000000       0x91 lib/libhal.a(hal_pmu_8910.c.obj)
+ .rodata.halPmuCheckPsm.str1.1
+                0x00000000       0x27 lib/libhal.a(hal_pmu_8910.c.obj)
+ .rodata.halPmuSetPowerLevel.str1.1
+                0x00000000       0x34 lib/libhal.a(hal_pmu_8910.c.obj)
+ .rodata.halShutdown.str1.1
+                0x00000000       0x32 lib/libhal.a(hal_pmu_8910.c.obj)
+ .rodata.pmic_power_level_table
+                0x00000000       0xa0 lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_info    0x00000000     0x607c lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_abbrev  0x00000000      0x4db lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_loc     0x00000000      0xdd5 lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_aranges
+                0x00000000       0x90 lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_ranges  0x00000000      0x100 lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_line    0x00000000      0x5cc lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_str     0x00000000     0x3fe8 lib/libhal.a(hal_pmu_8910.c.obj)
+ .comment       0x00000000       0x7f lib/libhal.a(hal_pmu_8910.c.obj)
+ .debug_frame   0x00000000      0x244 lib/libhal.a(hal_pmu_8910.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libhal.a(hal_pmu_8910.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_efuse_8910.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_efuse_8910.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.prvEfuseSetDouble
+                0x00000000       0x10 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.prvEfuseWrite
+                0x00000000       0x64 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseOpen
+                0x00000000       0x60 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseClose
+                0x00000000       0x48 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseWrite
+                0x00000000       0x20 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseDoubleWrite
+                0x00000000       0x20 lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseRead
+                0x00000000       0x3c lib/libhal.a(hal_efuse_8910.c.obj)
+ .text.halEfuseDoubleRead
+                0x00000000       0x3c lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_info    0x00000000     0x1e65 lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_abbrev  0x00000000      0x33d lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_loc     0x00000000      0x2d3 lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_aranges
+                0x00000000       0x58 lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_ranges  0x00000000       0x48 lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_line    0x00000000      0x325 lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_str     0x00000000     0x174f lib/libhal.a(hal_efuse_8910.c.obj)
+ .comment       0x00000000       0x7f lib/libhal.a(hal_efuse_8910.c.obj)
+ .debug_frame   0x00000000       0xec lib/libhal.a(hal_efuse_8910.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libhal.a(hal_efuse_8910.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_delay.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_delay.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_delay.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_iomux.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_iomux.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_iomux.c.obj)
+ .text.prvSetPadPull
+                0x00000000       0x9e lib/libhal.a(hal_iomux.c.obj)
+ .text.prvSetPadDriving
+                0x00000000       0x4e lib/libhal.a(hal_iomux.c.obj)
+ .text.prvSetPadInout.isra.1.part.2
+                0x00000000       0x54 lib/libhal.a(hal_iomux.c.obj)
+ .text.prvIomuxSuspend
+                0x00000000       0x30 lib/libhal.a(hal_iomux.c.obj)
+ .text.prvIomuxResume
+                0x00000000       0x34 lib/libhal.a(hal_iomux.c.obj)
+ .text.prvSetPad
+                0x00000000       0x56 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxSetInitConfig
+                0x00000000       0x68 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxSetFunction
+                0x00000000       0x80 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxSetPadDriving
+                0x00000000       0x64 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxSetPadPull
+                0x00000000       0x64 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxSetPadInout
+                0x00000000       0x68 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxGetFunPads
+                0x00000000       0x68 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxGetPadFun
+                0x00000000       0x58 lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxFunName
+                0x00000000       0x1c lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxPadName
+                0x00000000       0x1c lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxShowInfo
+                0x00000000       0x7c lib/libhal.a(hal_iomux.c.obj)
+ .text.halIomuxInit
+                0x00000000       0x1c lib/libhal.a(hal_iomux.c.obj)
+ .bss.gHalIomuxCtx
+                0x00000000      0x178 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gFunNames
+                0x00000000      0x3d0 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gFunPadSel
+                0x00000000      0x598 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gFunProp
+                0x00000000      0x3d0 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gInitPad
+                0x00000000       0x4c lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gIomuxPmOps
+                0x00000000       0x10 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gPadNames
+                0x00000000      0x184 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.gPadProp
+                0x00000000      0x48c lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxFunName.str1.1
+                0x00000000        0x1 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxSetFunction.str1.1
+                0x00000000       0x22 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxSetInitConfig.str1.1
+                0x00000000       0x1c lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxSetPadDriving.str1.1
+                0x00000000       0x24 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxSetPadInout.str1.1
+                0x00000000       0x22 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxSetPadPull.str1.1
+                0x00000000       0x21 lib/libhal.a(hal_iomux.c.obj)
+ .rodata.halIomuxShowInfo.str1.1
+                0x00000000       0x3e lib/libhal.a(hal_iomux.c.obj)
+ .rodata.str1.1
+                0x00000000      0xafc lib/libhal.a(hal_iomux.c.obj)
+ .debug_info    0x00000000     0x25cf lib/libhal.a(hal_iomux.c.obj)
+ .debug_abbrev  0x00000000      0x4ec lib/libhal.a(hal_iomux.c.obj)
+ .debug_loc     0x00000000      0xfff lib/libhal.a(hal_iomux.c.obj)
+ .debug_aranges
+                0x00000000       0xa0 lib/libhal.a(hal_iomux.c.obj)
+ .debug_ranges  0x00000000      0x270 lib/libhal.a(hal_iomux.c.obj)
+ .debug_line    0x00000000      0x4f3 lib/libhal.a(hal_iomux.c.obj)
+ .debug_str     0x00000000     0x1b2d lib/libhal.a(hal_iomux.c.obj)
+ .comment       0x00000000       0x7f lib/libhal.a(hal_iomux.c.obj)
+ .debug_frame   0x00000000      0x1f4 lib/libhal.a(hal_iomux.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libhal.a(hal_iomux.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_reg_apply.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_reg_apply.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_reg_apply.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_chip.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_chip.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_chip.c.obj)
+ .text.halCalcDivider24
+                0x00000000       0x92 lib/libhal.a(hal_chip.c.obj)
+ .text.halDivider24OutFreq
+                0x00000000       0x16 lib/libhal.a(hal_chip.c.obj)
+ .text.halCalcDivider20
+                0x00000000       0x88 lib/libhal.a(hal_chip.c.obj)
+ .text.halDivider20OutFreq
+                0x00000000       0x14 lib/libhal.a(hal_chip.c.obj)
+ .text.halCalHalfDivider
+                0x00000000       0x7e lib/libhal.a(hal_chip.c.obj)
+ .text.halHalfDividerOutFreq
+                0x00000000       0x18 lib/libhal.a(hal_chip.c.obj)
+ .rodata.gHalfDividerDiv
+                0x00000000       0x10 lib/libhal.a(hal_chip.c.obj)
+ .debug_info    0x00000000      0x3e4 lib/libhal.a(hal_chip.c.obj)
+ .debug_abbrev  0x00000000       0xec lib/libhal.a(hal_chip.c.obj)
+ .debug_loc     0x00000000      0x488 lib/libhal.a(hal_chip.c.obj)
+ .debug_aranges
+                0x00000000       0x48 lib/libhal.a(hal_chip.c.obj)
+ .debug_ranges  0x00000000       0x88 lib/libhal.a(hal_chip.c.obj)
+ .debug_line    0x00000000      0x1b4 lib/libhal.a(hal_chip.c.obj)
+ .debug_str     0x00000000      0x3d2 lib/libhal.a(hal_chip.c.obj)
+ .comment       0x00000000       0x7f lib/libhal.a(hal_chip.c.obj)
+ .debug_frame   0x00000000       0xf4 lib/libhal.a(hal_chip.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libhal.a(hal_chip.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_adi_bus.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_adi_bus.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_adi_bus.c.obj)
+ .text.halAdiBusBatchChange
+                0x00000000       0x88 lib/libhal.a(hal_adi_bus.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_hwspinlock.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_hwspinlock.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_hwspinlock.c.obj)
+ .text.halHwspinlockTryAcquireInCritical
+                0x00000000       0x14 lib/libhal.a(hal_hwspinlock.c.obj)
+ .text.halHwspinlockAcquireInCritical
+                0x00000000       0x14 lib/libhal.a(hal_hwspinlock.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_lzma.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_lzma.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_lzma.c.obj)
+ .text.halLzmaDataSize
+                0x00000000        0xc lib/libhal.a(hal_lzma.c.obj)
+ .text.halLzmaMaxBlockStreamSize
+                0x00000000       0x18 lib/libhal.a(hal_lzma.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_spi_flash.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_spi_flash.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_spi_flash.c.obj)
+ .text.halSpiFlashWpRange
+                0x00000000       0xc0 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.962
+                0x00000000       0xe4 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.245
+                0x00000000       0x20 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.302
+                0x00000000       0x14 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.318
+                0x00000000       0x24 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.227
+                0x00000000       0x12 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.335
+                0x00000000       0x18 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.449
+                0x00000000        0xc lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.763
+                0x00000000       0x74 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.239
+                0x00000000       0x16 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.493
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.501
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.509
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.517
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.525
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.536
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.544
+                0x00000000       0x16 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.482
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.471
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.460
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.880
+                0x00000000       0x1a lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.386
+                0x00000000       0x24 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.359
+                0x00000000       0x64 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.428
+                0x00000000       0x54 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.699
+                0x00000000       0xb2 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.949
+                0x00000000       0x3c lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.933
+                0x00000000       0x48 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.893
+                0x00000000       0x7c lib/libhal.a(hal_spi_flash.c.obj)
+ .text.halSpiFlashCmdDualTx
+                0x00000000      0x104 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.731
+                0x00000000       0x98 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1041
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.403
+                0x00000000      0x130 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1049
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1057
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1065
+                0x00000000        0xa lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1073
+                0x00000000       0x1a lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.853
+                0x00000000       0x6e lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1109
+                0x00000000       0x26 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1122
+                0x00000000       0x10 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1081
+                0x00000000       0x6c lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.792
+                0x00000000       0x9a lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.823
+                0x00000000       0x9e lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1211
+                0x00000000      0x116 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1288
+                0x00000000       0x94 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.1299
+                0x00000000       0x42 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.115
+                0x00000000       0x44 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.138
+                0x00000000       0x44 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.161
+                0x00000000       0x3c lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.52
+                0x00000000       0x34 lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.71
+                0x00000000       0x3c lib/libhal.a(hal_spi_flash.c.obj)
+ .ramtext.flashhal.92
+                0x00000000       0x44 lib/libhal.a(hal_spi_flash.c.obj)
+ .rodata.gSpiFlashProps
+                0x00000000      0x12c lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_info    0x00000000     0x420a lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_abbrev  0x00000000      0x52a lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_loc     0x00000000     0x2c0c lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_aranges
+                0x00000000      0x180 lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_ranges  0x00000000      0x560 lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_line    0x00000000      0x9df lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_str     0x00000000     0x15a1 lib/libhal.a(hal_spi_flash.c.obj)
+ .comment       0x00000000       0x7f lib/libhal.a(hal_spi_flash.c.obj)
+ .debug_frame   0x00000000      0x4cc lib/libhal.a(hal_spi_flash.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libhal.a(hal_spi_flash.c.obj)
+ .text          0x00000000        0x0 lib/libhal.a(hal_blue_screen.c.obj)
+ .data          0x00000000        0x0 lib/libhal.a(hal_blue_screen.c.obj)
+ .bss           0x00000000        0x0 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.prvStrncpy
+                0x00000000       0x1e lib/libhal.a(hal_blue_screen.c.obj)
+ .text.prvStackDump
+                0x00000000       0x88 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halBlueScreenGetInfo
+                0x00000000        0x8 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halBlueScreenSaveContext
+                0x00000000       0x34 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halBlueScreenSaveInfo
+                0x00000000       0x44 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halBscoreBufSave
+                0x00000000      0x43c lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halGetBscoreBuf
+                0x00000000       0x30 lib/libhal.a(hal_blue_screen.c.obj)
+ .text.halClearBscoreBuf
+                0x00000000        0xc lib/libhal.a(hal_blue_screen.c.obj)
+ .bss.gBlueScreenInfo
+                0x00000000       0x60 lib/libhal.a(hal_blue_screen.c.obj)
+ .rodata.halBlueScreenSaveInfo.str1.1
+                0x00000000       0x44 lib/libhal.a(hal_blue_screen.c.obj)
+ .rodata.halBscoreBufSave.str1.1
+                0x00000000        0x8 lib/libhal.a(hal_blue_screen.c.obj)
+ .text          0x00000000        0x0 lib/libcalclib.a(crc32.c.obj)
+ .data          0x00000000        0x0 lib/libcalclib.a(crc32.c.obj)
+ .bss           0x00000000        0x0 lib/libcalclib.a(crc32.c.obj)
+ .text.crc32Init
+                0x00000000        0x4 lib/libcalclib.a(crc32.c.obj)
+ .text.crc32Update
+                0x00000000       0x2c lib/libcalclib.a(crc32.c.obj)
+ .text.crc32Calc
+                0x00000000       0x30 lib/libcalclib.a(crc32.c.obj)
+ .text.crc32VariantInit
+                0x00000000        0x4 lib/libcalclib.a(crc32.c.obj)
+ .text.crc32VariantUpdate
+                0x00000000       0x28 lib/libcalclib.a(crc32.c.obj)
+ .text.crc32VariantCalc
+                0x00000000       0x30 lib/libcalclib.a(crc32.c.obj)
+ .text.crc8RohcInit
+                0x00000000        0x4 lib/libcalclib.a(crc32.c.obj)
+ .text.crc8RohcUpdate
+                0x00000000       0x20 lib/libcalclib.a(crc32.c.obj)
+ .text.crc8RohcCalc
+                0x00000000       0x28 lib/libcalclib.a(crc32.c.obj)
+ .text.crc16NvCalc
+                0x00000000       0x44 lib/libcalclib.a(crc32.c.obj)
+ .text.romBslCrc16
+                0x00000000       0x36 lib/libcalclib.a(crc32.c.obj)
+ .text.romBslCrc16Check
+                0x00000000        0xe lib/libcalclib.a(crc32.c.obj)
+ .rodata.gCrc8Table
+                0x00000000      0x100 lib/libcalclib.a(crc32.c.obj)
+ .rodata.vds_crc32_table
+                0x00000000      0x400 lib/libcalclib.a(crc32.c.obj)
+ .debug_info    0x00000000      0x486 lib/libcalclib.a(crc32.c.obj)
+ .debug_abbrev  0x00000000      0x151 lib/libcalclib.a(crc32.c.obj)
+ .debug_loc     0x00000000      0x65a lib/libcalclib.a(crc32.c.obj)
+ .debug_aranges
+                0x00000000       0x70 lib/libcalclib.a(crc32.c.obj)
+ .debug_ranges  0x00000000       0x78 lib/libcalclib.a(crc32.c.obj)
+ .debug_line    0x00000000      0x250 lib/libcalclib.a(crc32.c.obj)
+ .debug_str     0x00000000      0x2f1 lib/libcalclib.a(crc32.c.obj)
+ .comment       0x00000000       0x7f lib/libcalclib.a(crc32.c.obj)
+ .debug_frame   0x00000000      0x128 lib/libcalclib.a(crc32.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libcalclib.a(crc32.c.obj)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00000000       0x5c ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-memcmp.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x00000000       0xc8 ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .text.memset   0x00000000       0xa8 ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .text._snprintf_r
+                0x00000000       0x5e ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .text.snprintf
+                0x00000000       0x68 ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-snprintf.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .text.strcat   0x00000000       0x40 ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strcat.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .text.strchr   0x00000000       0xd0 ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strchr.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .text.strcpy   0x00000000       0xc4 ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strcpy.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .text.strdup   0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strdup.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .text._strdup_r
+                0x00000000       0x24 ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strdup_r.o)
+ .text          0x00000000       0xdc ../../components/newlib/armca5/libc.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000000       0x1d ../../components/newlib/armca5/libc.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .text.strrchr  0x00000000       0x24 ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strrchr.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .rodata._svfprintf_r.str1.1
+                0x00000000       0x3b ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .text._svfprintf_r
+                0x00000000     0x1314 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .rodata.blanks.8609
+                0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .rodata.zeroes.8610
+                0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-svfprintf.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .text.quorem   0x00000000      0x126 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .rodata._dtoa_r.str1.1
+                0x00000000        0xf ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x00000000      0xa50 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-dtoa.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000      0x428 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x3d ../../components/newlib/armca5/libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .text.__localeconv_l
+                0x00000000        0x4 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .text._localeconv_r
+                0x00000000        0x8 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .text.localeconv
+                0x00000000        0x8 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-localeconv.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .rodata._setlocale_r.str1.1
+                0x00000000        0x9 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .text._setlocale_r
+                0x00000000       0x40 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .text.__locale_mb_cur_max
+                0x00000000        0xc ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .text.setlocale
+                0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .rodata.str1.1
+                0x00000000        0x2 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .bss._PathLocale
+                0x00000000        0x4 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .data.__global_locale
+                0x00000000      0x16c ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-locale.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .text._mbtowc_r
+                0x00000000       0x14 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .text.__ascii_mbtowc
+                0x00000000       0x24 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-mbtowc_r.o)
+ .text          0x00000000       0xe8 ../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+ .debug_frame   0x00000000       0x34 ../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x00000000       0x21 ../../components/newlib/armca5/libc.a(lib_a-memchr.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text._Balloc  0x00000000       0x48 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text._Bfree   0x00000000       0x12 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__multadd
+                0x00000000       0x7c ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__s2b    0x00000000       0x88 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__hi0bits
+                0x00000000       0x40 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__lo0bits
+                0x00000000       0x5c ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__i2b    0x00000000       0x12 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__multiply
+                0x00000000      0x136 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__pow5mult
+                0x00000000       0x80 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__lshift
+                0x00000000       0xbe ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__mcmp   0x00000000       0x36 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__mdiff  0x00000000       0xec ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__ulp    0x00000000       0x58 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__b2d    0x00000000       0xa0 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__d2b    0x00000000       0xa4 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__ratio  0x00000000       0x64 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text._mprec_log10
+                0x00000000       0x28 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__copybits
+                0x00000000       0x46 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text.__any_on
+                0x00000000       0x42 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .rodata.__mprec_bigtens
+                0x00000000       0x28 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .rodata.__mprec_tens
+                0x00000000       0xc8 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .rodata.__mprec_tinytens
+                0x00000000       0x28 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .rodata.p05.7382
+                0x00000000        0xc ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-mprec.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .text.frexp    0x00000000       0x70 ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-s_frexp.o)
+ .text          0x00000000      0x2dc ../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00000000       0x68 ../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000000       0x25 ../../components/newlib/armca5/libc.a(lib_a-strcmp.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .text.strncpy  0x00000000       0x74 ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-strncpy.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .text.__ssprint_r
+                0x00000000       0xea ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .rodata._svfiprintf_r.str1.1
+                0x00000000       0x29 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .text._svfiprintf_r
+                0x00000000      0x89c ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .rodata.blanks.8588
+                0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .rodata.zeroes.8589
+                0x00000000       0x10 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-svfiprintf.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .text._wctomb_r
+                0x00000000       0x14 ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .text.__ascii_wctomb
+                0x00000000       0x1a ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-wctomb_r.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .rodata._ctype_
+                0x00000000      0x101 ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000000       0x3d ../../components/newlib/armca5/libc.a(lib_a-ctype_.o)
+ .text          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0xd4 ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .comment       0x00000000       0x7a ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x37 ../../components/newlib/armca5/libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)
+ .text          0x00000000      0x2b0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000       0x20 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000       0x1b ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000       0xa0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00000000       0x44 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x00000000       0x1b ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_ldivmod.o)
+ .text          0x00000000       0x30 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000       0x2c ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000       0x1b ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_aeabi_uldivmod.o)
+ .text          0x00000000      0x144 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00000000        0x8 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00000000       0x40 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000000       0x2d ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivmoddi4.o)
+ .text          0x00000000        0x0 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .data          0x00000000        0x0 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .bss           0x00000000        0x0 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text._gpioSuspend
+                0x00000000       0x34 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text._gpioISR
+                0x00000000       0x50 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text._gpioResume
+                0x00000000       0x44 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioInit
+                0x00000000       0x54 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioReconfig
+                0x00000000       0x84 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioOpen
+                0x00000000       0x68 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioClose
+                0x00000000       0x4c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioRead
+                0x00000000       0x4c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.drvGpioWrite
+                0x00000000       0x3c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_drvGpiodirset
+                0x00000000       0x40 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_drvGpiodirget
+                0x00000000       0x44 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_drvGpioRecallback
+                0x00000000       0x2c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOintrenset
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOdirget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOintrlvlget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOdbnget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOrisingget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOfallingget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOcbget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_GPIOcbctxget
+                0x00000000        0x4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .text.quec_drvGpioIntrClose
+                0x00000000       0x40 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .bss.gDrvGpioCtx
+                0x00000000       0x9c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .rodata._gpioISR.str1.1
+                0x00000000       0x15 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .rodata._gpioPmOps
+                0x00000000       0x10 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_info    0x00000000     0x1900 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_abbrev  0x00000000      0x4ba lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_loc     0x00000000      0x901 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_aranges
+                0x00000000       0xc0 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_ranges  0x00000000       0xf8 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_line    0x00000000      0x4ca lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_str     0x00000000     0x12b4 lib/libdriver.a(drv_gpio_8910.c.obj)
+ .comment       0x00000000       0x7f lib/libdriver.a(drv_gpio_8910.c.obj)
+ .debug_frame   0x00000000      0x20c lib/libdriver.a(drv_gpio_8910.c.obj)
+ .ARM.attributes
+                0x00000000       0x3d lib/libdriver.a(drv_gpio_8910.c.obj)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sram             0x00800100         0x0000ff00         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+LOAD components/bootloader/CMakeFiles/boot.dir/boot2.img.lzmar.S.obj
+LOAD lib/libbootloader.a
+START GROUP
+LOAD lib/libhal.a
+LOAD lib/libcalclib.a
+END GROUP
+LOAD ../../components/newlib/armca5/libc.a
+LOAD ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a
+LOAD ../../components/libs/boot_encrypt/libboot_encrypt.a
+LOAD lib/libdriver.a
+
+.text           0x00800100     0xa4e0
+                0x00800100                __text_start = .
+ *(BOOT_ENTRY)
+ BOOT_ENTRY     0x00800100      0x184 lib/libbootloader.a(boot_entry_v7a.S.obj)
+                0x008001b0                bootEntry
+                0x0080021c                bootJumpImageEntry
+ SORT_BY_NAME(*)(.sramboottext .sramboottext.*)
+ .sramboottext  0x00800284       0x64 lib/libhal.a(hal_delay.c.obj)
+                0x00800284                osiDelayLoops
+                0x00800290                osiDelayUS
+                0x008002b0                osiDebugEvent
+                0x008002dc                osiHWTick16K
+ .sramboottext  0x008002e8       0x56 lib/libhal.a(hal_reg_apply.c.obj)
+                0x008002e8                halApplyRegisters
+                0x0080031a                halApplyRegisterList
+ SORT_BY_NAME(*)(.sramtext .sramtext.*)
+ .sramtext      0x0080033e       0x1e lib/libhal.a(hal_chip_8910.c.obj)
+                0x0080033e                uxPortSetInterruptMaskFromISR
+                0x0080033e                vPortDisableInterrupts
+                0x0080033e                uxPortEnterCritical
+                0x0080033e                osiEnterCritical
+                0x0080033e                osiIrqSave
+                0x0080034e                osiExitCritical
+                0x0080034e                osiIrqRestore
+                0x0080034e                vPortExitCritical
+                0x0080034e                vPortClearInterruptMaskFromISR
+ SORT_BY_NAME(*)(.ramtext .ramtext.*)
+ SORT_BY_NAME(*)(.text .text.* .gnu.linkonce.t.* .rdata .rodata .rodata.* .rodata1 .gnu.linkonce.r.*)
+ .text          0x0080035c        0x4 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_dvmd_tls.o)
+                0x0080035c                __aeabi_idiv0
+                0x0080035c                __aeabi_ldiv0
+ .text          0x00800360      0x278 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)
+                0x00800360                __aeabi_uidiv
+                0x00800360                __udivsi3
+                0x008005bc                __aeabi_uidivmod
+ .text          0x008005d8     0x9918 components/bootloader/CMakeFiles/boot.dir/boot2.img.lzmar.S.obj
+                0x008005d8                gBoot2CompData
+ .text.bootIrqHandler
+                0x00809ef0        0x2 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+                0x00809ef0                bootIrqHandler
+ .text.bootBlueScreen
+                0x00809ef2        0x2 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+                0x00809ef2                bootBlueScreen
+ .text.bootStart
+                0x00809ef4       0x4c components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+                0x00809ef4                bootStart
+ .text.bootPanic
+                0x00809f40        0x2 lib/libbootloader.a(boot_delay.c.obj)
+                0x00809f40                osiPanic
+                0x00809f40                bootPanic
+ *fill*         0x00809f42        0x2 
+ .text.bootElapsedTimerStart
+                0x00809f44       0x10 lib/libbootloader.a(boot_delay.c.obj)
+                0x00809f44                osiElapsedTimerStart
+                0x00809f44                bootElapsedTimerStart
+ .text.bootElapsedTimeUS
+                0x00809f54       0x14 lib/libbootloader.a(boot_delay.c.obj)
+                0x00809f54                bootElapsedTimeUS
+                0x00809f54                osiElapsedTimeUS
+ .text.bootResetPinEnable
+                0x00809f68       0x48 lib/libbootloader.a(boot_platform_8910.c.obj)
+                0x00809f68                bootResetPinEnable
+ .text.osiPmSourceCreate
+                0x00809fb0        0x8 lib/libbootloader.a(boot_stub.c.obj)
+                0x00809fb0                osiPmSourceCreate
+ .text.bootUimageEntry
+                0x00809fb8        0xc lib/libbootloader.a(boot_uimage.c.obj)
+                0x00809fb8                bootUimageEntry
+ .text._initCfgReg
+                0x00809fc4       0x28 lib/libhal.a(hal_adi_bus.c.obj)
+                0x00809fc4                _initCfgReg
+ .text._adiBusResume
+                0x00809fec        0xa lib/libhal.a(hal_adi_bus.c.obj)
+ *fill*         0x00809ff6        0x2 
+ .text.halAdiBusInit
+                0x00809ff8       0x1c lib/libhal.a(hal_adi_bus.c.obj)
+                0x00809ff8                halAdiBusInit
+ .text.halAdiBusRead
+                0x0080a014       0x3c lib/libhal.a(hal_adi_bus.c.obj)
+                0x0080a014                halAdiBusRead
+ .text.halAdiBusWrite
+                0x0080a050       0x2c lib/libhal.a(hal_adi_bus.c.obj)
+                0x0080a050                halAdiBusWrite
+ .text.halAdiBusChange
+                0x0080a07c       0x64 lib/libhal.a(hal_adi_bus.c.obj)
+                0x0080a07c                halAdiBusChange
+ .rodata        0x0080a0e0        0x4 lib/libhal.a(hal_adi_bus.c.obj)
+ .rodata._adiBusPmOps
+                0x0080a0e4       0x10 lib/libhal.a(hal_adi_bus.c.obj)
+ .text.osiDCacheClean
+                0x0080a0f4       0x1c lib/libhal.a(hal_chip_8910.c.obj)
+                0x0080a0f4                osiDCacheClean
+ .text.osiDCacheInvalidate
+                0x0080a110       0x18 lib/libhal.a(hal_chip_8910.c.obj)
+                0x0080a110                osiDCacheInvalidate
+ .text.prvDelayUS
+                0x0080a128       0x14 lib/libhal.a(hal_clock_init.c.obj)
+ .text.halClockInit
+                0x0080a13c      0x240 lib/libhal.a(hal_clock_init.c.obj)
+                0x0080a13c                halClockInit
+ .text.halHwspinlockAcquire
+                0x0080a37c       0x38 lib/libhal.a(hal_hwspinlock.c.obj)
+                0x0080a37c                halHwspinlockAcquire
+ .text.halHwspinlockRelease
+                0x0080a3b4       0x14 lib/libhal.a(hal_hwspinlock.c.obj)
+                0x0080a3b4                halHwspinlockRelease
+ .text.halHwspinlockReleaseInCritical
+                0x0080a3c8       0x14 lib/libhal.a(hal_hwspinlock.c.obj)
+                0x0080a3c8                halHwspinlockReleaseInCritical
+ .text.halLzmaReset
+                0x0080a3dc       0x30 lib/libhal.a(hal_lzma.c.obj)
+                0x0080a3dc                halLzmaReset
+ .text.halLzmaEnable
+                0x0080a40c       0x18 lib/libhal.a(hal_lzma.c.obj)
+                0x0080a40c                halLzmaEnable
+ .text.halLzmaDisable
+                0x0080a424       0x18 lib/libhal.a(hal_lzma.c.obj)
+                0x0080a424                halLzmaDisable
+ .text.halLzmaDecompressBlock
+                0x0080a43c       0xd0 lib/libhal.a(hal_lzma.c.obj)
+                0x0080a43c                halLzmaDecompressBlock
+ .text.halLzmaDecompressFile
+                0x0080a50c       0xc0 lib/libhal.a(hal_lzma.c.obj)
+                0x0080a50c                halLzmaDecompressFile
+ *(.rokeep)
+                0x0080a5cc                __text_end = .
+                0x0080a5e0                . = ALIGN (0x20)
+ *fill*         0x0080a5cc       0x14 
+
+.data           0x0080a5e0       0x20
+                0x0080a5e0                __data_start = .
+ SORT_BY_NAME(*)(.sramdata .sramdata.*)
+ SORT_BY_NAME(*)(.data .data.* .sdata .sdata.* .data1 .gnu.linkonce.d.*)
+ *(.rwkeep)
+ .rwkeep        0x0080a5e0        0xc lib/libhal.a(hal_blue_screen.c.obj)
+                0x0080a5e0                gGdbRegAddress
+                0x0080a5e4                gCpGdbRegAddress
+                0x0080a5e8                gGdbCtxType
+                0x0080a5ec                __data_end = .
+                0x0080a600                . = ALIGN (0x20)
+ *fill*         0x0080a5ec       0x14 
+
+.lastflash      0x0080a600        0x0
+                0x0080a600                . = ALIGN (0x20)
+
+.bss            0x0080a600        0x0
+                0x0080a600                __bss_start = .
+ *(.srambss .srambss.*)
+ *(.bss .bss.* COMMON .scommon .sbss .sbss.* .sbss2 .sbss2.* .gnu.linkonce.b.*)
+                0x0080a600                __bss_end = .
+                0x0080a600                . = ALIGN (0x20)
+
+.sys_stack      0x0080a600     0x1800
+                0x0080a600                __sys_stack_start = .
+                0x0080be00                . = (. + 0x1800)
+ *fill*         0x0080a600     0x1800 
+                0x0080be00                __sys_stack_end = .
+                0x0080be00                . = ALIGN (0x20)
+
+.irq_stack      0x0080be00      0x800
+                0x0080be00                __irq_stack_start = .
+                0x0080c600                . = (. + 0x800)
+ *fill*         0x0080be00      0x800 
+                0x0080c600                __irq_stack_end = .
+                0x0080c600                . = ALIGN (0x20)
+
+.blue_screen    0x0080c600      0x400
+                0x0080c600                __blue_screen_start = .
+                0x0080ca00                . = (. + 0x400)
+ *fill*         0x0080c600      0x400 
+                0x0080ca00                __blue_screen_end = .
+                0x0080ca00                . = ALIGN (0x20)
+
+.sram_heap      0x0080ca00     0x3600
+                0x0080ca00                __sram_heap_start = .
+                0x00810000                . = (ORIGIN (sram) + LENGTH (sram))
+ *fill*         0x0080ca00     0x3600 
+                0x00810000                __sram_heap_end = .
+                0x00810000                . = ALIGN (0x20)
+                0x00800100                __flash_start = LOADADDR (.text)
+                0x0080a600                __flash_end = ADDR (.lastflash)
+                0x00000001                ASSERT (((__flash_end - 0x8000c0) <= 0xbae0), flash overflow)
+
+.comment        0x00000000       0x7e
+ *(.comment)
+ .comment       0x00000000       0x7e components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+                                 0x7f (size before relaxing)
+ .comment       0x0000007e       0x7f lib/libbootloader.a(boot_platform_8910.c.obj)
+ .comment       0x0000007e       0x7f lib/libbootloader.a(boot_stub.c.obj)
+ .comment       0x0000007e       0x7f lib/libbootloader.a(boot_delay.c.obj)
+ .comment       0x0000007e       0x7f lib/libbootloader.a(boot_uimage.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_clock_init.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_chip_8910.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_delay.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_reg_apply.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_adi_bus.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_hwspinlock.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_lzma.c.obj)
+ .comment       0x0000007e       0x7f lib/libhal.a(hal_blue_screen.c.obj)
+
+.ARM.attributes
+                0x00000000       0x3d
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x3d components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .ARM.attributes
+                0x0000003d       0x2b components/bootloader/CMakeFiles/boot.dir/boot2.img.lzmar.S.obj
+ .ARM.attributes
+                0x00000068       0x3d lib/libbootloader.a(boot_platform_8910.c.obj)
+ .ARM.attributes
+                0x000000a5       0x2b lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .ARM.attributes
+                0x000000d0       0x3d lib/libbootloader.a(boot_stub.c.obj)
+ .ARM.attributes
+                0x0000010d       0x3d lib/libbootloader.a(boot_delay.c.obj)
+ .ARM.attributes
+                0x0000014a       0x3d lib/libbootloader.a(boot_uimage.c.obj)
+ .ARM.attributes
+                0x00000187       0x3d lib/libhal.a(hal_clock_init.c.obj)
+ .ARM.attributes
+                0x000001c4       0x3d lib/libhal.a(hal_chip_8910.c.obj)
+ .ARM.attributes
+                0x00000201       0x3d lib/libhal.a(hal_delay.c.obj)
+ .ARM.attributes
+                0x0000023e       0x3d lib/libhal.a(hal_reg_apply.c.obj)
+ .ARM.attributes
+                0x0000027b       0x3d lib/libhal.a(hal_adi_bus.c.obj)
+ .ARM.attributes
+                0x000002b8       0x3d lib/libhal.a(hal_hwspinlock.c.obj)
+ .ARM.attributes
+                0x000002f5       0x3d lib/libhal.a(hal_lzma.c.obj)
+ .ARM.attributes
+                0x00000332       0x3d lib/libhal.a(hal_blue_screen.c.obj)
+ .ARM.attributes
+                0x0000036f       0x1b ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000038a       0x1b ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_dvmd_tls.o)
+
+.iplt           0x00000000        0x0
+ *(.iplt)
+ .iplt          0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+
+.igot.plt       0x00000000        0x0
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+
+.rel.dyn        0x00000000        0x0
+ *(.rel.dyn)
+ .rel.iplt      0x00000000        0x0 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+
+.glue_7         0x00000000        0x0
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000000        0x0
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000000        0x0
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000000        0x0
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+/DISCARD/
+ *(.ARM.exidx*)
+ *(.gnu.linkonce.armexidx*)
+OUTPUT(hex\boot.elf elf32-littlearm)
+
+.debug_info     0x00000000    0x14d67
+ .debug_info    0x00000000      0x224 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_info    0x00000224     0x269d lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_info    0x000028c1       0x26 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .debug_info    0x000028e7      0x1cc lib/libbootloader.a(boot_stub.c.obj)
+ .debug_info    0x00002ab3      0x1fb lib/libbootloader.a(boot_delay.c.obj)
+ .debug_info    0x00002cae      0xd68 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_info    0x00003a16     0x7975 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_info    0x0000b38b     0x3871 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_info    0x0000ebfc      0x32b lib/libhal.a(hal_delay.c.obj)
+ .debug_info    0x0000ef27      0x1b8 lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_info    0x0000f0df      0x9fb lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_info    0x0000fada      0x633 lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_info    0x0001010d     0x29c8 lib/libhal.a(hal_lzma.c.obj)
+ .debug_info    0x00012ad5     0x2292 lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_abbrev   0x00000000     0x1f0f
+ .debug_abbrev  0x00000000      0x16f components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_abbrev  0x0000016f      0x29a lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_abbrev  0x00000409       0x14 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .debug_abbrev  0x0000041d       0xf3 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_abbrev  0x00000510       0xd2 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_abbrev  0x000005e2      0x2a0 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_abbrev  0x00000882      0x38b lib/libhal.a(hal_clock_init.c.obj)
+ .debug_abbrev  0x00000c0d      0x463 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_abbrev  0x00001070      0x123 lib/libhal.a(hal_delay.c.obj)
+ .debug_abbrev  0x00001193      0x10f lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_abbrev  0x000012a2      0x283 lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_abbrev  0x00001525      0x15e lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_abbrev  0x00001683      0x3a5 lib/libhal.a(hal_lzma.c.obj)
+ .debug_abbrev  0x00001a28      0x4e7 lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_loc      0x00000000     0x34f8
+ .debug_loc     0x00000000       0x89 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_loc     0x00000089      0x143 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_loc     0x000001cc       0x21 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_loc     0x000001ed       0x42 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_loc     0x0000022f      0x23f lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_loc     0x0000046e      0x555 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_loc     0x000009c3      0xed0 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_loc     0x00001893       0x84 lib/libhal.a(hal_delay.c.obj)
+ .debug_loc     0x00001917       0xbe lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_loc     0x000019d5      0x3dd lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_loc     0x00001db2       0xff lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_loc     0x00001eb1      0x97d lib/libhal.a(hal_lzma.c.obj)
+ .debug_loc     0x0000282e      0xcca lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_aranges  0x00000000      0x3f0
+ .debug_aranges
+                0x00000000       0x30 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_aranges
+                0x00000030       0x58 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_aranges
+                0x00000088       0x20 lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .debug_aranges
+                0x000000a8       0x20 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_aranges
+                0x000000c8       0x38 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_aranges
+                0x00000100       0x38 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_aranges
+                0x00000138       0x70 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_aranges
+                0x000001a8       0xb0 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_aranges
+                0x00000258       0x38 lib/libhal.a(hal_delay.c.obj)
+ .debug_aranges
+                0x00000290       0x28 lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_aranges
+                0x000002b8       0x50 lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_aranges
+                0x00000308       0x40 lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_aranges
+                0x00000348       0x50 lib/libhal.a(hal_lzma.c.obj)
+ .debug_aranges
+                0x00000398       0x58 lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_ranges   0x00000000      0x688
+ .debug_ranges  0x00000000       0x40 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_ranges  0x00000040       0x60 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_ranges  0x000000a0       0x10 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_ranges  0x000000b0       0x28 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_ranges  0x000000d8       0x28 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_ranges  0x00000100       0xb0 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_ranges  0x000001b0      0x270 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_ranges  0x00000420       0x40 lib/libhal.a(hal_delay.c.obj)
+ .debug_ranges  0x00000460       0x18 lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_ranges  0x00000478       0x70 lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_ranges  0x000004e8       0x30 lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_ranges  0x00000518       0xa8 lib/libhal.a(hal_lzma.c.obj)
+ .debug_ranges  0x000005c0       0xc8 lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_line     0x00000000     0x23c8
+ .debug_line    0x00000000      0x197 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_line    0x00000197      0x2ac lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_line    0x00000443       0xce lib/libbootloader.a(boot_entry_v7a.S.obj)
+ .debug_line    0x00000511       0xf6 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_line    0x00000607      0x164 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_line    0x0000076b      0x234 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_line    0x0000099f      0x519 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_line    0x00000eb8      0x709 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_line    0x000015c1      0x13a lib/libhal.a(hal_delay.c.obj)
+ .debug_line    0x000016fb      0x17c lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_line    0x00001877      0x293 lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_line    0x00001b0a      0x182 lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_line    0x00001c8c      0x2ce lib/libhal.a(hal_lzma.c.obj)
+ .debug_line    0x00001f5a      0x46e lib/libhal.a(hal_blue_screen.c.obj)
+
+.debug_str      0x00000000     0xd5d5
+ .debug_str     0x00000000      0x2aa components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+                                0x2ec (size before relaxing)
+ .debug_str     0x000002aa     0x20e6 lib/libbootloader.a(boot_platform_8910.c.obj)
+                               0x22fd (size before relaxing)
+ .debug_str     0x00002390       0x40 lib/libbootloader.a(boot_entry_v7a.S.obj)
+                                 0x6e (size before relaxing)
+ .debug_str     0x000023d0       0xd5 lib/libbootloader.a(boot_stub.c.obj)
+                                0x2b5 (size before relaxing)
+ .debug_str     0x000024a5      0x18c lib/libbootloader.a(boot_delay.c.obj)
+                                0x36a (size before relaxing)
+ .debug_str     0x00002631      0x533 lib/libbootloader.a(boot_uimage.c.obj)
+                                0x769 (size before relaxing)
+ .debug_str     0x00002b64     0x6969 lib/libhal.a(hal_clock_init.c.obj)
+                               0x7839 (size before relaxing)
+ .debug_str     0x000094cd     0x1e49 lib/libhal.a(hal_chip_8910.c.obj)
+                               0x3077 (size before relaxing)
+ .debug_str     0x0000b316       0xdb lib/libhal.a(hal_delay.c.obj)
+                                0x3e0 (size before relaxing)
+ .debug_str     0x0000b3f1       0x5c lib/libhal.a(hal_reg_apply.c.obj)
+                                0x26c (size before relaxing)
+ .debug_str     0x0000b44d      0x4d9 lib/libhal.a(hal_adi_bus.c.obj)
+                                0x855 (size before relaxing)
+ .debug_str     0x0000b926      0x346 lib/libhal.a(hal_hwspinlock.c.obj)
+                                0x590 (size before relaxing)
+ .debug_str     0x0000bc6c     0x1351 lib/libhal.a(hal_lzma.c.obj)
+                               0x2837 (size before relaxing)
+ .debug_str     0x0000cfbd      0x618 lib/libhal.a(hal_blue_screen.c.obj)
+                                0xce8 (size before relaxing)
+
+.debug_frame    0x00000000      0x930
+ .debug_frame   0x00000000       0x48 components/bootloader/CMakeFiles/boot.dir/boot/boot_start_8910.c.obj
+ .debug_frame   0x00000048       0xe0 lib/libbootloader.a(boot_platform_8910.c.obj)
+ .debug_frame   0x00000128       0x20 lib/libbootloader.a(boot_stub.c.obj)
+ .debug_frame   0x00000148       0x50 lib/libbootloader.a(boot_delay.c.obj)
+ .debug_frame   0x00000198       0x78 lib/libbootloader.a(boot_uimage.c.obj)
+ .debug_frame   0x00000210      0x138 lib/libhal.a(hal_clock_init.c.obj)
+ .debug_frame   0x00000348      0x230 lib/libhal.a(hal_chip_8910.c.obj)
+ .debug_frame   0x00000578       0x5c lib/libhal.a(hal_delay.c.obj)
+ .debug_frame   0x000005d4       0x5c lib/libhal.a(hal_reg_apply.c.obj)
+ .debug_frame   0x00000630       0xe0 lib/libhal.a(hal_adi_bus.c.obj)
+ .debug_frame   0x00000710       0x6c lib/libhal.a(hal_hwspinlock.c.obj)
+ .debug_frame   0x0000077c       0xc8 lib/libhal.a(hal_lzma.c.obj)
+ .debug_frame   0x00000844       0xcc lib/libhal.a(hal_blue_screen.c.obj)
+ .debug_frame   0x00000910       0x20 ../../prebuilts/win32/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7-ar/fpv3/hard/libgcc.a(_udivsi3.o)

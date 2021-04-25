@@ -1,0 +1,17 @@
+
+///////////////////////////////////////////// IMS /////////////////////////////////////////////
+
+// Max PDU size can be transfered by UDP, use TCP if bigger than it;
+// If set to 0, use UDP. Set to a small value to use TCP always;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_mtu=1500
+
+// sip_preconditionEnabled: Control the precondition of all cases.
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\sip_preconditionEnabled=1
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_rs=600
+
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_rr=2000
+
+// 0: Not set; 1: QCIF; 2: QVGA-15; 3: CIF; 4: QVGA-30; 5: VGA-15; 6: VGA-30; 7: 1280x720;
+PS_NV_PARAMS\NV_PARAM_TYPE_PLMN_DELTA_NV\ims_plmn_nvinfo\video_max_resolution=2
+
