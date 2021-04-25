@@ -1,0 +1,1 @@
+build_all new EC600UCN_LB C51V VOLTE SSIM debug

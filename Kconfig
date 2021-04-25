@@ -1,0 +1,42 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+mainmenu "Main Menu"
+
+osource "components/chip/Kconfig"
+osource "components/bootloader/Kconfig"
+osource "components/kernel/Kconfig"
+osource "components/hal/Kconfig"
+osource "components/driver/Kconfig"
+osource "components/console/Kconfig"
+osource "components/fs/Kconfig"
+osource "components/rpc/Kconfig"
+osource "components/cfw/Kconfig"
+osource "components/mal/Kconfig"
+osource "components/service/Kconfig"
+osource "components/diag/Kconfig"
+osource "components/firmwareupdate/Kconfig"
+osource "components/appstart/Kconfig"
+osource "components/net/Kconfig"
+osource "components/atr/Kconfig"
+osource "components/ats/Kconfig"
+osource "components/modem/Kconfig"
+osource "components/nvm/Kconfig"
+osource "components/connectivity/Kconfig"
+osource "components/bt_app/Kconfig"
+osource "components/audio/Kconfig"
+osource "components/tts/Kconfig"
+osource "components/littlevgl/Kconfig"
+osource "components/tb/Kconfig"
+osource "components/lpa/Kconfig"
+osource "examples/Kconfig"
+osource "components/quectel/Kconfig"
+osource "components/ql-kernel/Kconfig"

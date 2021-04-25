@@ -1,0 +1,1 @@
+build_all r EC600UCN_LB C51 VOLTE SSIM release
